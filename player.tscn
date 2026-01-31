@@ -136,8 +136,6 @@ _data = {
 
 [node name="Player" type="CharacterBody3D" unique_id=665689080]
 script = ExtResource("1_4flbx")
-speed = null
-rotation_speed = null
 metadata/_edit_vertical_guides_ = [1151.0]
 metadata/_edit_horizontal_guides_ = [718.0]
 
@@ -164,16 +162,19 @@ fov = 80.20326
 [node name="AnimationHandling" type="CanvasLayer" parent="." unique_id=1791864523]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimationHandling" unique_id=1995456628]
+reset_on_save = false
+callback_mode_method = 1
 libraries/ = SubResource("AnimationLibrary_onrkg")
 
 [node name="LeftHand" type="Sprite2D" parent="AnimationHandling" unique_id=629328375]
-position = Vector2(181, 423)
+position = Vector2(0, 198)
 scale = Vector2(0.518, 0.518)
 texture = ExtResource("3_i3pqv")
 centered = false
 
 [node name="RightHand" type="Sprite2D" parent="AnimationHandling" unique_id=517697399]
-position = Vector2(790.00006, 198.00002)
+position = Vector2(635, 724)
+rotation = -0.40142572
 scale = Vector2(0.518, 0.518)
 texture = ExtResource("3_i3pqv")
 centered = false

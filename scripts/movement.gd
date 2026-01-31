@@ -3,6 +3,10 @@ extends CharacterBody3D
 @export var speed = 9
 @export var rotation_speed = 2
 var journal = false
+var animator
+
+func _ready() -> void:
+	animator = $AnimationHandling/AnimationPlayer
 
 func _physics_process(delta):
 	if journal == false:
@@ -14,6 +18,9 @@ func _physics_process(delta):
 		if Input.is_action_pressed("move_forward"):
 			velocity = (forward * speed)
 			move_and_slide()
+			animator.play("walking")
+		else:
+			animator.pause()
 		if Input.is_action_pressed("move_backward"):
 			velocity = (-forward * speed / 1.7)
 			move_and_slide()
