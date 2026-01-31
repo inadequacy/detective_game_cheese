@@ -1,0 +1,363 @@
+[gd_scene format=3 uid="uid://767hlx3sdcay"]
+
+[ext_resource type="Texture2D" uid="uid://wn5cjd1bruhm" path="res://icon.svg" id="1_ddl45"]
+[ext_resource type="Script" uid="uid://bdmdxpxlbxph4" path="res://d_n_d/basic_d_n_d.gd" id="2_ubymx"]
+[ext_resource type="Script" uid="uid://cdhk3xl7ih3gy" path="res://d_n_d/basic_d_n_d_child.gd" id="3_ubymx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(129, 128)
+
+[node name="Pinwand" type="Control" unique_id=1529431941]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=516653806]
+
+[node name="Board" type="Node2D" parent="." unique_id=951711570 groups=["board"]]
+
+[node name="Card" type="Sprite2D" parent="Board" unique_id=1041222790 groups=["base"]]
+position = Vector2(9, -218)
+texture = ExtResource("1_ddl45")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card" unique_id=852053344]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="DropZone" type="Area2D" parent="Board/Card" unique_id=75314240]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card/DropZone" unique_id=1547585888]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Card3" type="Sprite2D" parent="Board" unique_id=896837112 groups=["base"]]
+position = Vector2(-187, -214)
+texture = ExtResource("1_ddl45")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card3" unique_id=271537164]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="DropZone" type="Area2D" parent="Board/Card3" unique_id=990997218]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card3/DropZone" unique_id=1809387048]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Card2" type="Sprite2D" parent="Board" unique_id=426525000 groups=["base"]]
+position = Vector2(224, -211)
+texture = ExtResource("1_ddl45")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card2" unique_id=1143053658]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="DropZone" type="Area2D" parent="Board/Card2" unique_id=2147274521]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card2/DropZone" unique_id=1290733508]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Note" type="Sprite2D" parent="Board" unique_id=634305992]
+modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
+position = Vector2(-523.5, -116.5)
+scale = Vector2(0.3984375, 0.3984375)
+texture = ExtResource("1_ddl45")
+script = ExtResource("3_ubymx")
+
+[node name="Button" type="Button" parent="Board/Note" unique_id=1226974191]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="OverlapSensor" type="Area2D" parent="Board/Note" unique_id=67142708]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Note/OverlapSensor" unique_id=1137733059]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Note2" type="Sprite2D" parent="Board" unique_id=1010816689]
+modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
+position = Vector2(-523.5, -116.5)
+scale = Vector2(0.3984375, 0.3984375)
+texture = ExtResource("1_ddl45")
+script = ExtResource("3_ubymx")
+
+[node name="Button" type="Button" parent="Board/Note2" unique_id=243088001]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="OverlapSensor" type="Area2D" parent="Board/Note2" unique_id=1767444929]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Note2/OverlapSensor" unique_id=84212495]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Note3" type="Sprite2D" parent="Board" unique_id=985217209]
+modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
+position = Vector2(-523.5, -116.5)
+scale = Vector2(0.3984375, 0.3984375)
+texture = ExtResource("1_ddl45")
+script = ExtResource("3_ubymx")
+
+[node name="Button" type="Button" parent="Board/Note3" unique_id=203551846]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="OverlapSensor" type="Area2D" parent="Board/Note3" unique_id=868728254]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Note3/OverlapSensor" unique_id=229473763]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Note4" type="Sprite2D" parent="Board" unique_id=419103207]
+modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
+position = Vector2(-523.5, -116.5)
+scale = Vector2(0.3984375, 0.3984375)
+texture = ExtResource("1_ddl45")
+script = ExtResource("3_ubymx")
+
+[node name="Button" type="Button" parent="Board/Note4" unique_id=609685711]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="OverlapSensor" type="Area2D" parent="Board/Note4" unique_id=182725361]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Note4/OverlapSensor" unique_id=1433922843]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Card4" type="Sprite2D" parent="Board" unique_id=1141184952 groups=["base"]]
+position = Vector2(9, -57)
+texture = ExtResource("1_ddl45")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card4" unique_id=199880799]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="DropZone" type="Area2D" parent="Board/Card4" unique_id=1312977654]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card4/DropZone" unique_id=1200936973]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Card5" type="Sprite2D" parent="Board" unique_id=349364803 groups=["base"]]
+position = Vector2(-187, -53)
+texture = ExtResource("1_ddl45")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card5" unique_id=1462724245]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="DropZone" type="Area2D" parent="Board/Card5" unique_id=1558859439]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card5/DropZone" unique_id=1159067297]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Card6" type="Sprite2D" parent="Board" unique_id=474576899 groups=["base"]]
+position = Vector2(224, -50)
+texture = ExtResource("1_ddl45")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card6" unique_id=695400239]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="DropZone" type="Area2D" parent="Board/Card6" unique_id=612051222]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card6/DropZone" unique_id=1060344870]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Card7" type="Sprite2D" parent="Board" unique_id=30866026 groups=["base"]]
+position = Vector2(9, 126)
+texture = ExtResource("1_ddl45")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card7" unique_id=696422706]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="DropZone" type="Area2D" parent="Board/Card7" unique_id=2038990284]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card7/DropZone" unique_id=1402523513]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Card8" type="Sprite2D" parent="Board" unique_id=1628196397 groups=["base"]]
+position = Vector2(-187, 130)
+texture = ExtResource("1_ddl45")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card8" unique_id=1251833991]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="DropZone" type="Area2D" parent="Board/Card8" unique_id=1403796431]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card8/DropZone" unique_id=2113725074]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Card9" type="Sprite2D" parent="Board" unique_id=1475662051 groups=["base"]]
+position = Vector2(224, 133)
+texture = ExtResource("1_ddl45")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card9" unique_id=58373619]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="DropZone" type="Area2D" parent="Board/Card9" unique_id=1467284457]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card9/DropZone" unique_id=2113407914]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[connection signal="button_down" from="Board/Card/Button" to="Board/Card" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card/Button" to="Board/Card" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card3/Button" to="Board/Card3" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card3/Button" to="Board/Card3" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card2/Button" to="Board/Card2" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card2/Button" to="Board/Card2" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Note/Button" to="Board/Note" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Note/Button" to="Board/Note" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Note2/Button" to="Board/Note2" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Note2/Button" to="Board/Note2" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Note3/Button" to="Board/Note3" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Note3/Button" to="Board/Note3" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Note4/Button" to="Board/Note4" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Note4/Button" to="Board/Note4" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card4/Button" to="Board/Card4" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card4/Button" to="Board/Card4" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card5/Button" to="Board/Card5" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card5/Button" to="Board/Card5" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card6/Button" to="Board/Card6" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card6/Button" to="Board/Card6" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card7/Button" to="Board/Card7" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card7/Button" to="Board/Card7" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card8/Button" to="Board/Card8" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card8/Button" to="Board/Card8" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card9/Button" to="Board/Card9" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card9/Button" to="Board/Card9" method="_on_button_button_up"]
