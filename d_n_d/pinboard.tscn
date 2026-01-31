@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://wn5cjd1bruhm" path="res://icon.svg" id="1_ddl45"]
 [ext_resource type="Script" uid="uid://cqc0wtvbefpeg" path="res://d_n_d/camera_2d.gd" id="1_geain"]
 [ext_resource type="Script" uid="uid://bdmdxpxlbxph4" path="res://d_n_d/basic_d_n_d.gd" id="2_ubymx"]
+[ext_resource type="Script" uid="uid://chk76m8p4wvo1" path="res://d_n_d/board.gd" id="3_7vij8"]
 [ext_resource type="Script" uid="uid://cdhk3xl7ih3gy" path="res://d_n_d/basic_d_n_d_child.gd" id="3_ubymx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
@@ -18,6 +19,7 @@ script = ExtResource("1_3h13b")
 script = ExtResource("1_geain")
 
 [node name="Board" type="Node2D" parent="." unique_id=951711570 groups=["board"]]
+script = ExtResource("3_7vij8")
 
 [node name="Card" type="Sprite2D" parent="Board" unique_id=1041222790 groups=["base"]]
 position = Vector2(9, -218)
@@ -88,110 +90,6 @@ action_mode = 0
 position = Vector2(-61, -52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card2/DropZone" unique_id=1290733508]
-position = Vector2(61.5, 52)
-shape = SubResource("RectangleShape2D_0e48y")
-
-[node name="Note" type="Sprite2D" parent="Board" unique_id=634305992]
-modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
-position = Vector2(-523.5, -116.5)
-scale = Vector2(0.3984375, 0.3984375)
-texture = ExtResource("1_ddl45")
-script = ExtResource("3_ubymx")
-
-[node name="Button" type="Button" parent="Board/Note" unique_id=1226974191]
-self_modulate = Color(1, 1, 1, 0)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -64.0
-offset_top = -62.0
-offset_right = -66.0
-offset_bottom = -67.0
-grow_horizontal = 0
-action_mode = 0
-
-[node name="OverlapSensor" type="Area2D" parent="Board/Note" unique_id=67142708]
-position = Vector2(-61, -52)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Note/OverlapSensor" unique_id=1137733059]
-position = Vector2(61.5, 52)
-shape = SubResource("RectangleShape2D_0e48y")
-
-[node name="Note2" type="Sprite2D" parent="Board" unique_id=1010816689]
-modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
-position = Vector2(-523.5, -116.5)
-scale = Vector2(0.3984375, 0.3984375)
-texture = ExtResource("1_ddl45")
-script = ExtResource("3_ubymx")
-
-[node name="Button" type="Button" parent="Board/Note2" unique_id=243088001]
-self_modulate = Color(1, 1, 1, 0)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -64.0
-offset_top = -62.0
-offset_right = -66.0
-offset_bottom = -67.0
-grow_horizontal = 0
-action_mode = 0
-
-[node name="OverlapSensor" type="Area2D" parent="Board/Note2" unique_id=1767444929]
-position = Vector2(-61, -52)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Note2/OverlapSensor" unique_id=84212495]
-position = Vector2(61.5, 52)
-shape = SubResource("RectangleShape2D_0e48y")
-
-[node name="Note3" type="Sprite2D" parent="Board" unique_id=985217209]
-modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
-position = Vector2(-523.5, -116.5)
-scale = Vector2(0.3984375, 0.3984375)
-texture = ExtResource("1_ddl45")
-script = ExtResource("3_ubymx")
-
-[node name="Button" type="Button" parent="Board/Note3" unique_id=203551846]
-self_modulate = Color(1, 1, 1, 0)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -64.0
-offset_top = -62.0
-offset_right = -66.0
-offset_bottom = -67.0
-grow_horizontal = 0
-action_mode = 0
-
-[node name="OverlapSensor" type="Area2D" parent="Board/Note3" unique_id=868728254]
-position = Vector2(-61, -52)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Note3/OverlapSensor" unique_id=229473763]
-position = Vector2(61.5, 52)
-shape = SubResource("RectangleShape2D_0e48y")
-
-[node name="Note4" type="Sprite2D" parent="Board" unique_id=419103207]
-modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
-position = Vector2(-523.5, -116.5)
-scale = Vector2(0.3984375, 0.3984375)
-texture = ExtResource("1_ddl45")
-script = ExtResource("3_ubymx")
-
-[node name="Button" type="Button" parent="Board/Note4" unique_id=609685711]
-self_modulate = Color(1, 1, 1, 0)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -64.0
-offset_top = -62.0
-offset_right = -66.0
-offset_bottom = -67.0
-grow_horizontal = 0
-action_mode = 0
-
-[node name="OverlapSensor" type="Area2D" parent="Board/Note4" unique_id=182725361]
-position = Vector2(-61, -52)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Note4/OverlapSensor" unique_id=1433922843]
 position = Vector2(61.5, 52)
 shape = SubResource("RectangleShape2D_0e48y")
 
@@ -339,20 +237,120 @@ position = Vector2(-61, -52)
 position = Vector2(61.5, 52)
 shape = SubResource("RectangleShape2D_0e48y")
 
+[node name="Note" type="Sprite2D" parent="Board" unique_id=634305992]
+modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
+z_index = 1
+position = Vector2(-523.5, -116.5)
+scale = Vector2(0.3984375, 0.3984375)
+texture = ExtResource("1_ddl45")
+script = ExtResource("3_ubymx")
+
+[node name="Button" type="Button" parent="Board/Note" unique_id=1226974191]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="OverlapSensor" type="Area2D" parent="Board/Note" unique_id=67142708]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Note/OverlapSensor" unique_id=1137733059]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Note2" type="Sprite2D" parent="Board" unique_id=1010816689]
+modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
+z_index = 1
+position = Vector2(-523.5, -116.5)
+scale = Vector2(0.3984375, 0.3984375)
+texture = ExtResource("1_ddl45")
+script = ExtResource("3_ubymx")
+
+[node name="Button" type="Button" parent="Board/Note2" unique_id=243088001]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="OverlapSensor" type="Area2D" parent="Board/Note2" unique_id=1767444929]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Note2/OverlapSensor" unique_id=84212495]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Note3" type="Sprite2D" parent="Board" unique_id=985217209]
+modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
+z_index = 1
+position = Vector2(-523.5, -116.5)
+scale = Vector2(0.3984375, 0.3984375)
+texture = ExtResource("1_ddl45")
+script = ExtResource("3_ubymx")
+
+[node name="Button" type="Button" parent="Board/Note3" unique_id=203551846]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="OverlapSensor" type="Area2D" parent="Board/Note3" unique_id=868728254]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Note3/OverlapSensor" unique_id=229473763]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Note4" type="Sprite2D" parent="Board" unique_id=419103207]
+modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
+z_index = 1
+position = Vector2(-523.5, -116.5)
+scale = Vector2(0.3984375, 0.3984375)
+texture = ExtResource("1_ddl45")
+script = ExtResource("3_ubymx")
+
+[node name="Button" type="Button" parent="Board/Note4" unique_id=609685711]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -62.0
+offset_right = -66.0
+offset_bottom = -67.0
+grow_horizontal = 0
+action_mode = 0
+
+[node name="OverlapSensor" type="Area2D" parent="Board/Note4" unique_id=182725361]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Note4/OverlapSensor" unique_id=1433922843]
+position = Vector2(61.5, 52)
+shape = SubResource("RectangleShape2D_0e48y")
+
 [connection signal="button_down" from="Board/Card/Button" to="Board/Card" method="_on_button_button_down"]
 [connection signal="button_up" from="Board/Card/Button" to="Board/Card" method="_on_button_button_up"]
 [connection signal="button_down" from="Board/Card3/Button" to="Board/Card3" method="_on_button_button_down"]
 [connection signal="button_up" from="Board/Card3/Button" to="Board/Card3" method="_on_button_button_up"]
 [connection signal="button_down" from="Board/Card2/Button" to="Board/Card2" method="_on_button_button_down"]
 [connection signal="button_up" from="Board/Card2/Button" to="Board/Card2" method="_on_button_button_up"]
-[connection signal="button_down" from="Board/Note/Button" to="Board/Note" method="_on_button_button_down"]
-[connection signal="button_up" from="Board/Note/Button" to="Board/Note" method="_on_button_button_up"]
-[connection signal="button_down" from="Board/Note2/Button" to="Board/Note2" method="_on_button_button_down"]
-[connection signal="button_up" from="Board/Note2/Button" to="Board/Note2" method="_on_button_button_up"]
-[connection signal="button_down" from="Board/Note3/Button" to="Board/Note3" method="_on_button_button_down"]
-[connection signal="button_up" from="Board/Note3/Button" to="Board/Note3" method="_on_button_button_up"]
-[connection signal="button_down" from="Board/Note4/Button" to="Board/Note4" method="_on_button_button_down"]
-[connection signal="button_up" from="Board/Note4/Button" to="Board/Note4" method="_on_button_button_up"]
 [connection signal="button_down" from="Board/Card4/Button" to="Board/Card4" method="_on_button_button_down"]
 [connection signal="button_up" from="Board/Card4/Button" to="Board/Card4" method="_on_button_button_up"]
 [connection signal="button_down" from="Board/Card5/Button" to="Board/Card5" method="_on_button_button_down"]
@@ -365,3 +363,11 @@ shape = SubResource("RectangleShape2D_0e48y")
 [connection signal="button_up" from="Board/Card8/Button" to="Board/Card8" method="_on_button_button_up"]
 [connection signal="button_down" from="Board/Card9/Button" to="Board/Card9" method="_on_button_button_down"]
 [connection signal="button_up" from="Board/Card9/Button" to="Board/Card9" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Note/Button" to="Board/Note" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Note/Button" to="Board/Note" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Note2/Button" to="Board/Note2" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Note2/Button" to="Board/Note2" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Note3/Button" to="Board/Note3" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Note3/Button" to="Board/Note3" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Note4/Button" to="Board/Note4" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Note4/Button" to="Board/Note4" method="_on_button_button_up"]
