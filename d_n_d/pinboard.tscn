@@ -44,7 +44,7 @@ position = Vector2(-405, 192)
 [node name="Note" type="Sprite2D" parent="Book" unique_id=634305992]
 modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
 z_index = 2
-position = Vector2(-11.4999695, -88.49999)
+position = Vector2(98, -167)
 scale = Vector2(0.39843747, 0.39843747)
 texture = ExtResource("1_ddl45")
 script = ExtResource("3_ubymx")
@@ -71,7 +71,7 @@ shape = SubResource("RectangleShape2D_0e48y")
 [node name="Note2" type="Sprite2D" parent="Book" unique_id=1010816689]
 modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
 z_index = 2
-position = Vector2(-12.9999695, -14.9999695)
+position = Vector2(96.5, -93.499985)
 scale = Vector2(0.39843747, 0.39843747)
 texture = ExtResource("1_ddl45")
 script = ExtResource("3_ubymx")
@@ -98,7 +98,7 @@ shape = SubResource("RectangleShape2D_0e48y")
 [node name="Note3" type="Sprite2D" parent="Book" unique_id=985217209]
 modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
 z_index = 2
-position = Vector2(86, -88.999985)
+position = Vector2(195.49997, -167.5)
 scale = Vector2(0.39843747, 0.39843747)
 texture = ExtResource("1_ddl45")
 script = ExtResource("3_ubymx")
@@ -125,7 +125,7 @@ shape = SubResource("RectangleShape2D_0e48y")
 [node name="Note4" type="Sprite2D" parent="Book" unique_id=419103207]
 modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
 z_index = 2
-position = Vector2(85, -20)
+position = Vector2(194.49997, -98.500015)
 scale = Vector2(0.39843747, 0.39843747)
 texture = ExtResource("1_ddl45")
 script = ExtResource("3_ubymx")
@@ -151,7 +151,8 @@ shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Book" type="Sprite2D" parent="Book" unique_id=1307068805]
 z_index = 1
-scale = Vector2(0.34508142, 0.34508142)
+position = Vector2(87, -67)
+scale = Vector2(0.5183957, 0.5183957)
 texture = ExtResource("7_ugepn")
 script = SubResource("GDScript_ugepn")
 
@@ -167,7 +168,7 @@ shape = SubResource("RectangleShape2D_ugepn")
 script = ExtResource("3_7vij8")
 
 [node name="Card" type="Sprite2D" parent="Board" unique_id=1041222790 groups=["base"]]
-position = Vector2(9, -218)
+position = Vector2(229, -218)
 texture = ExtResource("1_ddl45")
 script = ExtResource("2_ubymx")
 
@@ -191,7 +192,7 @@ position = Vector2(61.5, 52)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Card3" type="Sprite2D" parent="Board" unique_id=896837112 groups=["base"]]
-position = Vector2(-187, -214)
+position = Vector2(33, -214)
 texture = ExtResource("1_ddl45")
 script = ExtResource("2_ubymx")
 
@@ -215,7 +216,7 @@ position = Vector2(61.5, 52)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Card2" type="Sprite2D" parent="Board" unique_id=426525000 groups=["base"]]
-position = Vector2(224, -211)
+position = Vector2(444, -211)
 texture = ExtResource("1_ddl45")
 script = ExtResource("2_ubymx")
 
@@ -239,7 +240,7 @@ position = Vector2(61.5, 52)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Card4" type="Sprite2D" parent="Board" unique_id=1141184952 groups=["base"]]
-position = Vector2(9, -57)
+position = Vector2(229, -57)
 texture = ExtResource("1_ddl45")
 script = ExtResource("2_ubymx")
 
@@ -263,7 +264,7 @@ position = Vector2(61.5, 52)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Card5" type="Sprite2D" parent="Board" unique_id=349364803 groups=["base"]]
-position = Vector2(-187, -53)
+position = Vector2(33, -53)
 texture = ExtResource("1_ddl45")
 script = ExtResource("2_ubymx")
 
@@ -287,7 +288,7 @@ position = Vector2(61.5, 52)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Card6" type="Sprite2D" parent="Board" unique_id=474576899 groups=["base"]]
-position = Vector2(224, -50)
+position = Vector2(444, -50)
 texture = ExtResource("1_ddl45")
 script = ExtResource("2_ubymx")
 
@@ -311,7 +312,7 @@ position = Vector2(61.5, 52)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Card7" type="Sprite2D" parent="Board" unique_id=30866026 groups=["base"]]
-position = Vector2(9, 126)
+position = Vector2(229, 126)
 texture = ExtResource("1_ddl45")
 script = ExtResource("2_ubymx")
 
@@ -335,7 +336,7 @@ position = Vector2(61.5, 52)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Card8" type="Sprite2D" parent="Board" unique_id=1628196397 groups=["base"]]
-position = Vector2(-187, 130)
+position = Vector2(33, 130)
 texture = ExtResource("1_ddl45")
 script = ExtResource("2_ubymx")
 
@@ -359,7 +360,7 @@ position = Vector2(61.5, 52)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Card9" type="Sprite2D" parent="Board" unique_id=1475662051 groups=["base"]]
-position = Vector2(224, 133)
+position = Vector2(444, 133)
 texture = ExtResource("1_ddl45")
 script = ExtResource("2_ubymx")
 
