@@ -29,4 +29,4 @@ func _process(delta):
 
 	# Clamp zoom
 	zoom.x = clamp(zoom.x, min_zoom, max_zoom)
-	zoom.y = clamp(zoom.y, min_zoom, max_zoom)
+	zoom.y = clamp(zoom.y, min_zoom, max_zoom)\
