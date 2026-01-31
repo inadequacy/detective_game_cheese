@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ben1o8qrn1f33"
+path="res://.godot/imported/angler.dialogue-24e0b1a7e63344ecd4b6fe10bc883d80.tres"
+
+[deps]
+
+source_file="res://dialogue/dialogues/angler.dialogue"
+dest_files=["res://.godot/imported/angler.dialogue-24e0b1a7e63344ecd4b6fe10bc883d80.tres"]
+
+[params]
+
+defaults=true
