@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c7sdsd2d31n6e"]
+
+[ext_resource type="Script" uid="uid://ctbpvs4lh6htx" path="res://objects/interactive_object.gd" id="1_excoy"]
+[ext_resource type="Texture2D" uid="uid://c4kve3xlrwb2h" path="res://hand_L.png" id="2_7uhu7"]
+
+[node name="InteractiveObject" type="Node" unique_id=1817754635]
+script = ExtResource("1_excoy")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=605064889]
+billboard = 1
+texture = ExtResource("2_7uhu7")
