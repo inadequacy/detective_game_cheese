@@ -3,6 +3,10 @@ extends Control
 var player
 var my_node
 var journal_open := false
+var manager
+var pinned_facts: Dictionary
+var state_d
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -10,17 +14,30 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	
 	my_node = $"."
-	player = $"../../../Player"
-	my_node.visible = player.journal
 
-@onready var journal_root = self # your instanced 2D scene root
-@onready var journal_content = $Board
+	player=$"../../../Player"
+	
+	my_node.visible=player.journal
+	
 
-func _unhandled_input(event):
-	if event.is_action_pressed("journal"):
-		journal_open = !journal_open
-		journal_root.visible = journal_open
-		journal_content.active = journal_open
-		# stop player movement while journal open
-		set_physics_process(!journal_open)
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+
+
+func _input(event):
+	if Input.is_action_just_pressed("journal"):
+		
+		manager =$".."
+		state_d=manager.dialogue_state
+		
+		
+		for fact_id in state_d.facts:
+			var fact = state_d.facts[fact_id]
+			
+			if pinned_facts[fact_id] == fact:
+				print_debug(fact_id, fact.known)
+				
+			
+			#if fact.known:
+			
