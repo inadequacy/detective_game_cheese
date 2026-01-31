@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://qkx0elk5ahg4"]
 
 [ext_resource type="PackedScene" uid="uid://bcg7p15c5ofuq" path="res://player.tscn" id="1_ulcgi"]
-[ext_resource type="PackedScene" uid="uid://c78pibhcatusp" path="res://dialogue/dialogue_ui.tscn" id="2_nxogm"]
-[ext_resource type="PackedScene" uid="uid://767hlx3sdcay" path="res://d_n_d/pinboard.tscn" id="3_3253y"]
+[ext_resource type="PackedScene" uid="uid://e47n22u4x0do" path="res://objects/manager.tscn" id="2_nxogm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_drvgu"]
 size = Vector3(10, 1, 10)
@@ -47,12 +46,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6186717, 0.5, 2.871706)
 [node name="Camera3D" type="Camera3D" parent="." unique_id=945388378]
 transform = Transform3D(0.49999997, 0, -0.86602545, 0, 1, 0, 0.86602545, 0, 0.49999997, -4, 1, 2)
 
-[node name="Manager" type="Node" parent="." unique_id=19490008]
-
-[node name="DialogueUI" parent="Manager" unique_id=1774084481 instance=ExtResource("2_nxogm")]
-
-[node name="Pinwand" parent="Manager/DialogueUI" unique_id=1529431941 instance=ExtResource("3_3253y")]
-offset_left = 580.0
-offset_top = 325.0
-offset_right = 580.0
-offset_bottom = 325.0
+[node name="Manager" parent="." unique_id=831551970 instance=ExtResource("2_nxogm")]

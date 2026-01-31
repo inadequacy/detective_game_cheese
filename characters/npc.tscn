@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://dvrrss18cib0j"]
 
+[ext_resource type="Script" uid="uid://cupf5no1b2483" path="res://characters/npc_logic.gd" id="1_ppmss"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_v7lw1"]
 size = Vector3(0.7, 1, 0.1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ideak"]
 size = Vector3(0.7, 1, 0.1)
 
-[node name="NPC" type="StaticBody3D" unique_id=1363036756]
+[node name="NPC" type="CharacterBody3D" unique_id=228738560]
+script = ExtResource("1_ppmss")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=435531988]
 shape = SubResource("BoxShape3D_v7lw1")

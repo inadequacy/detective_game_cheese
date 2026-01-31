@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://e47n22u4x0do"]
+
+[ext_resource type="PackedScene" uid="uid://c78pibhcatusp" path="res://dialogue/dialogue_ui.tscn" id="1_yriaq"]
+[ext_resource type="PackedScene" uid="uid://767hlx3sdcay" path="res://d_n_d/pinboard.tscn" id="2_m3gqb"]
+
+[node name="Manager" type="Node" unique_id=831551970]
+
+[node name="DialogueUI" parent="." unique_id=1774084481 instance=ExtResource("1_yriaq")]
+
+[node name="Pinwand" parent="DialogueUI" unique_id=1529431941 instance=ExtResource("2_m3gqb")]
+offset_left = 580.0
+offset_top = 325.0
+offset_right = 580.0
+offset_bottom = 325.0
