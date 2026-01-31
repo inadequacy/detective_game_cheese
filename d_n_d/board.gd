@@ -15,10 +15,10 @@ func _process(delta: float) -> void:
 		return
 
 	var dir := Vector2.ZERO
-	if Input.is_action_pressed("move_forward"): dir.y -= 1
-	if Input.is_action_pressed("move_backward"): dir.y += 1
-	if Input.is_action_pressed("strafe_left"): dir.x -= 1
-	if Input.is_action_pressed("strafe_right"): dir.x += 1
+	if Input.is_action_pressed("move_backward"): dir.y -= 1
+	if Input.is_action_pressed("move_forward"): dir.y += 1
+	if Input.is_action_pressed("strafe_right"): dir.x -= 1
+	if Input.is_action_pressed("strafe_left"): dir.x += 1
 
 	if dir != Vector2.ZERO:
 		position += dir.normalized() * move_speed * delta

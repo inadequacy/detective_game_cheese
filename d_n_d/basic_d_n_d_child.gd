@@ -15,6 +15,7 @@ func _process(_delta: float) -> void:
 
 func _on_button_button_down() -> void:
 	dragging = true
+	z_index = 6
 	offset = get_global_mouse_position() - global_position
 	
 
@@ -48,6 +49,7 @@ func _try_attach_or_drop() -> void:
 
 	if best_base != null:
 		best_base.add_child(self)
+		z_index=best_base.get_z_index()+1
 	else:
 		board.add_child(self)
 
