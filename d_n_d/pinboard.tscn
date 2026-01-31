@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://767hlx3sdcay"]
 
 [ext_resource type="Texture2D" uid="uid://wn5cjd1bruhm" path="res://icon.svg" id="1_ddl45"]
+[ext_resource type="Script" uid="uid://cqc0wtvbefpeg" path="res://d_n_d/camera_2d.gd" id="1_geain"]
 [ext_resource type="Script" uid="uid://bdmdxpxlbxph4" path="res://d_n_d/basic_d_n_d.gd" id="2_ubymx"]
 [ext_resource type="Script" uid="uid://cdhk3xl7ih3gy" path="res://d_n_d/basic_d_n_d_child.gd" id="3_ubymx"]
 
@@ -12,6 +13,7 @@ layout_mode = 3
 anchors_preset = 0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=516653806]
+script = ExtResource("1_geain")
 
 [node name="Board" type="Node2D" parent="." unique_id=951711570 groups=["board"]]
 
