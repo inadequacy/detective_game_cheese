@@ -8,8 +8,17 @@ var dialogue_state: Dictionary = {
 		fact_1 = {
 			known = false,
 			content = "This is a fact"
+		},
+		fact_2 = {
+			known = true,
+			content = "This is a fact"
+		},
+		fact_3 = {
+			known = true,
+			content = "This is a fact"
 		}
 	},
+	
 	npcs = {
 		peacock = {
 			has_met = false
