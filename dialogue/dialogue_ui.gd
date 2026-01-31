@@ -4,25 +4,32 @@ var dialogue_resource = load('res://dialogue/base.dialogue')
 
 var dialogue_state: Dictionary = {
 	speaking_to = "peacock",
-	facts = {},
-	peacock = {
-		has_met = false
+	facts = {
+		fact_1 = {
+			known = false,
+			content = "This is a fact"
+		}
 	},
-	horse = {
-		has_met = false
-	},
-	plague = {
-		has_met = false
-	},
-	pidgeon = {
-		has_met = false
-	},
-	angler = {
-		has_met = false
-	},
-	big_cheese = {
-		has_met = false
-	},
+	npcs = {
+		peacock = {
+			has_met = false
+		},
+		horse = {
+			has_met = false
+		},
+		plague = {
+			has_met = false
+		},
+		pidgeon = {
+			has_met = false
+		},
+		angler = {
+			has_met = false
+		},
+		big_cheese = {
+			has_met = false
+		},	
+	}
 }
 
 # Called when the node enters the scene tree for the first time.
