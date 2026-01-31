@@ -1,0 +1,9 @@
+import "res://dialogue/dialogues/peacock.dialogue" as peacock
+
+~ start
+match dialogue_state.speaking_to
+	when "peacock"
+		=>< peacock/start
+	else
+		DEBUG: unknown character name!
+=> END

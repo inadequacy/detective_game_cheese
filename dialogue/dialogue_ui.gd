@@ -1,6 +1,28 @@
 extends CanvasLayer
 
-var dialogue_resource = load('res://dialogue/test_dialogue.dialogue')
+var dialogue_resource = load('res://dialogue/base.dialogue')
+
+var dialogue_state: Dictionary = {
+	speaking_to = "peacock",
+	peacock = {
+		has_met = false
+	},
+	horse = {
+		has_met = false
+	},
+	plague = {
+		has_met = false
+	},
+	pidgeon = {
+		has_met = false
+	},
+	angler = {
+		has_met = false
+	},
+	big_cheese = {
+		has_met = false
+	},
+}
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,4 +33,8 @@ func _process(delta: float) -> void:
 	pass
 
 func _unhandled_input(event: InputEvent) -> void:
-	DialogueManager.show_dialogue_balloon(dialogue_resource, "start")
+	DialogueManager.show_dialogue_balloon(dialogue_resource, "start", [dialogue_state])
+
+# Good for triggering character animations
+func play_animation() -> void:
+	print('test')
