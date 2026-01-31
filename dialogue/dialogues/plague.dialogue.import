@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ej5rdfkfxt7g"
+path="res://.godot/imported/plague.dialogue-81bd9056dbd89a90687ec4f216cba50c.tres"
+
+[deps]
+
+source_file="res://dialogue/dialogues/plague.dialogue"
+dest_files=["res://.godot/imported/plague.dialogue-81bd9056dbd89a90687ec4f216cba50c.tres"]
+
+[params]
+
+defaults=true

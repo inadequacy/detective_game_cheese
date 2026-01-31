@@ -1,9 +1,21 @@
 import "res://dialogue/dialogues/peacock.dialogue" as peacock
+import "res://dialogue/dialogues/horse.dialogue" as horse
+import "res://dialogue/dialogues/plague.dialogue" as plague
+import "res://dialogue/dialogues/pidgeon.dialogue" as pidgeon
+import "res://dialogue/dialogues/angler.dialogue" as angler
 
 ~ start
 match dialogue_state.speaking_to
 	when "peacock"
 		=>< peacock/start
+	when "horse"
+		=>< horse/start
+	when "plague"
+		=>< plague/start
+	when "pidgeon"
+		=>< pidgeon/start
+	when "angler"
+		=>< angler/start
 	else
 		DEBUG: unknown character name!
 => END
