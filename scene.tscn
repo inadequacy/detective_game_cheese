@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://qkx0elk5ahg4"]
 
-[ext_resource type="PackedScene" uid="uid://bcemy0xxbnhmt" path="res://MANSION.glb" id="1_3253y"]
+[ext_resource type="PackedScene" uid="uid://djpa62nxowicr" path="res://objects/mansion.tscn" id="1_3253y"]
 [ext_resource type="PackedScene" uid="uid://bcg7p15c5ofuq" path="res://player.tscn" id="1_ulcgi"]
-[ext_resource type="PackedScene" path="res://objects/manager.tscn" id="2_nxogm"]
+[ext_resource type="PackedScene" uid="uid://e47n22u4x0do" path="res://objects/manager.tscn" id="2_nxogm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_drvgu"]
 size = Vector3(10, 1, 10)
@@ -30,7 +30,6 @@ mesh = SubResource("BoxMesh_ulcgi")
 
 [node name="Wall" type="StaticBody3D" parent="." unique_id=1370527097]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -2)
-visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall" unique_id=316655791]
 shape = SubResource("BoxShape3D_ulcgi")
@@ -38,12 +37,125 @@ shape = SubResource("BoxShape3D_ulcgi")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Wall" unique_id=1397785371]
 mesh = SubResource("BoxMesh_nxogm")
 
-[node name="MANSION" parent="." unique_id=1683716452 instance=ExtResource("1_3253y")]
+[node name="MANSION2" parent="." unique_id=218848142 instance=ExtResource("1_3253y")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="Candle?" type="OmniLight3D" parent="." unique_id=483589625]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -2)
-light_energy = 7.921
-light_indirect_energy = 6.651
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8, 0)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 13.968
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 224.0
+
+[node name="Candle?" type="OmniLight3D" parent="Candle?" unique_id=540608520]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 5.143
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 19.0
+
+[node name="Candle?" type="OmniLight3D" parent="Candle?/Candle?" unique_id=1157800709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, -1, -17)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 5.143
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 19.0
+
+[node name="Candle?2" type="OmniLight3D" parent="." unique_id=1979319667]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 5, 27)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 13.968
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 224.0
+
+[node name="Candle?" type="OmniLight3D" parent="Candle?2" unique_id=540307905]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 5.143
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 13.0
+
+[node name="Candle?2" type="OmniLight3D" parent="Candle?2" unique_id=348016629]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 13, 27)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 13.968
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 22.0
+
+[node name="Candle?" type="OmniLight3D" parent="Candle?2/Candle?2" unique_id=2091037146]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 5.143
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 13.0
+
+[node name="Candle?2" type="OmniLight3D" parent="Candle?2/Candle?2" unique_id=380162223]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, -15, -25)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 13.968
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 22.0
+
+[node name="Candle?" type="OmniLight3D" parent="Candle?2/Candle?2/Candle?2" unique_id=1983062159]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 5.143
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 13.0
+
+[node name="Candle?2" type="OmniLight3D" parent="Candle?2/Candle?2/Candle?2" unique_id=573767976]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 3, -45)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 13.968
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 22.0
+
+[node name="Candle?" type="OmniLight3D" parent="Candle?2/Candle?2/Candle?2/Candle?2" unique_id=147185168]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -5, -12)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 5.143
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 13.0
+
+[node name="Candle?2" type="OmniLight3D" parent="Candle?2/Candle?2/Candle?2/Candle?2" unique_id=495007120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 3, -45)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 13.968
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 22.0
+
+[node name="Candle?" type="OmniLight3D" parent="Candle?2/Candle?2/Candle?2/Candle?2/Candle?2" unique_id=1136712363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 5.143
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 13.0
 
 [node name="Player" parent="." unique_id=665689080 instance=ExtResource("1_ulcgi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6186717, -0.51596516, 2.871706)
@@ -52,7 +164,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6186717, -0.51596516, 2.871
 transform = Transform3D(0.49999997, 0, -0.86602545, 0, 1, 0, 0.86602545, 0, 0.49999997, -4, 1, 2)
 
 [node name="Manager" parent="." unique_id=831551970 instance=ExtResource("2_nxogm")]
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1695194779]
-transform = Transform3D(-0.004496155, -0.9978806, 0.06491674, -0.06894836, 0.06507226, 0.99549574, -0.9976101, 0, -0.0690948, 0, 24.16433, 0)
-sky_mode = 1

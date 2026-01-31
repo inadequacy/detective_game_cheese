@@ -2,8 +2,8 @@ extends CharacterBody3D
 
 var manager
 @export var route_one = Node3D
-@export var route_two = {}
-@export var start_time = 6
+@export var route_two = Node3D
+@export var leave_time = 6
 var is_seen = false
 
 # Called when the node enters the scene tree for the first time.
