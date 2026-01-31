@@ -4,6 +4,7 @@ var dialogue_resource = load('res://dialogue/base.dialogue')
 
 var dialogue_state: Dictionary = {
 	speaking_to = "peacock",
+	facts = {},
 	peacock = {
 		has_met = false
 	},
@@ -32,7 +33,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func _unhandled_input(event: InputEvent) -> void:
+func talk_to(who: String) -> void:
+	dialogue_state.speaking_to = who
 	DialogueManager.show_dialogue_balloon(dialogue_resource, "start", [dialogue_state])
 
 # Good for triggering character animations
