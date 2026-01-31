@@ -10,15 +10,15 @@ var pinned_facts: Dictionary = {
 	facts = {
 		fact_1 = {
 			known = false,
-			content = "This is a fact"
+			content = "."
 		},
 		fact_2 = {
 			known = false,
-			content = "This is a fact"
+			content = "."
 		},
 		fact_3 = {
 			known = false,
-			content = "This is a fact"
+			content = "."
 		}
 	}
 	}
@@ -52,8 +52,15 @@ func _input(event):
 			var fact = state_d.facts[fact_id]
 			var fact_known=pinned_facts.facts[fact_id]
 			
-			if pinned_facts.facts[fact_id] == fact:
-				print_debug(fact_known)
+			print_debug(pinned_facts.facts[fact_id])
+			if pinned_facts.facts[fact_id] != fact:
+				if fact.known == true:
+					pinned_facts.facts[fact_id].known = true
+					pinned_facts.facts[fact_id].content = state_d.facts[fact_id].content
+					
+					print_debug(pinned_facts.facts[fact_id].content)
+					
+				#print_debug(fact_known)
 				
 			
 			#if fact.known:
