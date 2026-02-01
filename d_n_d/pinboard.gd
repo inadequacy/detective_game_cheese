@@ -33,9 +33,11 @@ func random_point_in_book() -> Vector2:
 	# return position in book_node's local coordinates (since note is child of book_node)
 	return book_node.to_local(p_global)
 
-func spawn_note():
+func spawn_note(text_label):
 	var note = note_scene.instantiate()
 	note.position = random_point_in_book()
+	var label := note.get_node("TexLabel") as Label
+	label.text = text_label
 	
 	book_node.add_child(note)
 
@@ -83,7 +85,7 @@ func _input(_event):
 				if fact.known == true:
 					pinned_facts.facts[fact_id].known = true
 					pinned_facts.facts[fact_id].content = state_d.facts[fact_id].content
-					spawn_note()
+					spawn_note(state_d.facts[fact_id].content)
 					
 					print_debug(pinned_facts.facts[fact_id].content)
 					

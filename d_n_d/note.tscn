@@ -7,7 +7,6 @@
 size = Vector2(150.58826, 148.07846)
 
 [node name="Note" type="Sprite2D" unique_id=838163697]
-modulate = Color(1.1125244, 1.1214021, 0.03167765, 1)
 z_index = 2
 scale = Vector2(0.39843747, 0.39843747)
 texture = ExtResource("1_64jy2")
@@ -31,6 +30,15 @@ position = Vector2(-61, -52)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OverlapSensor" unique_id=1926999572]
 position = Vector2(61.000008, 53.254917)
 shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="TexLabel" type="Label" parent="." unique_id=401421906]
+offset_left = -67.76471
+offset_top = -55.21569
+offset_right = 67.764725
+offset_bottom = 67.76472
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_font_sizes/font_size = 28
+autowrap_mode = 1
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
