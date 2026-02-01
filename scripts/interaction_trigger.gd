@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 			contains_npc = true
 			can_interact = true
 			interacting_with = body.name
-			interaction_label.text = "Press F to pay respects"
+			interaction_label.text = "Press F to speak to " + interacting_with
 
 	if not contains_npc:
 		can_interact = false
@@ -24,7 +24,6 @@ func _process(delta: float) -> void:
 
 func _input(event: InputEvent) -> void:
 	if can_interact and Input.is_action_pressed("to_pay_respect"):
-		print(interacting_with)
 		talk_to(interacting_with)
 
 func talk_to(who: String) -> void:
