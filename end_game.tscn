@@ -1,10 +1,17 @@
-[gd_scene format=3 uid="uid://bxrtlge4ostao"]
+[gd_scene format=3 uid="uid://bvylrtrc0b0sp"]
 
 [ext_resource type="Texture2D" uid="uid://kxijfu2dl4tx" path="res://d_n_d/art/cork board.png" id="1_semjh"]
 [ext_resource type="Texture2D" uid="uid://b40v8sc82y26x" path="res://d_n_d/art/polaroid.png" id="2_4amj7"]
 [ext_resource type="Script" uid="uid://dfon2oj4eqy2r" path="res://polaroid.gd" id="3_h3nuw"]
 [ext_resource type="Texture2D" uid="uid://chd45e3uvp3ej" path="res://d_n_d/art/baby twin mask.png" id="4_jppxx"]
 [ext_resource type="Texture2D" uid="uid://cp8bejbeco5ke" path="res://d_n_d/art/tapename.png" id="5_2goxq"]
+[ext_resource type="Texture2D" uid="uid://dtonv8fp0q6jo" path="res://d_n_d/art/Big Cheese_Mask_01.png" id="6_b8sqn"]
+[ext_resource type="Texture2D" uid="uid://qj1ol8rwsnn1" path="res://d_n_d/art/big twin head.png" id="7_57ipk"]
+[ext_resource type="Texture2D" uid="uid://cuhnpsdlisk2k" path="res://d_n_d/art/bigcheesemask.png" id="8_bx16a"]
+[ext_resource type="Texture2D" uid="uid://htl5rspq6v46" path="res://d_n_d/art/Femme Fatale_Mask_01.png" id="9_j6s1x"]
+[ext_resource type="Texture2D" uid="uid://boq31rhg7pn65" path="res://d_n_d/art/mask for merchant.png" id="10_h2oix"]
+[ext_resource type="Texture2D" uid="uid://d325wtebmftwo" path="res://d_n_d/art/owl.png" id="11_1si2d"]
+[ext_resource type="Texture2D" uid="uid://v8u6655uy58i" path="res://d_n_d/art/plod mask only.png" id="12_s37n4"]
 
 [sub_resource type="Theme" id="Theme_5mt7g"]
 
@@ -22,6 +29,7 @@ position = Vector2(-124.719986, -122.72)
 scale = Vector2(0.16000003, 0.16000003)
 texture = ExtResource("2_4amj7")
 script = ExtResource("3_h3nuw")
+murderer = true
 
 [node name="Button" type="Button" parent="Node2D/Polaroid" unique_id=143062509]
 self_modulate = Color(1, 1, 1, 0)
@@ -77,9 +85,9 @@ grow_vertical = 2
 action_mode = 0
 
 [node name="Face" type="Sprite2D" parent="Node2D/Polaroid2" unique_id=239024003]
-position = Vector2(-6.2499237, -25)
-scale = Vector2(0.6700597, 0.67005986)
-texture = ExtResource("4_jppxx")
+position = Vector2(4.4999084, -70.499954)
+scale = Vector2(2.0654612, 2.0654616)
+texture = ExtResource("6_b8sqn")
 
 [node name="Tape" type="Sprite2D" parent="Node2D/Polaroid2" unique_id=428170939]
 position = Vector2(-6.25, 331.24988)
@@ -117,9 +125,9 @@ grow_vertical = 2
 action_mode = 0
 
 [node name="Face" type="Sprite2D" parent="Node2D/Polaroid3" unique_id=1422713178]
-position = Vector2(-6.2499237, -25)
+position = Vector2(-14.250107, -164.24998)
 scale = Vector2(0.6700597, 0.67005986)
-texture = ExtResource("4_jppxx")
+texture = ExtResource("7_57ipk")
 
 [node name="Tape" type="Sprite2D" parent="Node2D/Polaroid3" unique_id=384122373]
 position = Vector2(-6.25, 331.24988)
@@ -157,9 +165,9 @@ grow_vertical = 2
 action_mode = 0
 
 [node name="Face" type="Sprite2D" parent="Node2D/Polaroid4" unique_id=1254189111]
-position = Vector2(-6.2499237, -25)
+position = Vector2(16.999893, -64.249985)
 scale = Vector2(0.6700597, 0.67005986)
-texture = ExtResource("4_jppxx")
+texture = ExtResource("8_bx16a")
 
 [node name="Tape" type="Sprite2D" parent="Node2D/Polaroid4" unique_id=1142086924]
 position = Vector2(-6.25, 331.24988)
@@ -178,7 +186,7 @@ text = "Name"
 metadata/_edit_use_anchors_ = true
 
 [node name="Polaroid5" type="Sprite2D" parent="Node2D" unique_id=1322404250]
-position = Vector2(-4.7199707, 1.2799988)
+position = Vector2(-5, 132)
 scale = Vector2(0.16000003, 0.16000003)
 texture = ExtResource("2_4amj7")
 script = ExtResource("3_h3nuw")
@@ -197,9 +205,9 @@ grow_vertical = 2
 action_mode = 0
 
 [node name="Face" type="Sprite2D" parent="Node2D/Polaroid5" unique_id=1813786387]
-position = Vector2(-6.2499237, -25)
-scale = Vector2(0.6700597, 0.67005986)
-texture = ExtResource("4_jppxx")
+position = Vector2(29.499916, -51.750023)
+scale = Vector2(0.8430347, 0.8430349)
+texture = ExtResource("9_j6s1x")
 
 [node name="Tape" type="Sprite2D" parent="Node2D/Polaroid5" unique_id=193912851]
 position = Vector2(-6.25, 331.24988)
@@ -237,9 +245,9 @@ grow_vertical = 2
 action_mode = 0
 
 [node name="Face" type="Sprite2D" parent="Node2D/Polaroid6" unique_id=170959903]
-position = Vector2(-6.2499237, -25)
-scale = Vector2(0.6700597, 0.67005986)
-texture = ExtResource("4_jppxx")
+position = Vector2(10.749802, -14.249992)
+scale = Vector2(0.47553927, 0.4755394)
+texture = ExtResource("10_h2oix")
 
 [node name="Tape" type="Sprite2D" parent="Node2D/Polaroid6" unique_id=892357911]
 position = Vector2(-6.25, 331.24988)
@@ -277,9 +285,9 @@ grow_vertical = 2
 action_mode = 0
 
 [node name="Face" type="Sprite2D" parent="Node2D/Polaroid7" unique_id=962651053]
-position = Vector2(-6.2499237, -25)
+position = Vector2(-58.000107, 23.250004)
 scale = Vector2(0.6700597, 0.67005986)
-texture = ExtResource("4_jppxx")
+texture = ExtResource("11_1si2d")
 
 [node name="Tape" type="Sprite2D" parent="Node2D/Polaroid7" unique_id=302716394]
 position = Vector2(-6.25, 331.24988)
@@ -287,47 +295,6 @@ scale = Vector2(0.81250066, 0.81250066)
 texture = ExtResource("5_2goxq")
 
 [node name="Label" type="Label" parent="Node2D/Polaroid7/Tape" unique_id=415674159]
-offset_left = -253.84589
-offset_top = -76.92297
-offset_right = 246.15363
-offset_bottom = 46.15381
-theme = SubResource("Theme_5mt7g")
-theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
-theme_override_font_sizes/font_size = 100
-text = "Name"
-metadata/_edit_use_anchors_ = true
-
-[node name="Polaroid8" type="Sprite2D" parent="Node2D" unique_id=389871285]
-position = Vector2(-4.7199707, 127.28001)
-scale = Vector2(0.16000003, 0.16000003)
-texture = ExtResource("2_4amj7")
-script = ExtResource("3_h3nuw")
-murderer = true
-
-[node name="Button" type="Button" parent="Node2D/Polaroid8" unique_id=1610103997]
-self_modulate = Color(1, 1, 1, 0)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -256.24994
-offset_top = -262.5
-offset_right = -248.24994
-offset_bottom = -208.5
-grow_horizontal = 2
-grow_vertical = 2
-action_mode = 0
-
-[node name="Face" type="Sprite2D" parent="Node2D/Polaroid8" unique_id=1441367089]
-position = Vector2(-6.2499237, -25)
-scale = Vector2(0.6700597, 0.67005986)
-texture = ExtResource("4_jppxx")
-
-[node name="Tape" type="Sprite2D" parent="Node2D/Polaroid8" unique_id=419483224]
-position = Vector2(-6.25, 331.24988)
-scale = Vector2(0.81250066, 0.81250066)
-texture = ExtResource("5_2goxq")
-
-[node name="Label" type="Label" parent="Node2D/Polaroid8/Tape" unique_id=1440231102]
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -358,9 +325,9 @@ grow_vertical = 2
 action_mode = 0
 
 [node name="Face" type="Sprite2D" parent="Node2D/Polaroid9" unique_id=362907173]
-position = Vector2(-6.2499237, -25)
-scale = Vector2(0.6700597, 0.67005986)
-texture = ExtResource("4_jppxx")
+position = Vector2(41.999657, -64.249985)
+scale = Vector2(0.53677994, 0.5367801)
+texture = ExtResource("12_s37n4")
 
 [node name="Tape" type="Sprite2D" parent="Node2D/Polaroid9" unique_id=259027901]
 position = Vector2(-6.25, 331.24988)
@@ -399,5 +366,4 @@ text = "Who's done it?"
 [connection signal="pressed" from="Node2D/Polaroid5/Button" to="Node2D/Polaroid5" method="_on_button_pressed"]
 [connection signal="pressed" from="Node2D/Polaroid6/Button" to="Node2D/Polaroid6" method="_on_button_pressed"]
 [connection signal="pressed" from="Node2D/Polaroid7/Button" to="Node2D/Polaroid7" method="_on_button_pressed"]
-[connection signal="pressed" from="Node2D/Polaroid8/Button" to="Node2D/Polaroid8" method="_on_button_pressed"]
 [connection signal="pressed" from="Node2D/Polaroid9/Button" to="Node2D/Polaroid9" method="_on_button_pressed"]

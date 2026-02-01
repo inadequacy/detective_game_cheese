@@ -3,8 +3,11 @@
 [ext_resource type="PackedScene" uid="uid://djpa62nxowicr" path="res://objects/mansion.tscn" id="1_3253y"]
 [ext_resource type="PackedScene" uid="uid://bcg7p15c5ofuq" path="res://player.tscn" id="1_ulcgi"]
 [ext_resource type="PackedScene" uid="uid://duu5frrlx44ix" path="res://objects/manager.tscn" id="2_nxogm"]
+[ext_resource type="Script" uid="uid://b7n5o6m3tpfpi" path="res://scripts/manager.gd" id="4_5c1cw"]
+[ext_resource type="AudioStream" uid="uid://f6q4pbo7x60m" path="res://sound_effects/Chazz_v1.wav" id="4_fy5k1"]
 [ext_resource type="PackedScene" uid="uid://d0mgpraj6c620" path="res://objects/go_to_point.tscn" id="4_u3cyc"]
-[ext_resource type="PackedScene" uid="uid://c5xkajh1m7a6n" path="res://characters/npc.tscn" id="5_y2354"]
+[ext_resource type="PackedScene" uid="uid://dvrrss18cib0j" path="res://characters/npc.tscn" id="5_y2354"]
+[ext_resource type="PackedScene" uid="uid://bxrtlge4ostao" path="res://end_game.tscn" id="6_akxrc"]
 [ext_resource type="Texture2D" uid="uid://brewisrm55co1" path="res://characters/art/Cheese Dreams_Big Cheese_1.png" id="6_ni31j"]
 [ext_resource type="Texture2D" uid="uid://dm8jjnpgyss3w" path="res://characters/art/Butler_01.png" id="7_ni31j"]
 [ext_resource type="Texture2D" uid="uid://vp2kwr3p3a3q" path="res://characters/art/Cheese Dreams_Cheese Addict_1.png" id="8_xlvrw"]
@@ -149,6 +152,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, 0)
 speed = 3.6
 
 [node name="Manager" parent="." unique_id=831551970 instance=ExtResource("2_nxogm")]
+script = ExtResource("4_5c1cw")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Manager" unique_id=2095061336]
+stream = ExtResource("4_fy5k1")
+volume_db = 1.0
+autoplay = true
+
+[node name="Timer" type="Timer" parent="Manager" unique_id=229838048]
+process_callback = 0
+wait_time = 120.0
+autostart = true
+
+[node name="EndGame" parent="Manager" unique_id=1688594479 instance=ExtResource("6_akxrc")]
+visible = false
 
 [node name="NodeHolder" type="Node" parent="." unique_id=746029763]
 
@@ -314,12 +331,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -14)
 
 [node name="BigCheese" parent="Characters" unique_id=228738560 node_paths=PackedStringArray("route_one", "route_two") instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -5)
-route_one = [NodePath("../../NodeHolder/BedRoom/GoToPoint13"), null]
+route_one = [NodePath("../../NodeHolder/BedRoom/GoToPoint13"), NodePath("../../NodeHolder/BedRoom/GoToPoint15")]
 route_two = [null, null]
+event_times = Array[int]([3, 44, 0])
 
 [node name="Sprite3D" parent="Characters/BigCheese" index="2" unique_id=1357997964]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
 texture = ExtResource("6_ni31j")
+
+[node name="Timer" parent="Characters/BigCheese" index="3" unique_id=1531728564]
+process_callback = 1
 
 [node name="Butler" parent="Characters" unique_id=1273146221 instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

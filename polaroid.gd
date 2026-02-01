@@ -1,9 +1,7 @@
 extends Sprite2D
+
 @export var murderer = false
 var text_out
-
-
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

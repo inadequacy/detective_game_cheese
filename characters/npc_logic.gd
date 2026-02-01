@@ -1,7 +1,5 @@
 extends CharacterBody3D
 
-const EPSILON: float = 0.1
-
 @export var route_one : Array[Node3D]
 @export var route_two : Array[Node3D]
 @export var route_three : Array[Node3D]
