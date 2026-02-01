@@ -1,9 +1,0 @@
-~ start
-if not npcs.peacock.has_met
-	set npcs.peacock.has_met = true
-	Peacock: Hey darling you look RAVISHING
-	Peacock: Have you seen Katie? The last time I saw her was in the kitchen.
-	Peacock: She was waiting there for someone. I dunno, maybe someone broke the vase.
-else
-	Peacock: yo...[wait=1]again
-=> END

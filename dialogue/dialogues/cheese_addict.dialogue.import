@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ef3l0o0jorgp"
+path="res://.godot/imported/cheese_addict.dialogue-d6c6baa26e5663649b7379af978e1806.tres"
+
+[deps]
+
+source_file="res://dialogue/dialogues/cheese_addict.dialogue"
+dest_files=["res://.godot/imported/cheese_addict.dialogue-d6c6baa26e5663649b7379af978e1806.tres"]
+
+[params]
+
+defaults=true
