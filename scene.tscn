@@ -161,11 +161,14 @@ autoplay = true
 
 [node name="Timer" type="Timer" parent="Manager" unique_id=229838048]
 process_callback = 0
-wait_time = 120.0
+wait_time = 10.0
 autostart = true
 
 [node name="EndGame" parent="Manager" unique_id=1688594479 instance=ExtResource("6_akxrc")]
 visible = false
+script = null
+
+[node name="Scream" type="AudioStreamPlayer" parent="Manager" unique_id=1171511605]
 
 [node name="NodeHolder" type="Node" parent="." unique_id=746029763]
 

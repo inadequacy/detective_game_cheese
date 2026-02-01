@@ -3,6 +3,9 @@ extends Node
 var timer
 var end_screen = false
 
+@onready var scream_audio = $"Scream"
+var scream = preload("res://sound_effects/screamlonger.mp3")
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	timer = $Timer
@@ -14,6 +17,8 @@ func _process(_delta: float):
 		who_did_it()
 
 func who_did_it():
+	scream_audio.stream = scream
+	scream_audio.play()
 	end_screen = true
 	$EndGame.set_visible(true)
 	var lose = false
