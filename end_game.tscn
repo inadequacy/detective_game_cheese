@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bvylrtrc0b0sp"]
+[gd_scene format=3 uid="uid://bxrtlge4ostao"]
 
 [ext_resource type="Texture2D" uid="uid://kxijfu2dl4tx" path="res://d_n_d/art/cork board.png" id="1_semjh"]
 [ext_resource type="Texture2D" uid="uid://b40v8sc82y26x" path="res://d_n_d/art/polaroid.png" id="2_4amj7"]
@@ -8,7 +8,8 @@
 
 [sub_resource type="Theme" id="Theme_5mt7g"]
 
-[node name="EndGame" type="Node2D" unique_id=1688594479]
+[node name="EndGame" type="CanvasLayer" unique_id=1288185]
+layer = 3
 
 [node name="Node2D" type="Node2D" parent="." unique_id=654196274]
 position = Vector2(544, 322)
