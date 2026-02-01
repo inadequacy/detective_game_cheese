@@ -41,10 +41,6 @@ var dialogue_state: Dictionary = {
 	}
 }
 
-func talk_to(who: String) -> void:
-	dialogue_state.speaking_to = who
-	DialogueManager.show_dialogue_balloon(dialogue_resource, "start", [dialogue_state])
-
 # Good for triggering character animations
 func play_animation() -> void:
 	print('test')

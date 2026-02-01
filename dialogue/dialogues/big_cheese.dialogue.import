@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bl85cf8wibjcl"
+path="res://.godot/imported/big_cheese.dialogue-d56f4003343937fd1bdd3509a0deb729.tres"
+
+[deps]
+
+source_file="res://dialogue/dialogues/big_cheese.dialogue"
+dest_files=["res://.godot/imported/big_cheese.dialogue-d56f4003343937fd1bdd3509a0deb729.tres"]
+
+[params]
+
+defaults=true
