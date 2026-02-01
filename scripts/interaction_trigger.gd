@@ -2,8 +2,14 @@ extends Area3D
 
 @onready var interaction_label = $"../InteractionPrompt/CenterContainer/Label"
 @onready var dialogue_ui = $"../../Manager/DialogueUI"
+@onready var audio_stream_player = $"./AudioStreamPlayer"
 var can_interact = false
 var interacting_with = ""
+var talk = preload("res://sound_effects/talk2.mp3")
+
+func play_talking():
+	audio_stream_player.stream = talk
+	audio_stream_player.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -27,5 +33,6 @@ func _input(event: InputEvent) -> void:
 		talk_to(interacting_with)
 
 func talk_to(who: String) -> void:
+	play_talking()
 	dialogue_ui.dialogue_state.speaking_to = who
 	DialogueManager.show_dialogue_balloon(dialogue_ui.dialogue_resource, "start", [dialogue_ui.dialogue_state])
