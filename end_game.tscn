@@ -6,12 +6,20 @@
 [ext_resource type="Texture2D" uid="uid://chd45e3uvp3ej" path="res://d_n_d/art/baby twin mask.png" id="4_jppxx"]
 [ext_resource type="Texture2D" uid="uid://cp8bejbeco5ke" path="res://d_n_d/art/tapename.png" id="5_2goxq"]
 [ext_resource type="Texture2D" uid="uid://dtonv8fp0q6jo" path="res://d_n_d/art/Big Cheese_Mask_01.png" id="6_b8sqn"]
+[ext_resource type="Texture2D" uid="uid://dcaauxi7ptpi5" path="res://d_n_d/art/names/twin 1 roch baby.png" id="6_ksvyt"]
 [ext_resource type="Texture2D" uid="uid://qj1ol8rwsnn1" path="res://d_n_d/art/big twin head.png" id="7_57ipk"]
 [ext_resource type="Texture2D" uid="uid://cuhnpsdlisk2k" path="res://d_n_d/art/bigcheesemask.png" id="8_bx16a"]
+[ext_resource type="Texture2D" uid="uid://b0oc1ecms8cfx" path="res://d_n_d/art/names/eater.png" id="8_pjxtf"]
 [ext_resource type="Texture2D" uid="uid://htl5rspq6v46" path="res://d_n_d/art/Femme Fatale_Mask_01.png" id="9_j6s1x"]
+[ext_resource type="Texture2D" uid="uid://ch52uifo5lm4y" path="res://d_n_d/art/names/twin 2 ford big.png" id="10_0uf8p"]
 [ext_resource type="Texture2D" uid="uid://boq31rhg7pn65" path="res://d_n_d/art/mask for merchant.png" id="10_h2oix"]
 [ext_resource type="Texture2D" uid="uid://bvjbjanosnsjl" path="res://d_n_d/art/Butler_Head.png" id="11_b8sqn"]
+[ext_resource type="Texture2D" uid="uid://bbgoi3t2nkki5" path="res://d_n_d/art/names/big cheese.png" id="12_k0n3j"]
 [ext_resource type="Texture2D" uid="uid://v8u6655uy58i" path="res://d_n_d/art/plod mask only.png" id="12_s37n4"]
+[ext_resource type="Texture2D" uid="uid://b76h3u3pqf6sl" path="res://d_n_d/art/names/ella femme fatale.png" id="14_5swap"]
+[ext_resource type="Texture2D" uid="uid://cyoxiyfkfl6rj" path="res://d_n_d/art/names/brie the merchant.png" id="16_egsj6"]
+[ext_resource type="Texture2D" uid="uid://c1pybu08lrnf4" path="res://d_n_d/art/names/butler.png" id="18_k66nm"]
+[ext_resource type="Texture2D" uid="uid://q5occlg152mo" path="res://d_n_d/art/names/plod stilton.png" id="20_scok3"]
 
 [sub_resource type="Theme" id="Theme_5mt7g"]
 
@@ -54,6 +62,7 @@ scale = Vector2(0.81250066, 0.81250066)
 texture = ExtResource("5_2goxq")
 
 [node name="Label" type="Label" parent="Node2D/Polaroid/Tape" unique_id=237468308]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -63,6 +72,10 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Polaroid/Tape" unique_id=497493217]
+position = Vector2(136.30734, -2.1537173)
+texture = ExtResource("6_ksvyt")
 
 [node name="Polaroid2" type="Sprite2D" parent="Node2D" unique_id=646185607]
 position = Vector2(-4.7199707, -122.72)
@@ -94,6 +107,7 @@ scale = Vector2(0.81250066, 0.81250066)
 texture = ExtResource("5_2goxq")
 
 [node name="Label" type="Label" parent="Node2D/Polaroid2/Tape" unique_id=779791783]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -103,6 +117,10 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Polaroid2/Tape" unique_id=1423593673]
+position = Vector2(90.153534, -17.538319)
+texture = ExtResource("8_pjxtf")
 
 [node name="Polaroid3" type="Sprite2D" parent="Node2D" unique_id=927584386]
 position = Vector2(111.28003, -119.72)
@@ -134,6 +152,7 @@ scale = Vector2(0.81250066, 0.81250066)
 texture = ExtResource("5_2goxq")
 
 [node name="Label" type="Label" parent="Node2D/Polaroid3/Tape" unique_id=1803488808]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -143,6 +162,10 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Polaroid3/Tape" unique_id=524737499]
+position = Vector2(128.61504, -2.1537173)
+texture = ExtResource("10_0uf8p")
 
 [node name="Polaroid4" type="Sprite2D" parent="Node2D" unique_id=1131761601]
 position = Vector2(-124.719986, 1.2799988)
@@ -174,6 +197,7 @@ scale = Vector2(0.81250066, 0.81250066)
 texture = ExtResource("5_2goxq")
 
 [node name="Label" type="Label" parent="Node2D/Polaroid4/Tape" unique_id=2050891857]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -183,6 +207,9 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Polaroid4/Tape" unique_id=881873890]
+texture = ExtResource("12_k0n3j")
 
 [node name="Polaroid5" type="Sprite2D" parent="Node2D" unique_id=1322404250]
 position = Vector2(-5, 132)
@@ -214,6 +241,7 @@ scale = Vector2(0.81250066, 0.81250066)
 texture = ExtResource("5_2goxq")
 
 [node name="Label" type="Label" parent="Node2D/Polaroid5/Tape" unique_id=1534622344]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -223,6 +251,10 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Polaroid5/Tape" unique_id=563775456]
+position = Vector2(223.0767, -23.0769)
+texture = ExtResource("14_5swap")
 
 [node name="Polaroid6" type="Sprite2D" parent="Node2D" unique_id=957567065]
 position = Vector2(111.28003, 4.279999)
@@ -254,6 +286,7 @@ scale = Vector2(0.81250066, 0.81250066)
 texture = ExtResource("5_2goxq")
 
 [node name="Label" type="Label" parent="Node2D/Polaroid6/Tape" unique_id=660766192]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -263,6 +296,10 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Polaroid6/Tape" unique_id=1872606798]
+position = Vector2(59.384335, -2.1538346)
+texture = ExtResource("16_egsj6")
 
 [node name="Polaroid7" type="Sprite2D" parent="Node2D" unique_id=1560421878]
 position = Vector2(-124.719986, 127.28001)
@@ -284,7 +321,7 @@ grow_vertical = 2
 action_mode = 0
 
 [node name="Face" type="Sprite2D" parent="Node2D/Polaroid7" unique_id=962651053]
-position = Vector2(48.249725, 4.500063)
+position = Vector2(-39.25026, -1.7499356)
 scale = Vector2(0.36048138, 0.36048144)
 texture = ExtResource("11_b8sqn")
 
@@ -294,6 +331,7 @@ scale = Vector2(0.81250066, 0.81250066)
 texture = ExtResource("5_2goxq")
 
 [node name="Label" type="Label" parent="Node2D/Polaroid7/Tape" unique_id=415674159]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -303,6 +341,10 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Polaroid7/Tape" unique_id=1639480152]
+position = Vector2(159.38423, -32.923035)
+texture = ExtResource("18_k66nm")
 
 [node name="Polaroid9" type="Sprite2D" parent="Node2D" unique_id=1545204904]
 position = Vector2(111.28003, 130.28)
@@ -334,6 +376,7 @@ scale = Vector2(0.81250066, 0.81250066)
 texture = ExtResource("5_2goxq")
 
 [node name="Label" type="Label" parent="Node2D/Polaroid9/Tape" unique_id=654336608]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -343,6 +386,9 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Polaroid9/Tape" unique_id=781883163]
+texture = ExtResource("20_scok3")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=991683218]
 position = Vector2(-6, -199)
