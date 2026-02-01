@@ -1,6 +1,9 @@
 import "res://dialogue/dialogues/big_cheese.dialogue" as big_cheese
 import "res://dialogue/dialogues/butler.dialogue" as butler
 import "res://dialogue/dialogues/cheese_addict.dialogue" as cheese_addict
+import "res://dialogue/dialogues/femme_fish_fatale.dialogue" as femme_fish_fatale
+import "res://dialogue/dialogues/merchant.dialogue" as merchant
+import "res://dialogue/dialogues/plod_stilton.dialogue" as plod_stilton
 
 ~ start
 set is_speaking = true
@@ -11,6 +14,12 @@ match speaking_to
 		=>< butler/start
 	when "CheeseAddict"
 		=>< cheese_addict/start
+	when "FemmeFishFatale"
+		=>< femme_fish_fatale/start
+	when "Merchant"
+		=>< merchant/start
+	when "PlodStilton"
+		=>< plod_stilton/start
 	else
 		DEBUG: unknown character name!
 set is_speaking = false

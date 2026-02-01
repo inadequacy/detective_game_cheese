@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cnrltvvxyhg20"
+path="res://.godot/imported/plod_stilton.dialogue-9a8c1458287da1312fab9f2d8e99be59.tres"
+
+[deps]
+
+source_file="res://dialogue/dialogues/plod_stilton.dialogue"
+dest_files=["res://.godot/imported/plod_stilton.dialogue-9a8c1458287da1312fab9f2d8e99be59.tres"]
+
+[params]
+
+defaults=true
