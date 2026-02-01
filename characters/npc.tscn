@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dvrrss18cib0j"]
+[gd_scene format=3 uid="uid://c5xkajh1m7a6n"]
 
 [ext_resource type="Script" uid="uid://cupf5no1b2483" path="res://characters/npc_logic.gd" id="1_ppmss"]
 
@@ -9,7 +9,7 @@ radius = 0.7
 top_radius = 0.7
 bottom_radius = 0.7
 
-[node name="NPC" type="CharacterBody3D" unique_id=228738560]
+[node name="NPC" type="CharacterBody3D" unique_id=228738560 groups=["npc"]]
 script = ExtResource("1_ppmss")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=435531988]
