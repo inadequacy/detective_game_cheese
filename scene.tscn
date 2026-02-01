@@ -218,6 +218,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 31)
 [node name="GoToPoint22" parent="NodeHolder/NoRoof" unique_id=127221433 instance=ExtResource("4_u3cyc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 23)
 
+[node name="CoolCoatRoom" type="Node" parent="NodeHolder" unique_id=1804628153]
+
+[node name="GoToPoint13" parent="NodeHolder/CoolCoatRoom" unique_id=964651212 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 5)
+
+[node name="GoToPoint14" parent="NodeHolder/CoolCoatRoom" unique_id=73350979 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 6)
+
+[node name="GoToPoint15" parent="NodeHolder/CoolCoatRoom" unique_id=295866505 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 3)
+
 [node name="CrapToilet" type="Node" parent="NodeHolder" unique_id=1114674648]
 
 [node name="GoToPoint13" parent="NodeHolder/CrapToilet" unique_id=842992845 instance=ExtResource("4_u3cyc")]
@@ -233,3 +244,62 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -7)
 
 [node name="GoToPoint13" parent="NodeHolder/EmptyRoomForSomeReason" unique_id=1874054545 instance=ExtResource("4_u3cyc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 11)
+
+[node name="GoToPoint14" parent="NodeHolder/EmptyRoomForSomeReason" unique_id=1070043051 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 12)
+
+[node name="GoToPoint15" parent="NodeHolder/EmptyRoomForSomeReason" unique_id=1820383575 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 17)
+
+[node name="GoToPoint16" parent="NodeHolder/EmptyRoomForSomeReason" unique_id=1088206253 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 17)
+
+[node name="GoToPoint17" parent="NodeHolder/EmptyRoomForSomeReason" unique_id=841478538 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 13)
+
+[node name="BetterBathroom" type="Node" parent="NodeHolder" unique_id=1365106377]
+
+[node name="GoToPoint17" parent="NodeHolder/BetterBathroom" unique_id=1891272301 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -22)
+
+[node name="BedRoom" type="Node" parent="NodeHolder" unique_id=1857906156]
+
+[node name="GoToPoint13" parent="NodeHolder/BedRoom" unique_id=2086451135 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -12)
+
+[node name="GoToPoint14" parent="NodeHolder/BedRoom" unique_id=157936099 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -17)
+
+[node name="GoToPoint15" parent="NodeHolder/BedRoom" unique_id=175800662 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -17)
+
+[node name="GoToPoint16" parent="NodeHolder/BedRoom" unique_id=240096501 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -15)
+
+[node name="WashingRoom" type="Node" parent="NodeHolder" unique_id=802272139]
+
+[node name="GoToPoint21" parent="NodeHolder/WashingRoom" unique_id=42325370 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -14)
+
+[node name="GoToPoint22" parent="NodeHolder/WashingRoom" unique_id=71066724 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -14)
+
+[node name="GoToPoint23" parent="NodeHolder/WashingRoom" unique_id=144221259 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, -2)
+
+[node name="GoToPoint24" parent="NodeHolder/WashingRoom" unique_id=1394781878 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -4)
+
+[node name="Office" type="Node" parent="NodeHolder" unique_id=1453392982]
+
+[node name="GoToPoint17" parent="NodeHolder/Office" unique_id=1872549688 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -15)
+
+[node name="GoToPoint18" parent="NodeHolder/Office" unique_id=328058346 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -12)
+
+[node name="GoToPoint19" parent="NodeHolder/Office" unique_id=1269829927 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -17)
+
+[node name="GoToPoint20" parent="NodeHolder/Office" unique_id=21644561 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -14)
