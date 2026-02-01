@@ -13,11 +13,19 @@
 [ext_resource type="Texture2D" uid="uid://cp8bejbeco5ke" path="res://d_n_d/art/tapename.png" id="11_gw1yy"]
 [ext_resource type="Texture2D" uid="uid://qj1ol8rwsnn1" path="res://d_n_d/art/big twin head.png" id="11_kjhw6"]
 [ext_resource type="Texture2D" uid="uid://cuhnpsdlisk2k" path="res://d_n_d/art/bigcheesemask.png" id="12_gw1yy"]
+[ext_resource type="Texture2D" uid="uid://dcaauxi7ptpi5" path="res://d_n_d/art/names/twin 1 roch baby.png" id="12_v7s3u"]
 [ext_resource type="Texture2D" uid="uid://v8u6655uy58i" path="res://d_n_d/art/plod mask only.png" id="13_5hean"]
+[ext_resource type="Texture2D" uid="uid://ch52uifo5lm4y" path="res://d_n_d/art/names/twin 2 ford big.png" id="14_4rumu"]
 [ext_resource type="Texture2D" uid="uid://bvjbjanosnsjl" path="res://d_n_d/art/Butler_Head.png" id="15_n7odo"]
+[ext_resource type="Texture2D" uid="uid://bbgoi3t2nkki5" path="res://d_n_d/art/names/big cheese.png" id="16_2r3mg"]
 [ext_resource type="Texture2D" uid="uid://boq31rhg7pn65" path="res://d_n_d/art/mask for merchant.png" id="16_vsf20"]
 [ext_resource type="Texture2D" uid="uid://dtonv8fp0q6jo" path="res://d_n_d/art/Big Cheese_Mask_01.png" id="17_n7odo"]
 [ext_resource type="Texture2D" uid="uid://htl5rspq6v46" path="res://d_n_d/art/Femme Fatale_Mask_01.png" id="18_3t4i8"]
+[ext_resource type="Texture2D" uid="uid://q5occlg152mo" path="res://d_n_d/art/names/plod stilton.png" id="18_kkqtx"]
+[ext_resource type="Texture2D" uid="uid://c1pybu08lrnf4" path="res://d_n_d/art/names/butler.png" id="20_kenjd"]
+[ext_resource type="Texture2D" uid="uid://cyoxiyfkfl6rj" path="res://d_n_d/art/names/brie the merchant.png" id="22_em2nf"]
+[ext_resource type="Texture2D" uid="uid://b0oc1ecms8cfx" path="res://d_n_d/art/names/eater.png" id="24_xpfvw"]
+[ext_resource type="Texture2D" uid="uid://b76h3u3pqf6sl" path="res://d_n_d/art/names/ella femme fatale.png" id="26_njr88"]
 
 [sub_resource type="GDScript" id="GDScript_ugepn"]
 script/source = "extends Sprite2D
@@ -134,16 +142,9 @@ position = Vector2(3, 79)
 scale = Vector2(0.13000013, 0.13000013)
 texture = ExtResource("11_gw1yy")
 
-[node name="Label" type="Label" parent="Board/Card/Tape" unique_id=1419477521]
-offset_left = -253.84589
-offset_top = -76.92297
-offset_right = 246.15363
-offset_bottom = 46.15381
-theme = SubResource("Theme_5hean")
-theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
-theme_override_font_sizes/font_size = 100
-text = "Name"
-metadata/_edit_use_anchors_ = true
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card/Tape" unique_id=1541932061]
+position = Vector2(123.076805, -7.6923003)
+texture = ExtResource("12_v7s3u")
 
 [node name="Card2" type="Sprite2D" parent="Board" unique_id=2084027901 groups=["base"]]
 position = Vector2(142, -218)
@@ -186,11 +187,16 @@ scale = Vector2(0.16750175, 0.16750179)
 texture = ExtResource("11_kjhw6")
 
 [node name="Tape" type="Sprite2D" parent="Board/Card2" unique_id=997517339]
-position = Vector2(3, 79)
+position = Vector2(3, 80)
 scale = Vector2(0.13000013, 0.13000013)
 texture = ExtResource("11_gw1yy")
 
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card2/Tape" unique_id=702224546]
+position = Vector2(146.15369, -15.384644)
+texture = ExtResource("14_4rumu")
+
 [node name="Label" type="Label" parent="Board/Card2/Tape" unique_id=1928733809]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -246,7 +252,12 @@ position = Vector2(3, 79)
 scale = Vector2(0.13000013, 0.13000013)
 texture = ExtResource("11_gw1yy")
 
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card3/Tape" unique_id=649727627]
+position = Vector2(46.153778, -15.384571)
+texture = ExtResource("16_2r3mg")
+
 [node name="Label" type="Label" parent="Board/Card3/Tape" unique_id=1316919776]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -303,6 +314,7 @@ scale = Vector2(0.13000013, 0.13000013)
 texture = ExtResource("11_gw1yy")
 
 [node name="Label" type="Label" parent="Board/Card4/Tape" unique_id=2120177752]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -312,6 +324,9 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card4/Tape" unique_id=541586362]
+texture = ExtResource("18_kkqtx")
 
 [node name="Card5" type="Sprite2D" parent="Board" unique_id=1146576230 groups=["base"]]
 position = Vector2(383, 50)
@@ -359,6 +374,7 @@ scale = Vector2(0.13000013, 0.13000013)
 texture = ExtResource("11_gw1yy")
 
 [node name="Label" type="Label" parent="Board/Card5/Tape" unique_id=1376611407]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -368,6 +384,10 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card5/Tape" unique_id=41132204]
+position = Vector2(169.2306, -23.0769)
+texture = ExtResource("20_kenjd")
 
 [node name="Card6" type="Sprite2D" parent="Board" unique_id=816397161 groups=["base"]]
 position = Vector2(383, 307)
@@ -415,6 +435,7 @@ scale = Vector2(0.13000013, 0.13000013)
 texture = ExtResource("11_gw1yy")
 
 [node name="Label" type="Label" parent="Board/Card6/Tape" unique_id=1453455602]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -424,6 +445,10 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card6/Tape" unique_id=1531742967]
+position = Vector2(61.538403, -7.6923003)
+texture = ExtResource("22_em2nf")
 
 [node name="Card7" type="Sprite2D" parent="Board" unique_id=610895847 groups=["base"]]
 position = Vector2(155, 307)
@@ -471,6 +496,7 @@ scale = Vector2(0.13000013, 0.13000013)
 texture = ExtResource("11_gw1yy")
 
 [node name="Label" type="Label" parent="Board/Card7/Tape" unique_id=415050198]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -480,6 +506,10 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card7/Tape" unique_id=815882607]
+position = Vector2(76.923004, -30.769201)
+texture = ExtResource("24_xpfvw")
 
 [node name="Card8" type="Sprite2D" parent="Board" unique_id=1984030074 groups=["base"]]
 position = Vector2(-82, 328)
@@ -527,6 +557,7 @@ scale = Vector2(0.13000013, 0.13000013)
 texture = ExtResource("11_gw1yy")
 
 [node name="Label" type="Label" parent="Board/Card8/Tape" unique_id=311434922]
+visible = false
 offset_left = -253.84589
 offset_top = -76.92297
 offset_right = 246.15363
@@ -536,6 +567,10 @@ theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
 theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card8/Tape" unique_id=1508621674]
+position = Vector2(207.69211, -23.0769)
+texture = ExtResource("26_njr88")
 
 [connection signal="button_down" from="Board/Card/Button" to="Board/Card" method="_on_button_button_down"]
 [connection signal="button_up" from="Board/Card/Button" to="Board/Card" method="_on_button_button_up"]
