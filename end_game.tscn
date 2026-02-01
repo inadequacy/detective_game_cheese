@@ -1,0 +1,402 @@
+[gd_scene format=3 uid="uid://bvylrtrc0b0sp"]
+
+[ext_resource type="Texture2D" uid="uid://kxijfu2dl4tx" path="res://d_n_d/art/cork board.png" id="1_semjh"]
+[ext_resource type="Texture2D" uid="uid://b40v8sc82y26x" path="res://d_n_d/art/polaroid.png" id="2_4amj7"]
+[ext_resource type="Script" uid="uid://dfon2oj4eqy2r" path="res://polaroid.gd" id="3_h3nuw"]
+[ext_resource type="Texture2D" uid="uid://chd45e3uvp3ej" path="res://d_n_d/art/baby twin mask.png" id="4_jppxx"]
+[ext_resource type="Texture2D" uid="uid://cp8bejbeco5ke" path="res://d_n_d/art/tapename.png" id="5_2goxq"]
+
+[sub_resource type="Theme" id="Theme_5mt7g"]
+
+[node name="EndGame" type="Node2D" unique_id=1688594479]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=654196274]
+position = Vector2(544, 322)
+
+[node name="board" type="Sprite2D" parent="Node2D" unique_id=2113465924]
+texture = ExtResource("1_semjh")
+
+[node name="Polaroid" type="Sprite2D" parent="Node2D" unique_id=1270557863]
+position = Vector2(-124.719986, -122.72)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("2_4amj7")
+script = ExtResource("3_h3nuw")
+
+[node name="Button" type="Button" parent="Node2D/Polaroid" unique_id=143062509]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.24994
+offset_top = -262.5
+offset_right = -248.24994
+offset_bottom = -208.5
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Face" type="Sprite2D" parent="Node2D/Polaroid" unique_id=2037662679]
+position = Vector2(-6.2499237, -25)
+scale = Vector2(0.6700597, 0.67005986)
+texture = ExtResource("4_jppxx")
+
+[node name="Tape" type="Sprite2D" parent="Node2D/Polaroid" unique_id=1890375595]
+position = Vector2(-6.25, 331.24988)
+scale = Vector2(0.81250066, 0.81250066)
+texture = ExtResource("5_2goxq")
+
+[node name="Label" type="Label" parent="Node2D/Polaroid/Tape" unique_id=237468308]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5mt7g")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Polaroid2" type="Sprite2D" parent="Node2D" unique_id=646185607]
+position = Vector2(-4.7199707, -122.72)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("2_4amj7")
+script = ExtResource("3_h3nuw")
+
+[node name="Button" type="Button" parent="Node2D/Polaroid2" unique_id=591626851]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.24994
+offset_top = -262.5
+offset_right = -248.24994
+offset_bottom = -208.5
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Face" type="Sprite2D" parent="Node2D/Polaroid2" unique_id=239024003]
+position = Vector2(-6.2499237, -25)
+scale = Vector2(0.6700597, 0.67005986)
+texture = ExtResource("4_jppxx")
+
+[node name="Tape" type="Sprite2D" parent="Node2D/Polaroid2" unique_id=428170939]
+position = Vector2(-6.25, 331.24988)
+scale = Vector2(0.81250066, 0.81250066)
+texture = ExtResource("5_2goxq")
+
+[node name="Label" type="Label" parent="Node2D/Polaroid2/Tape" unique_id=779791783]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5mt7g")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Polaroid3" type="Sprite2D" parent="Node2D" unique_id=927584386]
+position = Vector2(111.28003, -119.72)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("2_4amj7")
+script = ExtResource("3_h3nuw")
+
+[node name="Button" type="Button" parent="Node2D/Polaroid3" unique_id=656332965]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.24994
+offset_top = -262.5
+offset_right = -248.24994
+offset_bottom = -208.5
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Face" type="Sprite2D" parent="Node2D/Polaroid3" unique_id=1422713178]
+position = Vector2(-6.2499237, -25)
+scale = Vector2(0.6700597, 0.67005986)
+texture = ExtResource("4_jppxx")
+
+[node name="Tape" type="Sprite2D" parent="Node2D/Polaroid3" unique_id=384122373]
+position = Vector2(-6.25, 331.24988)
+scale = Vector2(0.81250066, 0.81250066)
+texture = ExtResource("5_2goxq")
+
+[node name="Label" type="Label" parent="Node2D/Polaroid3/Tape" unique_id=1803488808]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5mt7g")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Polaroid4" type="Sprite2D" parent="Node2D" unique_id=1131761601]
+position = Vector2(-124.719986, 1.2799988)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("2_4amj7")
+script = ExtResource("3_h3nuw")
+
+[node name="Button" type="Button" parent="Node2D/Polaroid4" unique_id=1197828908]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.24994
+offset_top = -262.5
+offset_right = -248.24994
+offset_bottom = -208.5
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Face" type="Sprite2D" parent="Node2D/Polaroid4" unique_id=1254189111]
+position = Vector2(-6.2499237, -25)
+scale = Vector2(0.6700597, 0.67005986)
+texture = ExtResource("4_jppxx")
+
+[node name="Tape" type="Sprite2D" parent="Node2D/Polaroid4" unique_id=1142086924]
+position = Vector2(-6.25, 331.24988)
+scale = Vector2(0.81250066, 0.81250066)
+texture = ExtResource("5_2goxq")
+
+[node name="Label" type="Label" parent="Node2D/Polaroid4/Tape" unique_id=2050891857]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5mt7g")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Polaroid5" type="Sprite2D" parent="Node2D" unique_id=1322404250]
+position = Vector2(-4.7199707, 1.2799988)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("2_4amj7")
+script = ExtResource("3_h3nuw")
+
+[node name="Button" type="Button" parent="Node2D/Polaroid5" unique_id=1098831563]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.24994
+offset_top = -262.5
+offset_right = -248.24994
+offset_bottom = -208.5
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Face" type="Sprite2D" parent="Node2D/Polaroid5" unique_id=1813786387]
+position = Vector2(-6.2499237, -25)
+scale = Vector2(0.6700597, 0.67005986)
+texture = ExtResource("4_jppxx")
+
+[node name="Tape" type="Sprite2D" parent="Node2D/Polaroid5" unique_id=193912851]
+position = Vector2(-6.25, 331.24988)
+scale = Vector2(0.81250066, 0.81250066)
+texture = ExtResource("5_2goxq")
+
+[node name="Label" type="Label" parent="Node2D/Polaroid5/Tape" unique_id=1534622344]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5mt7g")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Polaroid6" type="Sprite2D" parent="Node2D" unique_id=957567065]
+position = Vector2(111.28003, 4.279999)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("2_4amj7")
+script = ExtResource("3_h3nuw")
+
+[node name="Button" type="Button" parent="Node2D/Polaroid6" unique_id=1641048739]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.24994
+offset_top = -262.5
+offset_right = -248.24994
+offset_bottom = -208.5
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Face" type="Sprite2D" parent="Node2D/Polaroid6" unique_id=170959903]
+position = Vector2(-6.2499237, -25)
+scale = Vector2(0.6700597, 0.67005986)
+texture = ExtResource("4_jppxx")
+
+[node name="Tape" type="Sprite2D" parent="Node2D/Polaroid6" unique_id=892357911]
+position = Vector2(-6.25, 331.24988)
+scale = Vector2(0.81250066, 0.81250066)
+texture = ExtResource("5_2goxq")
+
+[node name="Label" type="Label" parent="Node2D/Polaroid6/Tape" unique_id=660766192]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5mt7g")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Polaroid7" type="Sprite2D" parent="Node2D" unique_id=1560421878]
+position = Vector2(-124.719986, 127.28001)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("2_4amj7")
+script = ExtResource("3_h3nuw")
+
+[node name="Button" type="Button" parent="Node2D/Polaroid7" unique_id=1337982954]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.24994
+offset_top = -262.5
+offset_right = -248.24994
+offset_bottom = -208.5
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Face" type="Sprite2D" parent="Node2D/Polaroid7" unique_id=962651053]
+position = Vector2(-6.2499237, -25)
+scale = Vector2(0.6700597, 0.67005986)
+texture = ExtResource("4_jppxx")
+
+[node name="Tape" type="Sprite2D" parent="Node2D/Polaroid7" unique_id=302716394]
+position = Vector2(-6.25, 331.24988)
+scale = Vector2(0.81250066, 0.81250066)
+texture = ExtResource("5_2goxq")
+
+[node name="Label" type="Label" parent="Node2D/Polaroid7/Tape" unique_id=415674159]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5mt7g")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Polaroid8" type="Sprite2D" parent="Node2D" unique_id=389871285]
+position = Vector2(-4.7199707, 127.28001)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("2_4amj7")
+script = ExtResource("3_h3nuw")
+murderer = true
+
+[node name="Button" type="Button" parent="Node2D/Polaroid8" unique_id=1610103997]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.24994
+offset_top = -262.5
+offset_right = -248.24994
+offset_bottom = -208.5
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Face" type="Sprite2D" parent="Node2D/Polaroid8" unique_id=1441367089]
+position = Vector2(-6.2499237, -25)
+scale = Vector2(0.6700597, 0.67005986)
+texture = ExtResource("4_jppxx")
+
+[node name="Tape" type="Sprite2D" parent="Node2D/Polaroid8" unique_id=419483224]
+position = Vector2(-6.25, 331.24988)
+scale = Vector2(0.81250066, 0.81250066)
+texture = ExtResource("5_2goxq")
+
+[node name="Label" type="Label" parent="Node2D/Polaroid8/Tape" unique_id=1440231102]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5mt7g")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Polaroid9" type="Sprite2D" parent="Node2D" unique_id=1545204904]
+position = Vector2(111.28003, 130.28)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("2_4amj7")
+script = ExtResource("3_h3nuw")
+
+[node name="Button" type="Button" parent="Node2D/Polaroid9" unique_id=295389251]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.24994
+offset_top = -262.5
+offset_right = -248.24994
+offset_bottom = -208.5
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Face" type="Sprite2D" parent="Node2D/Polaroid9" unique_id=362907173]
+position = Vector2(-6.2499237, -25)
+scale = Vector2(0.6700597, 0.67005986)
+texture = ExtResource("4_jppxx")
+
+[node name="Tape" type="Sprite2D" parent="Node2D/Polaroid9" unique_id=259027901]
+position = Vector2(-6.25, 331.24988)
+scale = Vector2(0.81250066, 0.81250066)
+texture = ExtResource("5_2goxq")
+
+[node name="Label" type="Label" parent="Node2D/Polaroid9/Tape" unique_id=654336608]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5mt7g")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=991683218]
+position = Vector2(-6, -199)
+scale = Vector2(0.44000125, 0.44000125)
+texture = ExtResource("5_2goxq")
+
+[node name="Label" type="Label" parent="Node2D" unique_id=1929181760]
+offset_left = -93.0
+offset_top = -221.0
+offset_right = 83.0
+offset_bottom = -186.0
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_font_sizes/font_size = 25
+text = "Who's done it?"
+
+[connection signal="pressed" from="Node2D/Polaroid/Button" to="Node2D/Polaroid" method="_on_button_pressed"]
+[connection signal="pressed" from="Node2D/Polaroid2/Button" to="Node2D/Polaroid2" method="_on_button_pressed"]
+[connection signal="pressed" from="Node2D/Polaroid3/Button" to="Node2D/Polaroid3" method="_on_button_pressed"]
+[connection signal="pressed" from="Node2D/Polaroid4/Button" to="Node2D/Polaroid4" method="_on_button_pressed"]
+[connection signal="pressed" from="Node2D/Polaroid5/Button" to="Node2D/Polaroid5" method="_on_button_pressed"]
+[connection signal="pressed" from="Node2D/Polaroid6/Button" to="Node2D/Polaroid6" method="_on_button_pressed"]
+[connection signal="pressed" from="Node2D/Polaroid7/Button" to="Node2D/Polaroid7" method="_on_button_pressed"]
+[connection signal="pressed" from="Node2D/Polaroid8/Button" to="Node2D/Polaroid8" method="_on_button_pressed"]
+[connection signal="pressed" from="Node2D/Polaroid9/Button" to="Node2D/Polaroid9" method="_on_button_pressed"]
