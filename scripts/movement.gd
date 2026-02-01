@@ -4,9 +4,12 @@ extends CharacterBody3D
 @export var rotation_speed = 2
 var journal = false
 var animator
+var audio_player
+var was_pressed = false
 
 func _ready() -> void:
 	animator = $AnimationHandling/AnimationPlayer
+	audio_player=$AnimationHandling/AnimationPlayer/AudioStreamPlayer
 	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 
 func _physics_process(delta):
@@ -19,9 +22,17 @@ func _physics_process(delta):
 		if Input.is_action_pressed("move_forward"):
 			velocity = (forward * speed)
 			move_and_slide()
+			
 			animator.play("walking")
+			
+			if was_pressed == false:
+				audio_player.play()
+				was_pressed = true
+	
 		else:
 			animator.pause()
+			audio_player.stop()
+			was_pressed = false
 		if Input.is_action_pressed("move_backward"):
 			velocity = (-forward * speed / 1.7)
 			move_and_slide()
