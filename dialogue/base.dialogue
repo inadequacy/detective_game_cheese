@@ -6,6 +6,7 @@ import "res://dialogue/dialogues/angler.dialogue" as angler
 import "res://dialogue/dialogues/big_cheese.dialogue" as big_cheese
 
 ~ start
+set is_speaking = true
 match speaking_to
 	when "peacock"
 		=>< peacock/start
@@ -21,4 +22,5 @@ match speaking_to
 		=>< big_cheese/start
 	else
 		DEBUG: unknown character name!
+set is_speaking = false
 => END

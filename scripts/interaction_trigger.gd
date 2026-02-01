@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 		interacting_with = ""
 
 func _input(event: InputEvent) -> void:
-	if can_interact and Input.is_action_pressed("to_pay_respect"):
+	if can_interact and Input.is_action_pressed("to_pay_respect") and not dialogue_ui.dialogue_state.is_speaking:
 		talk_to(interacting_with)
 
 func talk_to(who: String) -> void:
