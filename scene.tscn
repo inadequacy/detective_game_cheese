@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dm8jjnpgyss3w" path="res://characters/art/Butler_01.png" id="7_ni31j"]
 [ext_resource type="Texture2D" uid="uid://vp2kwr3p3a3q" path="res://characters/art/Cheese Dreams_Cheese Addict_1.png" id="8_xlvrw"]
 [ext_resource type="Texture2D" uid="uid://ctjsr6m0pcmuq" path="res://characters/art/Twins_Body.png" id="9_73fnb"]
+[ext_resource type="Texture2D" uid="uid://bqpe4xgsfop7i" path="res://characters/art/plod stilton final.png" id="10_5juve"]
 
 [node name="Scene" type="Node3D" unique_id=350646142]
 
@@ -334,14 +335,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.460616, 0, 0)
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.48695517, 1.1087022, -0.3827505)
 texture = ExtResource("8_xlvrw")
 
-[node name="Twin1" parent="Characters" unique_id=1257681979 instance=ExtResource("5_y2354")]
+[node name="Twin" parent="Characters" unique_id=1257681979 instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.945978, 0.32084417, 3.7541246)
 
-[node name="Sprite3D" parent="Characters/Twin1" index="2" unique_id=1357997964]
+[node name="Sprite3D" parent="Characters/Twin" index="2" unique_id=1357997964]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0.6446736, 0)
 texture = ExtResource("9_73fnb")
+
+[node name="PlodStilton" parent="Characters" unique_id=290421130 instance=ExtResource("5_y2354")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.726032, 1.3788459, 5.3853736)
+
+[node name="Sprite3D" parent="Characters/PlodStilton" index="2" unique_id=1357997964]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+texture = ExtResource("10_5juve")
 
 [editable path="Characters/BigCheese"]
 [editable path="Characters/Butler"]
 [editable path="Characters/CheeseAddict"]
-[editable path="Characters/Twin1"]
+[editable path="Characters/Twin"]
+[editable path="Characters/PlodStilton"]
