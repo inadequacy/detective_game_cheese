@@ -8,11 +8,9 @@ func _ready() -> void:
 	timer = $Timer
 	timer.start()
 
-var time_passed
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float):
-	time_passed = 120 - timer.time_left
-	if time_passed >= 120 && end_screen == false:
+	if (timer.time_left - 1) <= 1 && end_screen == false:
 		who_did_it()
 
 func who_did_it():
