@@ -8,7 +8,7 @@ size = Vector2(150.58826, 148.07846)
 
 [node name="Note" type="Sprite2D" unique_id=838163697]
 z_index = 2
-scale = Vector2(0.39843747, 0.39843747)
+scale = Vector2(0.55843747, 0.55843747)
 texture = ExtResource("1_64jy2")
 script = ExtResource("2_6fdag")
 
