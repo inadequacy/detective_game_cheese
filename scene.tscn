@@ -11,7 +11,6 @@
 
 [node name="Mansion" parent="." unique_id=218848142 instance=ExtResource("1_3253y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.135, 0)
-visible = false
 
 [node name="Lighting" type="Node" parent="." unique_id=1018692635]
 
@@ -309,9 +308,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -14)
 
 [node name="Characters" type="Node3D" parent="." unique_id=1343866329]
 
-[node name="BigCheese" parent="Characters" unique_id=228738560 node_paths=PackedStringArray("route_one") instance=ExtResource("5_y2354")]
+[node name="BigCheese" parent="Characters" unique_id=228738560 node_paths=PackedStringArray("route_one", "route_two") instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -5)
 route_one = [NodePath("../../NodeHolder/BedRoom/GoToPoint13"), null]
+route_two = [null, null]
 
 [node name="Sprite3D" parent="Characters/BigCheese" index="2" unique_id=1357997964]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)

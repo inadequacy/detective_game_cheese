@@ -5,6 +5,42 @@ var my_node
 var journal_open := false
 var manager
 var state_d
+var book
+var book_node
+var book_area
+@export var note_scene: PackedScene
+
+func _ready() -> void:
+	book = $Book/Book
+	book_node=$Book
+	book_area=$Book/Book/DropZone/CollisionShape2D
+
+
+func random_point_in_book() -> Vector2:
+	var cs := book_area as CollisionShape2D
+	var rect := cs.shape as RectangleShape2D
+	var half := rect.size * 0.4
+
+	# point in the rectangle's local space
+	var p_shape := Vector2(
+		randf_range(-half.x, half.x),
+		randf_range(-half.y, half.y)
+	)
+
+	# transform it through the scene (handles parent scaling/rotation)
+	var p_global := cs.to_global(p_shape)
+
+	# return position in book_node's local coordinates (since note is child of book_node)
+	return book_node.to_local(p_global)
+
+func spawn_note(text_label):
+	var note = note_scene.instantiate()
+	note.position = random_point_in_book()
+	var label := note.get_node("TexLabel") as Label
+	label.text = text_label
+	
+	book_node.add_child(note)
+
 var pinned_facts: Dictionary = {
 	speaking_to = "peacock",
 	facts = {
@@ -49,6 +85,7 @@ func _input(_event):
 				if fact.known == true:
 					pinned_facts.facts[fact_id].known = true
 					pinned_facts.facts[fact_id].content = state_d.facts[fact_id].content
+					spawn_note(state_d.facts[fact_id].content)
 					
 					print_debug(pinned_facts.facts[fact_id].content)
 					
