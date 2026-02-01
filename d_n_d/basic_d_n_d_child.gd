@@ -5,6 +5,7 @@ var offset := Vector2.ZERO
 
 @onready var sensor: Area2D = $OverlapSensor
 
+# Waiting a physics frame supresses the errors, might not fix ???
 func _ready() -> void:
 	await get_tree().physics_frame
 	_try_attach_or_drop()
