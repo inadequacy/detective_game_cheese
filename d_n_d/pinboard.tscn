@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://qj1ol8rwsnn1" path="res://d_n_d/art/big twin head.png" id="11_kjhw6"]
 [ext_resource type="Texture2D" uid="uid://cuhnpsdlisk2k" path="res://d_n_d/art/bigcheesemask.png" id="12_gw1yy"]
 [ext_resource type="Texture2D" uid="uid://v8u6655uy58i" path="res://d_n_d/art/plod mask only.png" id="13_5hean"]
-[ext_resource type="Texture2D" uid="uid://d325wtebmftwo" path="res://d_n_d/art/owl.png" id="15_5hean"]
+[ext_resource type="Texture2D" uid="uid://bvjbjanosnsjl" path="res://d_n_d/art/Butler_Head.png" id="15_n7odo"]
 [ext_resource type="Texture2D" uid="uid://boq31rhg7pn65" path="res://d_n_d/art/mask for merchant.png" id="16_vsf20"]
 [ext_resource type="Texture2D" uid="uid://dtonv8fp0q6jo" path="res://d_n_d/art/Big Cheese_Mask_01.png" id="17_n7odo"]
 [ext_resource type="Texture2D" uid="uid://htl5rspq6v46" path="res://d_n_d/art/Femme Fatale_Mask_01.png" id="18_3t4i8"]
@@ -349,9 +349,9 @@ scale = Vector2(0.16000003, 0.16000003)
 texture = ExtResource("9_7uuhd")
 
 [node name="Face" type="Sprite2D" parent="Board/Card5" unique_id=988474096]
-position = Vector2(28.999994, -61.999996)
-scale = Vector2(0.10720956, 0.10720959)
-texture = ExtResource("15_5hean")
+position = Vector2(47.360973, -71.34788)
+scale = Vector2(0.058898695, 0.058898717)
+texture = ExtResource("15_n7odo")
 
 [node name="Tape" type="Sprite2D" parent="Board/Card5" unique_id=1619067314]
 position = Vector2(3, 79)

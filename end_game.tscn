@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cuhnpsdlisk2k" path="res://d_n_d/art/bigcheesemask.png" id="8_bx16a"]
 [ext_resource type="Texture2D" uid="uid://htl5rspq6v46" path="res://d_n_d/art/Femme Fatale_Mask_01.png" id="9_j6s1x"]
 [ext_resource type="Texture2D" uid="uid://boq31rhg7pn65" path="res://d_n_d/art/mask for merchant.png" id="10_h2oix"]
-[ext_resource type="Texture2D" uid="uid://d325wtebmftwo" path="res://d_n_d/art/owl.png" id="11_1si2d"]
+[ext_resource type="Texture2D" uid="uid://bvjbjanosnsjl" path="res://d_n_d/art/Butler_Head.png" id="11_b8sqn"]
 [ext_resource type="Texture2D" uid="uid://v8u6655uy58i" path="res://d_n_d/art/plod mask only.png" id="12_s37n4"]
 
 [sub_resource type="Theme" id="Theme_5mt7g"]
@@ -29,7 +29,6 @@ position = Vector2(-124.719986, -122.72)
 scale = Vector2(0.16000003, 0.16000003)
 texture = ExtResource("2_4amj7")
 script = ExtResource("3_h3nuw")
-murderer = true
 
 [node name="Button" type="Button" parent="Node2D/Polaroid" unique_id=143062509]
 self_modulate = Color(1, 1, 1, 0)
@@ -285,9 +284,9 @@ grow_vertical = 2
 action_mode = 0
 
 [node name="Face" type="Sprite2D" parent="Node2D/Polaroid7" unique_id=962651053]
-position = Vector2(-58.000107, 23.250004)
-scale = Vector2(0.6700597, 0.67005986)
-texture = ExtResource("11_1si2d")
+position = Vector2(48.249725, 4.500063)
+scale = Vector2(0.36048138, 0.36048144)
+texture = ExtResource("11_b8sqn")
 
 [node name="Tape" type="Sprite2D" parent="Node2D/Polaroid7" unique_id=302716394]
 position = Vector2(-6.25, 331.24988)
