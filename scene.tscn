@@ -4,11 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://bcg7p15c5ofuq" path="res://player.tscn" id="1_ulcgi"]
 [ext_resource type="PackedScene" uid="uid://duu5frrlx44ix" path="res://objects/manager.tscn" id="2_nxogm"]
 [ext_resource type="PackedScene" uid="uid://d0mgpraj6c620" path="res://objects/go_to_point.tscn" id="4_u3cyc"]
+[ext_resource type="PackedScene" uid="uid://dvrrss18cib0j" path="res://characters/npc.tscn" id="5_y2354"]
+[ext_resource type="Texture2D" uid="uid://brewisrm55co1" path="res://characters/art/Cheese Dreams_Big Cheese_1.png" id="6_ni31j"]
 
 [node name="Scene" type="Node3D" unique_id=350646142]
 
 [node name="Mansion" parent="." unique_id=218848142 instance=ExtResource("1_3253y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.135, 0)
+visible = false
 
 [node name="Lighting" type="Node" parent="." unique_id=1018692635]
 
@@ -303,3 +306,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -17)
 
 [node name="GoToPoint20" parent="NodeHolder/Office" unique_id=21644561 instance=ExtResource("4_u3cyc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -14)
+
+[node name="Characters" type="Node3D" parent="." unique_id=1343866329]
+
+[node name="BigCheese" parent="Characters" unique_id=228738560 node_paths=PackedStringArray("route_one") instance=ExtResource("5_y2354")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -5)
+route_one = [NodePath("../../NodeHolder/BedRoom/GoToPoint13"), null]
+
+[node name="Sprite3D" parent="Characters/BigCheese" index="2" unique_id=1357997964]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+texture = ExtResource("6_ni31j")
+
+[editable path="Characters/BigCheese"]
