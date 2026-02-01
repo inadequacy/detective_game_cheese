@@ -10,6 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://b40v8sc82y26x" path="res://d_n_d/art/polaroid.png" id="9_7uuhd"]
 [ext_resource type="Texture2D" uid="uid://chd45e3uvp3ej" path="res://d_n_d/art/baby twin mask.png" id="9_u54qm"]
 [ext_resource type="Texture2D" uid="uid://kxijfu2dl4tx" path="res://d_n_d/art/cork board.png" id="9_uuvgj"]
+[ext_resource type="Texture2D" uid="uid://cp8bejbeco5ke" path="res://d_n_d/art/tapename.png" id="11_gw1yy"]
+[ext_resource type="Texture2D" uid="uid://qj1ol8rwsnn1" path="res://d_n_d/art/big twin head.png" id="11_kjhw6"]
+[ext_resource type="Texture2D" uid="uid://cuhnpsdlisk2k" path="res://d_n_d/art/bigcheesemask.png" id="12_gw1yy"]
+[ext_resource type="Texture2D" uid="uid://v8u6655uy58i" path="res://d_n_d/art/plod mask only.png" id="13_5hean"]
 
 [sub_resource type="GDScript" id="GDScript_ugepn"]
 script/source = "extends Sprite2D
@@ -34,6 +38,8 @@ load_path = "res://.godot/imported/icon.svg-40d11009b022ae281956dc38e8f8d85e.cte
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
 size = Vector2(142, 185)
+
+[sub_resource type="Theme" id="Theme_5hean"]
 
 [node name="Pinwand" type="Control" unique_id=1529431941]
 layout_mode = 3
@@ -80,7 +86,7 @@ scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_u54qm")
 
 [node name="Card" type="Sprite2D" parent="Board" unique_id=1041222790 groups=["base"]]
-position = Vector2(229, -218)
+position = Vector2(-80, -218)
 texture = SubResource("CompressedTexture2D_uuvgj")
 script = ExtResource("2_ubymx")
 
@@ -119,5 +125,195 @@ position = Vector2(42.00001, -78.00001)
 scale = Vector2(0.10720956, 0.10720959)
 texture = ExtResource("9_u54qm")
 
+[node name="Tape" type="Sprite2D" parent="Board/Card" unique_id=848202890]
+position = Vector2(3, 79)
+scale = Vector2(0.13000013, 0.13000013)
+texture = ExtResource("11_gw1yy")
+
+[node name="Label" type="Label" parent="Board/Card/Tape" unique_id=1419477521]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5hean")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Card2" type="Sprite2D" parent="Board" unique_id=2084027901 groups=["base"]]
+position = Vector2(142, -218)
+texture = SubResource("CompressedTexture2D_uuvgj")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card2" unique_id=1090773210]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -99.0
+offset_right = -56.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card2" unique_id=1615641085]
+position = Vector2(1, -1)
+scale = Vector2(0.3739754, 0.3739754)
+texture = ExtResource("7_uuvgj")
+
+[node name="DropZone" type="Area2D" parent="Board/Card2" unique_id=163452567]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card2/DropZone" unique_id=801467907]
+position = Vector2(61, 42.5)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Board/Card2" unique_id=2061177031]
+position = Vector2(40, -67)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("9_7uuhd")
+
+[node name="Face" type="Sprite2D" parent="Board/Card2" unique_id=1254387599]
+position = Vector2(44.999996, -110.000015)
+scale = Vector2(0.16750175, 0.16750179)
+texture = ExtResource("11_kjhw6")
+
+[node name="Tape" type="Sprite2D" parent="Board/Card2" unique_id=997517339]
+position = Vector2(3, 79)
+scale = Vector2(0.13000013, 0.13000013)
+texture = ExtResource("11_gw1yy")
+
+[node name="Label" type="Label" parent="Board/Card2/Tape" unique_id=1928733809]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5hean")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Card3" type="Sprite2D" parent="Board" unique_id=2146477242 groups=["base"]]
+position = Vector2(366, -218)
+texture = SubResource("CompressedTexture2D_uuvgj")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card3" unique_id=1574055466]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -99.0
+offset_right = -56.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card3" unique_id=1565005973]
+position = Vector2(1, -1)
+scale = Vector2(0.3739754, 0.3739754)
+texture = ExtResource("7_uuvgj")
+
+[node name="DropZone" type="Area2D" parent="Board/Card3" unique_id=1313789228]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card3/DropZone" unique_id=805258854]
+position = Vector2(61, 42.5)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Board/Card3" unique_id=1810619883]
+position = Vector2(42, -61)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("9_7uuhd")
+
+[node name="Face" type="Sprite2D" parent="Board/Card3" unique_id=1580698279]
+position = Vector2(45.00001, -94.00001)
+scale = Vector2(0.15795565, 0.15795569)
+texture = ExtResource("12_gw1yy")
+
+[node name="Tape" type="Sprite2D" parent="Board/Card3" unique_id=1504947270]
+position = Vector2(3, 79)
+scale = Vector2(0.13000013, 0.13000013)
+texture = ExtResource("11_gw1yy")
+
+[node name="Label" type="Label" parent="Board/Card3/Tape" unique_id=1316919776]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5hean")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Card4" type="Sprite2D" parent="Board" unique_id=1781011620 groups=["base"]]
+position = Vector2(149, 57)
+texture = SubResource("CompressedTexture2D_uuvgj")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card4" unique_id=1230577692]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -99.0
+offset_right = -56.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card4" unique_id=616930536]
+position = Vector2(1, -1)
+scale = Vector2(0.3739754, 0.3739754)
+texture = ExtResource("7_uuvgj")
+
+[node name="DropZone" type="Area2D" parent="Board/Card4" unique_id=1322400815]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card4/DropZone" unique_id=1375200057]
+position = Vector2(61, 42.5)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Board/Card4" unique_id=1563945312]
+position = Vector2(42, -67)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("9_7uuhd")
+
+[node name="Face" type="Sprite2D" parent="Board/Card4" unique_id=1645485134]
+position = Vector2(45.999996, -91)
+scale = Vector2(0.10720956, 0.10720959)
+texture = ExtResource("13_5hean")
+
+[node name="Tape" type="Sprite2D" parent="Board/Card4" unique_id=1427579776]
+position = Vector2(3, 79)
+scale = Vector2(0.13000013, 0.13000013)
+texture = ExtResource("11_gw1yy")
+
+[node name="Label" type="Label" parent="Board/Card4/Tape" unique_id=2120177752]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5hean")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
 [connection signal="button_down" from="Board/Card/Button" to="Board/Card" method="_on_button_button_down"]
 [connection signal="button_up" from="Board/Card/Button" to="Board/Card" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card2/Button" to="Board/Card2" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card2/Button" to="Board/Card2" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card3/Button" to="Board/Card3" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card3/Button" to="Board/Card3" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card4/Button" to="Board/Card4" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card4/Button" to="Board/Card4" method="_on_button_button_up"]
