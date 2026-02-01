@@ -17,11 +17,12 @@ self_modulate = Color(1, 1, 1, 0)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -64.0
-offset_top = -62.0
-offset_right = -66.0
-offset_bottom = -67.0
-grow_horizontal = 0
+offset_left = -80.313736
+offset_top = -77.803925
+offset_right = -82.313736
+offset_bottom = -82.803925
+grow_horizontal = 2
+grow_vertical = 2
 action_mode = 0
 
 [node name="OverlapSensor" type="Area2D" parent="." unique_id=1194151518]
