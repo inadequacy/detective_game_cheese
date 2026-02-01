@@ -5,9 +5,12 @@ extends Area3D
 @onready var audio_stream_player = $"./AudioStreamPlayer"
 var can_interact = false
 var interacting_with = ""
-var talk = preload("res://sound_effects/talk2.mp3")
+var talk2 = preload("res://sound_effects/talk2.mp3")
+var talk3 = preload("res://sound_effects/talk3.mp3")
+var talk4 = preload("res://sound_effects/talk4.mp3")
 
 func play_talking():
+	var talk = [talk2, talk3, talk4].pick_random()
 	audio_stream_player.stream = talk
 	audio_stream_player.play()
 
