@@ -11,9 +11,11 @@ config_version=5
 [application]
 
 config/name="detective_game"
+config/description="Explore everything you've missed to try and solve the mystery!"
+config/version="1.02.07"
 run/main_scene="uid://qkx0elk5ahg4"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://rfg7ssy6uapq"
 
 [autoload]
 
@@ -67,8 +69,7 @@ zoom_out={
 }
 to_pay_respect={
 "deadzone": 0.2,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":70,"key_label":0,"unicode":102,"location":0,"echo":false,"script":null)
-]
+"events": []
 }
 
 [internationalization]

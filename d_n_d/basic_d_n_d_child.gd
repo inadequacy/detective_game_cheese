@@ -50,6 +50,7 @@ func _try_attach_or_drop() -> void:
 	if best_base != null:
 		best_base.add_child(self)
 		z_index=best_base.get_z_index()+1
+	# Can suppress error here by having elif clause
 	else:
 		board.add_child(self)
 

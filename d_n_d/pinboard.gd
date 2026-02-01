@@ -23,34 +23,26 @@ var pinned_facts: Dictionary = {
 	}
 	}
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	
+func _process(_delta: float) -> void:
 	my_node = $"."
-
-	player=$"../../../Player"
-	
-	my_node.visible=player.journal
-	
+	player = $"../../../Player"
+	my_node.visible = player.journal
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-
-
-func _input(event):
+func _input(_event):
 	if Input.is_action_just_pressed("journal"):
-		
-		manager =$".."
-		state_d=manager.dialogue_state
+		# Hand animation would go here if we had/wanted one for journal.
+		# RN just makes hands invisible.
+		var player_hands = $"../../../Player/AnimationHandling/Hands"
+		player_hands.set_visible(!player_hands.is_visible())
+		manager = $".."
+		state_d = manager.dialogue_state
 		
 		
 		for fact_id in state_d.facts:
 			var fact = state_d.facts[fact_id]
-			var fact_known=pinned_facts.facts[fact_id]
+			var fact_known = pinned_facts.facts[fact_id]
 			
 			print_debug(pinned_facts.facts[fact_id])
 			if pinned_facts.facts[fact_id] != fact:

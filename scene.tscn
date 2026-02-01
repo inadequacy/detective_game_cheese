@@ -2,40 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://djpa62nxowicr" path="res://objects/mansion.tscn" id="1_3253y"]
 [ext_resource type="PackedScene" uid="uid://bcg7p15c5ofuq" path="res://player.tscn" id="1_ulcgi"]
-[ext_resource type="PackedScene" uid="uid://e47n22u4x0do" path="res://objects/manager.tscn" id="2_nxogm"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_drvgu"]
-size = Vector3(10, 1, 10)
-
-[sub_resource type="BoxMesh" id="BoxMesh_ulcgi"]
-size = Vector3(10, 1, 10)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_ulcgi"]
-size = Vector3(1, 5, 5)
-
-[sub_resource type="BoxMesh" id="BoxMesh_nxogm"]
-size = Vector3(1, 5, 5)
+[ext_resource type="PackedScene" uid="uid://duu5frrlx44ix" path="res://objects/manager.tscn" id="2_nxogm"]
 
 [node name="Scene" type="Node3D" unique_id=350646142]
-
-[node name="Floor" type="StaticBody3D" parent="." unique_id=711311531]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
-visible = false
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=1070496928]
-shape = SubResource("BoxShape3D_drvgu")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=242975810]
-mesh = SubResource("BoxMesh_ulcgi")
-
-[node name="Wall" type="StaticBody3D" parent="." unique_id=1370527097]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -2)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall" unique_id=316655791]
-shape = SubResource("BoxShape3D_ulcgi")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Wall" unique_id=1397785371]
-mesh = SubResource("BoxMesh_nxogm")
 
 [node name="MANSION2" parent="." unique_id=218848142 instance=ExtResource("1_3253y")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)

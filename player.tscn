@@ -29,7 +29,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("LeftHand:position")
+tracks/0/path = NodePath("Hands/LeftHand:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -41,7 +41,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("LeftHand:rotation")
+tracks/1/path = NodePath("Hands/LeftHand:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -53,7 +53,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("RightHand:position")
+tracks/2/path = NodePath("Hands/RightHand:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -65,7 +65,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("RightHand:rotation")
+tracks/3/path = NodePath("Hands/RightHand:rotation")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -73,6 +73,58 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Hands/LeftHand:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Hands/RightHand:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_onrkg"]
+resource_name = "journal"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hands/LeftHand:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hands/RightHand:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
 }
 
 [sub_resource type="Animation" id="Animation_4flbx"]
@@ -82,7 +134,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("LeftHand:position")
+tracks/0/path = NodePath("Hands/LeftHand:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -94,7 +146,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("LeftHand:rotation")
+tracks/1/path = NodePath("Hands/LeftHand:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -106,7 +158,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("RightHand:position")
+tracks/2/path = NodePath("Hands/RightHand:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -118,7 +170,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("RightHand:rotation")
+tracks/3/path = NodePath("Hands/RightHand:rotation")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -131,6 +183,7 @@ tracks/3/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_onrkg"]
 _data = {
 &"RESET": SubResource("Animation_i3pqv"),
+&"journal": SubResource("Animation_onrkg"),
 &"walking": SubResource("Animation_4flbx")
 }
 
@@ -166,16 +219,18 @@ reset_on_save = false
 callback_mode_method = 1
 libraries/ = SubResource("AnimationLibrary_onrkg")
 
-[node name="LeftHand" type="Sprite2D" parent="AnimationHandling" unique_id=629328375]
+[node name="Hands" type="Node2D" parent="AnimationHandling" unique_id=1615168415]
+
+[node name="LeftHand" type="Sprite2D" parent="AnimationHandling/Hands" unique_id=629328375]
 position = Vector2(0, 198)
 scale = Vector2(0.518, 0.518)
 texture = ExtResource("3_i3pqv")
 centered = false
 
-[node name="RightHand" type="Sprite2D" parent="AnimationHandling" unique_id=517697399]
+[node name="RightHand" type="Sprite2D" parent="AnimationHandling/Hands" unique_id=517697399]
 position = Vector2(635, 724)
 rotation = -0.40142572
-scale = Vector2(0.518, 0.518)
+scale = Vector2(0.51800007, 0.51800007)
 texture = ExtResource("3_i3pqv")
 centered = false
 flip_h = true

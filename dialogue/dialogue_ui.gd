@@ -41,14 +41,6 @@ var dialogue_state: Dictionary = {
 	}
 }
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 func talk_to(who: String) -> void:
 	dialogue_state.speaking_to = who
 	DialogueManager.show_dialogue_balloon(dialogue_resource, "start", [dialogue_state])

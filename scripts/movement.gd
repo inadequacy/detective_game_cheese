@@ -7,6 +7,7 @@ var animator
 
 func _ready() -> void:
 	animator = $AnimationHandling/AnimationPlayer
+	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 
 func _physics_process(delta):
 	if journal == false:
@@ -27,6 +28,8 @@ func _physics_process(delta):
 
 	if Input.is_action_just_released("journal"):
 		if journal == false:
+			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 			journal = true
 		else:
+			Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 			journal=false
