@@ -1,6 +1,7 @@
 extends Node
 
 var timer
+var end_screen = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,15 +10,16 @@ func _ready() -> void:
 
 var time_passed
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
+func _process(_delta: float):
 	time_passed = 120 - timer.time_left
-	if time_passed >= 3:
+	if time_passed >= 120 && end_screen == false:
 		who_did_it()
 
 func who_did_it():
-	$EndGame.set_visible(!$EndGame.is_visible)
-	print($EndGame.is_visible)
+	end_screen = true
+	$EndGame.set_visible(true)
 	var lose = false
-	if lose:
-		#reset pls
+	if lose == true:
+		$EndGame.set_visible(true)
+		end_screen == false
 		pass

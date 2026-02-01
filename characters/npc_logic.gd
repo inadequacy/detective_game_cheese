@@ -32,7 +32,6 @@ func move_to_node(delta, routes):
 	var target_position
 	
 	for route in routes:
-		print("called")
 		target_position = route.global_transform.origin
 		position = position.move_toward(target_position, delta * 7)
 		await get_tree().create_timer(7).timeout
