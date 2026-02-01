@@ -75,7 +75,7 @@ to_pay_respect={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogue/base.dialogue", "res://dialogue/dialogues/big_cheese.dialogue", "res://dialogue/dialogues/butler.dialogue", "res://dialogue/dialogues/femme_fish_fatale.dialogue", "res://dialogue/dialogues/cheese_addict.dialogue", "res://dialogue/dialogues/merchant.dialogue", "res://dialogue/dialogues/plod_stilton.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogue/base.dialogue", "res://dialogue/dialogues/big_cheese.dialogue", "res://dialogue/dialogues/butler.dialogue", "res://dialogue/dialogues/femme_fish_fatale.dialogue", "res://dialogue/dialogues/cheese_addict.dialogue", "res://dialogue/dialogues/merchant.dialogue", "res://dialogue/dialogues/plod_stilton.dialogue", "res://dialogue/dialogues/rosh.dialogue", "res://dialogue/dialogues/ford.dialogue")
 
 [physics]
 

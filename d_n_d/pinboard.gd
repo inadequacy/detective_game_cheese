@@ -68,6 +68,14 @@ var pinned_facts: Dictionary = {
 			known = false,
 			content = "Police Cat knows about a secret pathway in the closet",
 		},
+		rosh_was_in_the_kitchen_all_night = {
+			known = false,
+			content = "Rosh was in the kitchen all night"
+		},
+		ford_knows_nothing = {
+			known = false,
+			content = "Ford has no idea what is going on"
+		},
 	},
 }
 

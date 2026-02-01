@@ -1,0 +1,16 @@
+~ ford_knows_nothing
+if not facts.ford_knows_nothing.known
+	set facts.ford_knows_nothing.known = true
+	Ford: ...whhooo I feel ALIVE TONIGHT...the nerve of big cheese and ella to act like they understand of anything about enjoying life...this is all a sham I cant wait to go home
+else:
+	Ford: You heard what I fucking said.
+=> END
+
+~ start
+if not npcs.Ford.has_met
+	set npcs.Ford.has_met = true
+	=>< ford_knows_nothing
+else:
+	Ford: Back for more cheddar I see?
+	=>< ford_knows_nothing
+=> END

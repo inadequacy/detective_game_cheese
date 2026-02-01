@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cehs7nuceihej"
+path="res://.godot/imported/rosh.dialogue-0e73daf84784fa86af8244bf313e0704.tres"
+
+[deps]
+
+source_file="res://dialogue/dialogues/rosh.dialogue"
+dest_files=["res://.godot/imported/rosh.dialogue-0e73daf84784fa86af8244bf313e0704.tres"]
+
+[params]
+
+defaults=true
