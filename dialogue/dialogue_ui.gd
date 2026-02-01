@@ -3,6 +3,7 @@ extends CanvasLayer
 var dialogue_resource = load('res://dialogue/base.dialogue')
 
 var dialogue_state: Dictionary = {
+	is_speaking = false,
 	speaking_to = "peacock",
 	facts = {
 		fact_1 = {
