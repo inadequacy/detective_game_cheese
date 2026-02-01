@@ -6,8 +6,8 @@ var offset := Vector2.ZERO
 @onready var sensor: Area2D = $OverlapSensor
 
 func _ready() -> void:
+	await get_tree().physics_frame
 	_try_attach_or_drop()
-	
 
 func _process(_delta: float) -> void:
 	if dragging:

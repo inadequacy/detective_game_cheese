@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-@export var speed = 9
+@export var speed = 9.1
 @export var rotation_speed = 2
 var journal = false
 var animator

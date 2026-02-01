@@ -42,7 +42,7 @@ func _input(_event):
 		
 		for fact_id in state_d.facts:
 			var fact = state_d.facts[fact_id]
-			var fact_known = pinned_facts.facts[fact_id]
+			var _fact_known = pinned_facts.facts[fact_id]
 			
 			print_debug(pinned_facts.facts[fact_id])
 			if pinned_facts.facts[fact_id] != fact:

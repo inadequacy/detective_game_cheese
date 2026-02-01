@@ -3,13 +3,16 @@
 [ext_resource type="PackedScene" uid="uid://djpa62nxowicr" path="res://objects/mansion.tscn" id="1_3253y"]
 [ext_resource type="PackedScene" uid="uid://bcg7p15c5ofuq" path="res://player.tscn" id="1_ulcgi"]
 [ext_resource type="PackedScene" uid="uid://duu5frrlx44ix" path="res://objects/manager.tscn" id="2_nxogm"]
+[ext_resource type="PackedScene" uid="uid://d0mgpraj6c620" path="res://objects/go_to_point.tscn" id="4_u3cyc"]
 
 [node name="Scene" type="Node3D" unique_id=350646142]
 
-[node name="MANSION2" parent="." unique_id=218848142 instance=ExtResource("1_3253y")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+[node name="Mansion" parent="." unique_id=218848142 instance=ExtResource("1_3253y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.135, 0)
 
-[node name="Candle?" type="OmniLight3D" parent="." unique_id=483589625]
+[node name="Lighting" type="Node" parent="." unique_id=1018692635]
+
+[node name="Candle?" type="OmniLight3D" parent="Lighting" unique_id=483589625]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8, 0)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 13.968
@@ -18,7 +21,7 @@ light_size = 0.41
 light_specular = 0.0
 omni_range = 224.0
 
-[node name="Candle?" type="OmniLight3D" parent="Candle?" unique_id=540608520]
+[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?" unique_id=540608520]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 5.143
@@ -27,7 +30,7 @@ light_size = 0.41
 light_specular = 0.0
 omni_range = 19.0
 
-[node name="Candle?" type="OmniLight3D" parent="Candle?/Candle?" unique_id=1157800709]
+[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?/Candle?" unique_id=1157800709]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, -1, -17)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 5.143
@@ -36,7 +39,16 @@ light_size = 0.41
 light_specular = 0.0
 omni_range = 19.0
 
-[node name="Candle?2" type="OmniLight3D" parent="." unique_id=1979319667]
+[node name="Candle?2" type="OmniLight3D" parent="Lighting/Candle?/Candle?" unique_id=904354942]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -1, 14)
+light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
+light_energy = 5.143
+light_indirect_energy = 5.0
+light_size = 0.41
+light_specular = 0.0
+omni_range = 19.0
+
+[node name="Candle?2" type="OmniLight3D" parent="Lighting" unique_id=1979319667]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 5, 27)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 13.968
@@ -45,7 +57,7 @@ light_size = 0.41
 light_specular = 0.0
 omni_range = 224.0
 
-[node name="Candle?" type="OmniLight3D" parent="Candle?2" unique_id=540307905]
+[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?2" unique_id=540307905]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 5.143
@@ -54,7 +66,7 @@ light_size = 0.41
 light_specular = 0.0
 omni_range = 13.0
 
-[node name="Candle?2" type="OmniLight3D" parent="Candle?2" unique_id=348016629]
+[node name="Candle?2" type="OmniLight3D" parent="Lighting/Candle?2" unique_id=348016629]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 13, 27)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 13.968
@@ -63,7 +75,7 @@ light_size = 0.41
 light_specular = 0.0
 omni_range = 22.0
 
-[node name="Candle?" type="OmniLight3D" parent="Candle?2/Candle?2" unique_id=2091037146]
+[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2" unique_id=2091037146]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 5.143
@@ -72,7 +84,7 @@ light_size = 0.41
 light_specular = 0.0
 omni_range = 13.0
 
-[node name="Candle?2" type="OmniLight3D" parent="Candle?2/Candle?2" unique_id=380162223]
+[node name="Candle?2" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2" unique_id=380162223]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, -15, -25)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 13.968
@@ -81,7 +93,7 @@ light_size = 0.41
 light_specular = 0.0
 omni_range = 22.0
 
-[node name="Candle?" type="OmniLight3D" parent="Candle?2/Candle?2/Candle?2" unique_id=1983062159]
+[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2/Candle?2" unique_id=1983062159]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 5.143
@@ -90,7 +102,7 @@ light_size = 0.41
 light_specular = 0.0
 omni_range = 13.0
 
-[node name="Candle?2" type="OmniLight3D" parent="Candle?2/Candle?2/Candle?2" unique_id=573767976]
+[node name="Candle?2" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2/Candle?2" unique_id=573767976]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 3, -45)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 13.968
@@ -99,7 +111,7 @@ light_size = 0.41
 light_specular = 0.0
 omni_range = 22.0
 
-[node name="Candle?" type="OmniLight3D" parent="Candle?2/Candle?2/Candle?2/Candle?2" unique_id=147185168]
+[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2/Candle?2/Candle?2" unique_id=147185168]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -5, -12)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 5.143
@@ -108,7 +120,7 @@ light_size = 0.41
 light_specular = 0.0
 omni_range = 13.0
 
-[node name="Candle?2" type="OmniLight3D" parent="Candle?2/Candle?2/Candle?2/Candle?2" unique_id=495007120]
+[node name="Candle?2" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2/Candle?2/Candle?2" unique_id=495007120]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 3, -45)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 13.968
@@ -117,7 +129,7 @@ light_size = 0.41
 light_specular = 0.0
 omni_range = 22.0
 
-[node name="Candle?" type="OmniLight3D" parent="Candle?2/Candle?2/Candle?2/Candle?2/Candle?2" unique_id=1136712363]
+[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2/Candle?2/Candle?2/Candle?2" unique_id=1136712363]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
 light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
 light_energy = 5.143
@@ -127,9 +139,97 @@ light_specular = 0.0
 omni_range = 13.0
 
 [node name="Player" parent="." unique_id=665689080 instance=ExtResource("1_ulcgi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6186717, -0.51596516, 2.871706)
-
-[node name="Camera3D" type="Camera3D" parent="." unique_id=945388378]
-transform = Transform3D(0.49999997, 0, -0.86602545, 0, 1, 0, 0.86602545, 0, 0.49999997, -4, 1, 2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, 0)
+speed = 3.6
 
 [node name="Manager" parent="." unique_id=831551970 instance=ExtResource("2_nxogm")]
+
+[node name="NodeHolder" type="Node" parent="." unique_id=746029763]
+
+[node name="BigRoom" type="Node" parent="NodeHolder" unique_id=2127201147]
+
+[node name="GoToPoint" parent="NodeHolder/BigRoom" unique_id=582049970 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="GoToPoint4" parent="NodeHolder/BigRoom" unique_id=802545229 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 2)
+
+[node name="GoToPoint10" parent="NodeHolder/BigRoom" unique_id=1237082131 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 2)
+
+[node name="GoToPoint11" parent="NodeHolder/BigRoom" unique_id=1974087157 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 5)
+
+[node name="GoToPoint12" parent="NodeHolder/BigRoom" unique_id=1670811308 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 8)
+
+[node name="GoToPoint2" parent="NodeHolder/BigRoom" unique_id=1408129335 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7)
+
+[node name="GoToPoint9" parent="NodeHolder/BigRoom" unique_id=148576527 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
+
+[node name="GoToPoint3" parent="NodeHolder/BigRoom" unique_id=2048762362 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 7)
+
+[node name="GoToPoint5" parent="NodeHolder/BigRoom" unique_id=354141935 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -8)
+
+[node name="GoToPoint6" parent="NodeHolder/BigRoom" unique_id=102162024 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 5)
+
+[node name="GoToPoint7" parent="NodeHolder/BigRoom" unique_id=1779950607 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, -6)
+
+[node name="GoToPoint8" parent="NodeHolder/BigRoom" unique_id=1311059456 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 6)
+
+[node name="CheeseRoom" type="Node" parent="NodeHolder" unique_id=1446699061]
+
+[node name="GoToPoint13" parent="NodeHolder/CheeseRoom" unique_id=1985804176 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 11)
+
+[node name="GoToPoint14" parent="NodeHolder/CheeseRoom" unique_id=188890480 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 17)
+
+[node name="GoToPoint15" parent="NodeHolder/CheeseRoom" unique_id=176720522 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, 17)
+
+[node name="GoToPoint16" parent="NodeHolder/CheeseRoom" unique_id=1821725826 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, 13)
+
+[node name="GoToPoint17" parent="NodeHolder/CheeseRoom" unique_id=1743284979 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 13)
+
+[node name="GoToPoint18" parent="NodeHolder/CheeseRoom" unique_id=1507648347 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 13)
+
+[node name="NoRoof" type="Node" parent="NodeHolder" unique_id=2138972516]
+
+[node name="GoToPoint19" parent="NodeHolder/NoRoof" unique_id=310165342 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 20)
+
+[node name="GoToPoint20" parent="NodeHolder/NoRoof" unique_id=279205980 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 30)
+
+[node name="GoToPoint21" parent="NodeHolder/NoRoof" unique_id=528047163 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 31)
+
+[node name="GoToPoint22" parent="NodeHolder/NoRoof" unique_id=127221433 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 23)
+
+[node name="CrapToilet" type="Node" parent="NodeHolder" unique_id=1114674648]
+
+[node name="GoToPoint13" parent="NodeHolder/CrapToilet" unique_id=842992845 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -1)
+
+[node name="GoToPoint14" parent="NodeHolder/CrapToilet" unique_id=439477906 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -7)
+
+[node name="GoToPoint15" parent="NodeHolder/CrapToilet" unique_id=1936505162 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -7)
+
+[node name="EmptyRoomForSomeReason" type="Node" parent="NodeHolder" unique_id=1894677768]
+
+[node name="GoToPoint13" parent="NodeHolder/EmptyRoomForSomeReason" unique_id=1874054545 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 11)
