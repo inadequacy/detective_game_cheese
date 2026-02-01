@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vp2kwr3p3a3q"
-path.s3tc="res://.godot/imported/Cheese Dreams_Cheese Addict_1.png-d0b32b88482c257cbd21c4817aafd6be.s3tc.ctex"
+uid="uid://ctjsr6m0pcmuq"
+path.s3tc="res://.godot/imported/Twins_Body.png-c95db415cce9d5feb50f112a939eccdc.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://characters/art/Cheese Dreams_Cheese Addict_1.png"
-dest_files=["res://.godot/imported/Cheese Dreams_Cheese Addict_1.png-d0b32b88482c257cbd21c4817aafd6be.s3tc.ctex"]
+source_file="res://characters/art/Twins_Body.png"
+dest_files=["res://.godot/imported/Twins_Body.png-c95db415cce9d5feb50f112a939eccdc.s3tc.ctex"]
 
 [params]
 

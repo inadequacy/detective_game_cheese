@@ -1,3 +1,18 @@
+~ fact_1
+if not facts.fact_1.known
+	set facts.fact_1.known = true
+	Big Cheese: So you want to know a secret?
+	Big Cheese: I secretly hate cheese and all those who enjoy it!
+else:
+	Big Cheese: I said what I said
+=> END
+
 ~ start
-Big Cheese: You want some of this cheddar?
+if not npcs.BigCheese.has_met
+	set npcs.BigCheese.has_met = true
+	Big Cheese: You want some of this cheddar?
+	=>< fact_1
+else:
+	Big Cheese: Back for more cheddar I see?
+	=>< fact_1
 => END

@@ -7,7 +7,7 @@ var dialogue_state: Dictionary = {
 	facts = {
 		fact_1 = {
 			known = false,
-			content = "This is a fact"
+			content = "Big cheese fact 1"
 		},
 		fact_2 = {
 			known = true,
@@ -35,7 +35,7 @@ var dialogue_state: Dictionary = {
 		angler = {
 			has_met = false
 		},
-		big_cheese = {
+		BigCheese = {
 			has_met = false
 		},	
 	}
