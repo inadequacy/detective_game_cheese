@@ -251,6 +251,8 @@ script = ExtResource("3_hqtel")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.46044922)
 shape = SubResource("BoxShape3D_i3pqv")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="InteractionTrigger" unique_id=2098468024]
+
 [node name="InteractionPrompt" type="CanvasLayer" parent="." unique_id=636082255]
 
 [node name="CenterContainer" type="CenterContainer" parent="InteractionPrompt" unique_id=1938972153]
