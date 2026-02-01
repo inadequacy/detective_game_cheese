@@ -1,18 +1,18 @@
-~ fact_1
-if not facts.fact_1.known
-	set facts.fact_1.known = true
-	Big Cheese: So you want to know a secret?
-	Big Cheese: I secretly hate cheese and all those who enjoy it!
+~ big_cheese_retiring
+if not facts.big_cheese_retiring.known
+	set facts.big_cheese_retiring.known = true
+	Big Cheese: God I am so fustrated. This is the last cheese ball and she birngs this us. Ella wants to take my place. This isnt about power or prestege. For me its about family
+	Big Cheese: I dont know what to do about them tho...[wait=0.5]they know all my secrets
 else:
-	Big Cheese: I said what I said
+	Big Cheese: You heard what I fucking said.
 => END
 
 ~ start
 if not npcs.BigCheese.has_met
 	set npcs.BigCheese.has_met = true
 	Big Cheese: You want some of this cheddar?
-	=>< fact_1
+	=>< big_cheese_retiring
 else:
 	Big Cheese: Back for more cheddar I see?
-	=>< fact_1
+	=>< big_cheese_retiring
 => END

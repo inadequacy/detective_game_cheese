@@ -14,6 +14,10 @@
 [ext_resource type="Texture2D" uid="uid://qj1ol8rwsnn1" path="res://d_n_d/art/big twin head.png" id="11_kjhw6"]
 [ext_resource type="Texture2D" uid="uid://cuhnpsdlisk2k" path="res://d_n_d/art/bigcheesemask.png" id="12_gw1yy"]
 [ext_resource type="Texture2D" uid="uid://v8u6655uy58i" path="res://d_n_d/art/plod mask only.png" id="13_5hean"]
+[ext_resource type="Texture2D" uid="uid://bvjbjanosnsjl" path="res://d_n_d/art/Butler_Head.png" id="15_n7odo"]
+[ext_resource type="Texture2D" uid="uid://boq31rhg7pn65" path="res://d_n_d/art/mask for merchant.png" id="16_vsf20"]
+[ext_resource type="Texture2D" uid="uid://dtonv8fp0q6jo" path="res://d_n_d/art/Big Cheese_Mask_01.png" id="17_n7odo"]
+[ext_resource type="Texture2D" uid="uid://htl5rspq6v46" path="res://d_n_d/art/Femme Fatale_Mask_01.png" id="18_3t4i8"]
 
 [sub_resource type="GDScript" id="GDScript_ugepn"]
 script/source = "extends Sprite2D
@@ -309,6 +313,230 @@ theme_override_font_sizes/font_size = 100
 text = "Name"
 metadata/_edit_use_anchors_ = true
 
+[node name="Card5" type="Sprite2D" parent="Board" unique_id=1146576230 groups=["base"]]
+position = Vector2(383, 50)
+texture = SubResource("CompressedTexture2D_uuvgj")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card5" unique_id=734372483]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -99.0
+offset_right = -56.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card5" unique_id=1223269181]
+position = Vector2(1, -1)
+scale = Vector2(0.3739754, 0.3739754)
+texture = ExtResource("7_uuvgj")
+
+[node name="DropZone" type="Area2D" parent="Board/Card5" unique_id=109389800]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card5/DropZone" unique_id=1892167147]
+position = Vector2(61, 42.5)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Board/Card5" unique_id=1309345758]
+position = Vector2(42, -67)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("9_7uuhd")
+
+[node name="Face" type="Sprite2D" parent="Board/Card5" unique_id=988474096]
+position = Vector2(47.360973, -71.34788)
+scale = Vector2(0.058898695, 0.058898717)
+texture = ExtResource("15_n7odo")
+
+[node name="Tape" type="Sprite2D" parent="Board/Card5" unique_id=1619067314]
+position = Vector2(3, 79)
+scale = Vector2(0.13000013, 0.13000013)
+texture = ExtResource("11_gw1yy")
+
+[node name="Label" type="Label" parent="Board/Card5/Tape" unique_id=1376611407]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5hean")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Card6" type="Sprite2D" parent="Board" unique_id=816397161 groups=["base"]]
+position = Vector2(383, 307)
+texture = SubResource("CompressedTexture2D_uuvgj")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card6" unique_id=825016944]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -99.0
+offset_right = -56.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card6" unique_id=154036153]
+position = Vector2(1, -1)
+scale = Vector2(0.3739754, 0.3739754)
+texture = ExtResource("7_uuvgj")
+
+[node name="DropZone" type="Area2D" parent="Board/Card6" unique_id=1729194619]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card6/DropZone" unique_id=570560982]
+position = Vector2(61, 42.5)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Board/Card6" unique_id=218061656]
+position = Vector2(42, -67)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("9_7uuhd")
+
+[node name="Face" type="Sprite2D" parent="Board/Card6" unique_id=997608663]
+position = Vector2(28.999994, -61.999996)
+scale = Vector2(0.10720956, 0.10720959)
+texture = ExtResource("16_vsf20")
+
+[node name="Tape" type="Sprite2D" parent="Board/Card6" unique_id=385119054]
+position = Vector2(3, 79)
+scale = Vector2(0.13000013, 0.13000013)
+texture = ExtResource("11_gw1yy")
+
+[node name="Label" type="Label" parent="Board/Card6/Tape" unique_id=1453455602]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5hean")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Card7" type="Sprite2D" parent="Board" unique_id=610895847 groups=["base"]]
+position = Vector2(155, 307)
+texture = SubResource("CompressedTexture2D_uuvgj")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card7" unique_id=2101329662]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -99.0
+offset_right = -56.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card7" unique_id=127333699]
+position = Vector2(1, -1)
+scale = Vector2(0.3739754, 0.3739754)
+texture = ExtResource("7_uuvgj")
+
+[node name="DropZone" type="Area2D" parent="Board/Card7" unique_id=30518905]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card7/DropZone" unique_id=2038952004]
+position = Vector2(61, 42.5)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Board/Card7" unique_id=790609891]
+position = Vector2(42, -67)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("9_7uuhd")
+
+[node name="Face" type="Sprite2D" parent="Board/Card7" unique_id=926447575]
+position = Vector2(40.999992, -76.00001)
+scale = Vector2(0.3434598, 0.3434599)
+texture = ExtResource("17_n7odo")
+
+[node name="Tape" type="Sprite2D" parent="Board/Card7" unique_id=109025072]
+position = Vector2(3, 79)
+scale = Vector2(0.13000013, 0.13000013)
+texture = ExtResource("11_gw1yy")
+
+[node name="Label" type="Label" parent="Board/Card7/Tape" unique_id=415050198]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5hean")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Card8" type="Sprite2D" parent="Board" unique_id=1984030074 groups=["base"]]
+position = Vector2(-82, 328)
+texture = SubResource("CompressedTexture2D_uuvgj")
+script = ExtResource("2_ubymx")
+
+[node name="Button" type="Button" parent="Board/Card8" unique_id=1297898650]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -99.0
+offset_right = -56.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Card8" unique_id=1018075982]
+position = Vector2(1, -1)
+scale = Vector2(0.3739754, 0.3739754)
+texture = ExtResource("7_uuvgj")
+
+[node name="DropZone" type="Area2D" parent="Board/Card8" unique_id=1465853058]
+position = Vector2(-61, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card8/DropZone" unique_id=727748423]
+position = Vector2(61, 42.5)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Board/Card8" unique_id=2072322261]
+position = Vector2(42, -67)
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("9_7uuhd")
+
+[node name="Face" type="Sprite2D" parent="Board/Card8" unique_id=967781316]
+position = Vector2(49, -75)
+scale = Vector2(0.15025623, 0.15025626)
+texture = ExtResource("18_3t4i8")
+
+[node name="Tape" type="Sprite2D" parent="Board/Card8" unique_id=521251253]
+position = Vector2(3, 79)
+scale = Vector2(0.13000013, 0.13000013)
+texture = ExtResource("11_gw1yy")
+
+[node name="Label" type="Label" parent="Board/Card8/Tape" unique_id=311434922]
+offset_left = -253.84589
+offset_top = -76.92297
+offset_right = 246.15363
+offset_bottom = 46.15381
+theme = SubResource("Theme_5hean")
+theme_override_colors/font_color = Color(0.06915031, 0.06915031, 0.06915031, 1)
+theme_override_font_sizes/font_size = 100
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
 [connection signal="button_down" from="Board/Card/Button" to="Board/Card" method="_on_button_button_down"]
 [connection signal="button_up" from="Board/Card/Button" to="Board/Card" method="_on_button_button_up"]
 [connection signal="button_down" from="Board/Card2/Button" to="Board/Card2" method="_on_button_button_down"]
@@ -317,3 +545,11 @@ metadata/_edit_use_anchors_ = true
 [connection signal="button_up" from="Board/Card3/Button" to="Board/Card3" method="_on_button_button_up"]
 [connection signal="button_down" from="Board/Card4/Button" to="Board/Card4" method="_on_button_button_down"]
 [connection signal="button_up" from="Board/Card4/Button" to="Board/Card4" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card5/Button" to="Board/Card5" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card5/Button" to="Board/Card5" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card6/Button" to="Board/Card6" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card6/Button" to="Board/Card6" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card7/Button" to="Board/Card7" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card7/Button" to="Board/Card7" method="_on_button_button_up"]
+[connection signal="button_down" from="Board/Card8/Button" to="Board/Card8" method="_on_button_button_down"]
+[connection signal="button_up" from="Board/Card8/Button" to="Board/Card8" method="_on_button_button_up"]

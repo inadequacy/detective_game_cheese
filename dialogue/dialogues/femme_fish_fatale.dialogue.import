@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://iijwp4hoedh1"
+path="res://.godot/imported/femme_fish_fatale.dialogue-7658736ecb7742e0c3b6ea9ae9782801.tres"
+
+[deps]
+
+source_file="res://dialogue/dialogues/femme_fish_fatale.dialogue"
+dest_files=["res://.godot/imported/femme_fish_fatale.dialogue-7658736ecb7742e0c3b6ea9ae9782801.tres"]
+
+[params]
+
+defaults=true

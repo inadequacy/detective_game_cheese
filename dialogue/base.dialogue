@@ -1,25 +1,16 @@
-import "res://dialogue/dialogues/peacock.dialogue" as peacock
-import "res://dialogue/dialogues/horse.dialogue" as horse
-import "res://dialogue/dialogues/plague.dialogue" as plague
-import "res://dialogue/dialogues/pidgeon.dialogue" as pidgeon
-import "res://dialogue/dialogues/angler.dialogue" as angler
 import "res://dialogue/dialogues/big_cheese.dialogue" as big_cheese
+import "res://dialogue/dialogues/butler.dialogue" as butler
+import "res://dialogue/dialogues/cheese_addict.dialogue" as cheese_addict
 
 ~ start
 set is_speaking = true
 match speaking_to
-	when "peacock"
-		=>< peacock/start
-	when "horse"
-		=>< horse/start
-	when "plague"
-		=>< plague/start
-	when "pidgeon"
-		=>< pidgeon/start
-	when "angler"
-		=>< angler/start
 	when "BigCheese"
 		=>< big_cheese/start
+	when "Butler"
+		=>< butler/start
+	when "CheeseAddict"
+		=>< cheese_addict/start
 	else
 		DEBUG: unknown character name!
 set is_speaking = false

@@ -44,20 +44,32 @@ func spawn_note(text_label):
 var pinned_facts: Dictionary = {
 	speaking_to = "peacock",
 	facts = {
-		fact_1 = {
+		big_cheese_retiring = {
 			known = false,
-			content = "."
+			content = "Big Cheese is retiring."
 		},
-		fact_2 = {
+		butler_hates_big_cheese = {
 			known = false,
-			content = "."
+			content = "The Butler secretly hates Big Cheese"
 		},
-		fact_3 = {
+		cheese_addict_saw_twin_brooding = {
 			known = false,
-			content = "."
-		}
-	}
-	}
+			content = "One of the twins was brooding"
+		},
+		femme_fish_fatale_wants_family = {
+			known = false,
+			content = "Femme Fish Fatale wants a family with Big Cheese"
+		},
+		merchant_sold_to_cheese_addict = {
+			known = false,
+			content = "Merchant sold cheese to Cheese Addict",
+		},
+		plod_knows_about_secret_pathway = {
+			known = false,
+			content = "Police Cat knows about a secret pathway in the closet",
+		},
+	},
+}
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:

@@ -4,41 +4,53 @@ var dialogue_resource = load('res://dialogue/base.dialogue')
 
 var dialogue_state: Dictionary = {
 	is_speaking = false,
-	speaking_to = "peacock",
+	speaking_to = "",
 	facts = {
-		fact_1 = {
+		big_cheese_retiring = {
 			known = false,
-			content = "Big cheese fact 1"
+			content = "Big Cheese is retiring."
 		},
-		fact_2 = {
-			known = true,
-			content = "This is a fact"
+		butler_hates_big_cheese = {
+			known = false,
+			content = "The Butler secretly hates Big Cheese"
 		},
-		fact_3 = {
-			known = true,
-			content = "This is a fact"
-		}
+		cheese_addict_saw_twin_brooding = {
+			known = false,
+			content = "One of the twins was brooding"
+		},
+		femme_fish_fatale_wants_family = {
+			known = false,
+			content = "Femme Fish Fatale wants a family with Big Cheese"
+		},
+		merchant_sold_to_cheese_addict = {
+			known = false,
+			content = "Merchant sold cheese to Cheese Addict",
+		},
+		plod_knows_about_secret_pathway = {
+			known = false,
+			content = "Police Cat knows about a secret pathway in the closet",
+		},
 	},
 	
 	npcs = {
-		peacock = {
-			has_met = false
-		},
-		horse = {
-			has_met = false
-		},
-		plague = {
-			has_met = false
-		},
-		pidgeon = {
-			has_met = false
-		},
-		angler = {
-			has_met = false
-		},
 		BigCheese = {
 			has_met = false
-		},	
+		},
+		Butler = {
+			has_met = false
+		},
+		CheeseAddict = {
+			has_met = false
+		},
+		FemmeFishFatale = {
+			has_met = false
+		},
+		Merchant = {
+			has_met = false
+		},
+		PlodStilton = {
+			has_met = false
+		},
 	}
 }
 
