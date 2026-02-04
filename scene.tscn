@@ -26,7 +26,7 @@ radius = 8.267
 [node name="Scene" type="Node3D" unique_id=350646142 groups=["interactable"]]
 
 [node name="Mansion" parent="." unique_id=218848142 instance=ExtResource("1_3253y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9618225e-05, 2.127433, 0.0021543503)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0003862381, 2.0732377, 0.001909256)
 
 [node name="Copboard" type="Sprite3D" parent="Mansion" unique_id=1999734537 groups=["interactable"]]
 transform = Transform3D(0.375, 0, 0, 0, 0.375, 0, 0, 0, 0.375, -0.9258561, -0.60891676, 18.124172)
@@ -45,131 +45,222 @@ shape = SubResource("CylinderShape3D_8j1ou")
 
 [node name="Lighting" type="Node" parent="." unique_id=1018692635]
 
-[node name="Candle?" type="OmniLight3D" parent="Lighting" unique_id=483589625]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8, 0)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 13.968
-light_indirect_energy = 5.0
-light_size = 0.41
+[node name="SpotLight3D" type="SpotLight3D" parent="Lighting" unique_id=1747577431]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 7.341305, 5.9421725, 0)
+light_color = Color(0.63570166, 0.5510592, 0.43441743, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
 light_specular = 0.0
-omni_range = 224.0
+light_bake_mode = 0
+spot_range = 14.295
+spot_angle = 81.89
 
-[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?" unique_id=540608520]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 5.143
-light_indirect_energy = 5.0
-light_size = 0.41
-light_specular = 0.0
-omni_range = 19.0
+[node name="OmniLight3D" type="OmniLight3D" parent="Lighting/SpotLight3D" unique_id=74601487]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5060673, -7.891322e-08, 1.8053236)
+light_color = Color(0.77912104, 0.63382876, 0.39382598, 1)
+light_energy = 2.105
+light_indirect_energy = 0.985
+light_bake_mode = 1
+omni_range = 6.148
+omni_attenuation = -0.366
 
-[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?/Candle?" unique_id=1157800709]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, -1, -17)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 5.143
-light_indirect_energy = 5.0
-light_size = 0.41
+[node name="SpotLight3D2" type="SpotLight3D" parent="Lighting" unique_id=1035130380]
+transform = Transform3D(0.97482353, 9.746675e-09, -0.22297792, 0.22297792, -4.261089e-08, 0.97482353, 0, -1, -4.3711392e-08, 24.057236, 5.633856, 2.5847878)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
 light_specular = 0.0
-omni_range = 19.0
+light_bake_mode = 0
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
 
-[node name="Candle?2" type="OmniLight3D" parent="Lighting/Candle?/Candle?" unique_id=904354942]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -1, 14)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 5.143
-light_indirect_energy = 5.0
-light_size = 0.41
-light_specular = 0.0
-omni_range = 19.0
+[node name="OmniLight3D" type="OmniLight3D" parent="Lighting/SpotLight3D2" unique_id=665858356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5060673, -7.891322e-08, 1.8053236)
+light_color = Color(0.77912104, 0.63382876, 0.39382598, 1)
+light_energy = 2.105
+light_indirect_energy = 0.985
+light_bake_mode = 1
+omni_range = 6.148
+omni_attenuation = -0.366
 
-[node name="Candle?2" type="OmniLight3D" parent="Lighting" unique_id=1979319667]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 5, 27)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 13.968
-light_indirect_energy = 5.0
-light_size = 0.41
+[node name="SpotLight3D4" type="SpotLight3D" parent="Lighting" unique_id=2123826052]
+transform = Transform3D(0.9996087, 1.2227813e-09, -0.027973982, 0.027260957, -0.22433884, 0.97412986, -0.006275649, -0.9745112, -0.22425106, 11.641292, 4.318365, 8.019307)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
 light_specular = 0.0
-omni_range = 224.0
+light_bake_mode = 0
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
 
-[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?2" unique_id=540307905]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 5.143
-light_indirect_energy = 5.0
-light_size = 0.41
+[node name="SpotLight3D14" type="SpotLight3D" parent="Lighting" unique_id=1421971655]
+transform = Transform3D(0.9996087, 1.2227813e-09, -0.027973982, 0.027260957, -0.22433884, 0.97412986, -0.006275649, -0.9745112, -0.22425106, 15.865206, 4.318365, 8.019307)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
 light_specular = 0.0
-omni_range = 13.0
+light_bake_mode = 0
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
 
-[node name="Candle?2" type="OmniLight3D" parent="Lighting/Candle?2" unique_id=348016629]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 13, 27)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 13.968
-light_indirect_energy = 5.0
-light_size = 0.41
+[node name="SpotLight3D5" type="SpotLight3D" parent="Lighting" unique_id=213675361]
+transform = Transform3D(0.9996087, 1.2227813e-09, -0.027973982, 0.027260957, -0.22433884, 0.97412986, -0.006275649, -0.9745112, -0.22425106, 0.74403, 4.318365, 8.019307)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
 light_specular = 0.0
-omni_range = 22.0
+light_bake_mode = 0
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
 
-[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2" unique_id=2091037146]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 5.143
-light_indirect_energy = 5.0
-light_size = 0.41
+[node name="SpotLight3D6" type="SpotLight3D" parent="Lighting" unique_id=1825985842]
+transform = Transform3D(0.9996087, -1.6196894e-10, -0.027973976, 0.023567533, -0.5387267, 0.84215087, -0.0150703285, -0.8424806, -0.53851587, -8.94655, 5.8091855, 8.019307)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
 light_specular = 0.0
-omni_range = 13.0
+light_bake_mode = 0
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
 
-[node name="Candle?2" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2" unique_id=380162223]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, -15, -25)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 13.968
-light_indirect_energy = 5.0
-light_size = 0.41
+[node name="SpotLight3D7" type="SpotLight3D" parent="Lighting" unique_id=316869063]
+transform = Transform3D(0.9996087, -1.6196894e-10, -0.027973976, 0.023567533, -0.5387267, 0.84215087, -0.0150703285, -0.8424806, -0.53851587, -4.276965, 5.8934255, 8.019307)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
 light_specular = 0.0
-omni_range = 22.0
+light_bake_mode = 0
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
 
-[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2/Candle?2" unique_id=1983062159]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 5.143
-light_indirect_energy = 5.0
-light_size = 0.41
+[node name="SpotLight3D8" type="SpotLight3D" parent="Lighting" unique_id=992270434]
+transform = Transform3D(0.9996087, -1.239264e-09, -0.027973978, 0.026401706, 0.3305309, 0.94342583, 0.009246264, -0.9437952, 0.33040157, 0.9264529, 6.1538415, -8.293931)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
 light_specular = 0.0
-omni_range = 13.0
+light_bake_mode = 0
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
 
-[node name="Candle?2" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2/Candle?2" unique_id=573767976]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 3, -45)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 13.968
-light_indirect_energy = 5.0
-light_size = 0.41
+[node name="SpotLight3D11" type="SpotLight3D" parent="Lighting" unique_id=1584932841]
+transform = Transform3D(0.9996087, -1.0065245e-09, -0.027973978, 0.027897883, 0.0737082, 0.9968896, 0.0020619105, -0.9972799, 0.07367935, 10.444467, 3.223474, -18.029036)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
 light_specular = 0.0
-omni_range = 22.0
+light_bake_mode = 0
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
 
-[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2/Candle?2/Candle?2" unique_id=147185168]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -5, -12)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 5.143
-light_indirect_energy = 5.0
-light_size = 0.41
+[node name="SpotLight3D15" type="SpotLight3D" parent="Lighting" unique_id=1388832967]
+transform = Transform3D(0.99695843, 0.007790316, 0.07754529, -0.077908345, 0.073295355, 0.9942626, 0.0020619105, -0.9972799, 0.07367934, -18.004456, 4.331711, 8.056761)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
 light_specular = 0.0
-omni_range = 13.0
+light_bake_mode = 0
+spot_range = 5.311
+spot_attenuation = 1.8
+spot_angle = 29.39
 
-[node name="Candle?2" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2/Candle?2/Candle?2" unique_id=495007120]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 3, -45)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 13.968
-light_indirect_energy = 5.0
-light_size = 0.41
+[node name="SpotLight3D16" type="SpotLight3D" parent="Lighting" unique_id=470216691]
+transform = Transform3D(0.97065425, 0.01971377, 0.23967019, -0.24047075, 0.071022995, 0.96805453, 0.0020619102, -0.9972799, 0.07367934, -17.769855, 3.194664, 2.4333344)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 3.975
+light_indirect_energy = 2.192
+light_size = 0.224
 light_specular = 0.0
-omni_range = 22.0
+spot_range = 4.146
+spot_attenuation = -1.7
+spot_angle = 66.89
 
-[node name="Candle?" type="OmniLight3D" parent="Lighting/Candle?2/Candle?2/Candle?2/Candle?2/Candle?2" unique_id=1136712363]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -30)
-light_color = Color(0.817546, 0.7746167, 0.59625393, 1)
-light_energy = 5.143
-light_indirect_energy = 5.0
-light_size = 0.41
+[node name="SpotLight3D13" type="SpotLight3D" parent="Lighting" unique_id=1512680956]
+transform = Transform3D(0.9996087, -1.8414931e-09, -0.027973974, 0.02761584, -0.1595021, 0.9868113, -0.0044619096, -0.9871976, -0.1594397, 7.8662014, 3.9375386, -13.755375)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 53.57
+light_indirect_energy = 2.59
+light_size = 0.224
 light_specular = 0.0
-omni_range = 13.0
+light_bake_mode = 0
+spot_range = 7.891
+spot_attenuation = 1.8
+spot_angle = 46.53
+
+[node name="SpotLight3D12" type="SpotLight3D" parent="Lighting" unique_id=2107523355]
+transform = Transform3D(0.9996087, -1.0065245e-09, -0.027973978, 0.027897883, 0.0737082, 0.9968896, 0.0020619105, -0.9972799, 0.07367935, 16.25507, 3.1620665, -18.22414)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 0
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
+
+[node name="SpotLight3D9" type="SpotLight3D" parent="Lighting" unique_id=1068592169]
+transform = Transform3D(0.75521255, -0.6249209, 0.19780762, 0.026401693, 0.3305309, 0.94342583, -0.65494806, -0.70726454, 0.26612008, -4.174206, 5.4381413, -4.326972)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 0
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
+
+[node name="SpotLight3D10" type="SpotLight3D" parent="Lighting" unique_id=462166684]
+transform = Transform3D(0.68804634, -0.72491825, 0.03295234, 0.11730073, 0.06629226, -0.99088144, 0.7161235, 0.68563765, 0.13064557, -10.646539, 0.105671406, -4.8385286)
+light_color = Color(0.58709943, 0.7644908, 0.57045436, 1)
+light_energy = 10.68
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 0
+spot_range = 5.64
+spot_attenuation = 1.8
+spot_angle = 92.61
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Lighting" unique_id=416478995]
+transform = Transform3D(0.97482353, 9.746675e-09, -0.22297792, 0.22297792, -4.261089e-08, 0.97482353, 0, -1, -4.3711392e-08, 24.057236, 5.633856, -4.130735)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 0
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lighting/SpotLight3D3" unique_id=1522232507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5060673, -7.891322e-08, 1.8053236)
+light_color = Color(0.77912104, 0.63382876, 0.39382598, 1)
+light_energy = 2.105
+light_indirect_energy = 0.985
+light_bake_mode = 1
+omni_range = 6.148
+omni_attenuation = -0.366
 
 [node name="Player" parent="." unique_id=665689080 instance=ExtResource("1_ulcgi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, 0)
