@@ -306,6 +306,7 @@ position = Vector2(-124.719986, 127.28001)
 scale = Vector2(0.16000003, 0.16000003)
 texture = ExtResource("2_4amj7")
 script = ExtResource("3_h3nuw")
+murderer = true
 
 [node name="Button" type="Button" parent="Node2D/Polaroid7" unique_id=1337982954]
 self_modulate = Color(1, 1, 1, 0)

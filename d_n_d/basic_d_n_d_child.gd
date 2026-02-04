@@ -29,7 +29,7 @@ func _on_button_button_up() -> void:
 
 func _try_attach_or_drop() -> void:
 	var board := get_tree().get_first_node_in_group("board")
-	var pinwand := get_tree().get_first_node_in_group("board")
+	var _pinwand := get_tree().get_first_node_in_group("board")
 	if board == null:
 		push_error("No node in group 'board'.")
 		return

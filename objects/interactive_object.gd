@@ -8,17 +8,19 @@ var active = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	# Default starting texture before it's had interaction
-	$Sprite3D.texture = inactive_texture
+	$".".texture = inactive_texture
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if active:
-		$Sprite3D.texture = active_texture
+		$".".texture = active_texture
 	else:
-		$Sprite3D.texture = inactive_texture
+		$".".texture = inactive_texture
 
-func interact() -> void:
+func interact():
+	print(active, " and ", reversible)
 	if active and reversible:
+		"should be changed"
 		active = false
-	if not active:
+	elif not active:
 		active = true

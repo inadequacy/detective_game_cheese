@@ -2,4 +2,17 @@
 
 [ext_resource type="PackedScene" uid="uid://634n7cb44ibh" path="res://objects/MANSIONobjects.glb" id="1_bbxb0"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_bbxb0"]
+size = Vector3(2.022, 0.975, 2.235)
+
 [node name="MANSIONobjects" unique_id=1083206359 instance=ExtResource("1_bbxb0")]
+
+[node name="copboard closed" parent="." index="4" unique_id=1707759556]
+visible = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube_010" parent_id_path=PackedInt32Array(19494227) index="0" unique_id=898727787]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, -1.1920929e-07, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_010/StaticBody3D" index="0" unique_id=1321386430]
+transform = Transform3D(1, 0, 0, 0, 0.9999998, 0, 0, 0, 1, 0.028096318, 0.4305501, -0.0818634)
+shape = SubResource("BoxShape3D_bbxb0")

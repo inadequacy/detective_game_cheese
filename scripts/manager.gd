@@ -17,12 +17,23 @@ func _process(_delta: float):
 		who_did_it()
 
 func who_did_it():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	scream_audio.stream = scream
 	scream_audio.play()
 	end_screen = true
 	$EndGame.set_visible(true)
 	var lose = false
 	if lose == true:
-		$EndGame.set_visible(true)
-		end_screen == false
+		$EndGame.set_visible(false)
+		end_screen = false
 		pass
+
+func game_lost():
+	$EndGame.set_visible(false)
+	end_screen = false
+	$"../Player".position = $"../Player".start_loc 
+	for character in $"../Characters".get_children():
+		character.position = character.start_loc
+		character.timer.start()
+	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
+	timer.start()
