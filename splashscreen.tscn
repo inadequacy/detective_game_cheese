@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://hg4nufaeahl8"]
+
+[ext_resource type="VideoStream" uid="uid://db7fhwn4e0rim" path="res://videos/splashscreen_game.ogv" id="1_2kxcd"]
+[ext_resource type="Script" uid="uid://5uoectyq0pkl" path="res://videos/splashscreen.gd" id="1_pkkup"]
+[ext_resource type="Texture2D" uid="uid://c215negwvywpd" path="res://images/letter.png" id="3_cte4o"]
+[ext_resource type="Texture2D" uid="uid://c3bvfog1sycrb" path="res://images/owl.png" id="4_kdb2t"]
+
+[node name="Node2D" type="Node2D" unique_id=1425960533]
+script = ExtResource("1_pkkup")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=711022378]
+offset_left = -588.0
+offset_top = -333.0
+offset_right = 132.0
+offset_bottom = 147.0
+scale = Vector2(1.6337508, 1.3995665)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stream = ExtResource("1_2kxcd")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2082054066]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1012700970]
+
+[node name="Letter" type="Sprite2D" parent="." unique_id=699361057]
+visible = false
+top_level = true
+position = Vector2(291, 267)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("3_cte4o")
+
+[node name="Owl" type="Sprite2D" parent="." unique_id=496129534]
+visible = false
+position = Vector2(-302, -128)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("4_kdb2t")
