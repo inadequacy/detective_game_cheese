@@ -216,7 +216,7 @@ mesh = SubResource("BoxMesh_sweqy")
 [node name="Camera3D" type="Camera3D" parent="." unique_id=2004352881]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48831552, -0.34707475)
 keep_aspect = 0
-fov = 80.20326
+fov = 90.8
 
 [node name="AnimationHandling" type="CanvasLayer" parent="." unique_id=1791864523]
 

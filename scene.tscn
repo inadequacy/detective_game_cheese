@@ -45,18 +45,20 @@ shape = SubResource("CylinderShape3D_8j1ou")
 
 [node name="Lighting" type="Node" parent="." unique_id=1018692635]
 
-[node name="SpotLight3D" type="SpotLight3D" parent="Lighting" unique_id=1747577431]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 7.341305, 5.9421725, 0)
+[node name="ballroom" type="Node" parent="Lighting" unique_id=1443899594]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lighting/ballroom" unique_id=1747577431]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 7.341305, 5.7945275, 0)
 light_color = Color(0.63570166, 0.5510592, 0.43441743, 1)
 light_energy = 44.7
 light_indirect_energy = 2.59
 light_size = 0.224
 light_specular = 0.0
-light_bake_mode = 0
+light_bake_mode = 1
 spot_range = 14.295
 spot_angle = 81.89
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Lighting/SpotLight3D" unique_id=74601487]
+[node name="OmniLight3D" type="OmniLight3D" parent="Lighting/ballroom/SpotLight3D" unique_id=74601487]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5060673, -7.891322e-08, 1.8053236)
 light_color = Color(0.77912104, 0.63382876, 0.39382598, 1)
 light_energy = 2.105
@@ -65,19 +67,31 @@ light_bake_mode = 1
 omni_range = 6.148
 omni_attenuation = -0.366
 
-[node name="SpotLight3D2" type="SpotLight3D" parent="Lighting" unique_id=1035130380]
+[node name="SpotLight3D10" type="SpotLight3D" parent="Lighting/ballroom" unique_id=339511056]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -16.168846, 5.90481, 5.080726)
+light_color = Color(0.63570166, 0.5510592, 0.43441743, 1)
+light_energy = 5.963
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 11.16
+spot_attenuation = 0.29
+spot_angle = 57.25
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Lighting/ballroom" unique_id=1035130380]
 transform = Transform3D(0.97482353, 9.746675e-09, -0.22297792, 0.22297792, -4.261089e-08, 0.97482353, 0, -1, -4.3711392e-08, 24.057236, 5.633856, 2.5847878)
 light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
 light_energy = 44.7
 light_indirect_energy = 2.59
 light_size = 0.224
 light_specular = 0.0
-light_bake_mode = 0
+light_bake_mode = 1
 spot_range = 14.295
 spot_attenuation = 1.8
 spot_angle = 66.89
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Lighting/SpotLight3D2" unique_id=665858356]
+[node name="OmniLight3D" type="OmniLight3D" parent="Lighting/ballroom/SpotLight3D2" unique_id=665858356]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5060673, -7.891322e-08, 1.8053236)
 light_color = Color(0.77912104, 0.63382876, 0.39382598, 1)
 light_energy = 2.105
@@ -86,151 +100,115 @@ light_bake_mode = 1
 omni_range = 6.148
 omni_attenuation = -0.366
 
-[node name="SpotLight3D4" type="SpotLight3D" parent="Lighting" unique_id=2123826052]
-transform = Transform3D(0.9996087, 1.2227813e-09, -0.027973982, 0.027260957, -0.22433884, 0.97412986, -0.006275649, -0.9745112, -0.22425106, 11.641292, 4.318365, 8.019307)
+[node name="SpotLight3D6" type="SpotLight3D" parent="Lighting/ballroom" unique_id=2039049414]
+transform = Transform3D(0.99960864, -0.015990376, -0.022953244, 0.027260957, 0.37275356, 0.9275298, -0.00627565, -0.92779255, 0.37304366, 17.078, 4.268765, -6.672157)
 light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
 light_energy = 44.7
 light_indirect_energy = 2.59
 light_size = 0.224
 light_specular = 0.0
-light_bake_mode = 0
+light_bake_mode = 1
 spot_range = 14.295
 spot_attenuation = 1.8
 spot_angle = 66.89
 
-[node name="SpotLight3D14" type="SpotLight3D" parent="Lighting" unique_id=1421971655]
-transform = Transform3D(0.9996087, 1.2227813e-09, -0.027973982, 0.027260957, -0.22433884, 0.97412986, -0.006275649, -0.9745112, -0.22425106, 15.865206, 4.318365, 8.019307)
-light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
-light_energy = 44.7
-light_indirect_energy = 2.59
-light_size = 0.224
-light_specular = 0.0
-light_bake_mode = 0
-spot_range = 14.295
-spot_attenuation = 1.8
-spot_angle = 66.89
-
-[node name="SpotLight3D5" type="SpotLight3D" parent="Lighting" unique_id=213675361]
+[node name="SpotLight3D5" type="SpotLight3D" parent="Lighting/ballroom" unique_id=213675361]
 transform = Transform3D(0.9996087, 1.2227813e-09, -0.027973982, 0.027260957, -0.22433884, 0.97412986, -0.006275649, -0.9745112, -0.22425106, 0.74403, 4.318365, 8.019307)
 light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
 light_energy = 44.7
 light_indirect_energy = 2.59
 light_size = 0.224
 light_specular = 0.0
-light_bake_mode = 0
+light_bake_mode = 1
 spot_range = 14.295
 spot_attenuation = 1.8
 spot_angle = 66.89
 
-[node name="SpotLight3D6" type="SpotLight3D" parent="Lighting" unique_id=1825985842]
-transform = Transform3D(0.9996087, -1.6196894e-10, -0.027973976, 0.023567533, -0.5387267, 0.84215087, -0.0150703285, -0.8424806, -0.53851587, -8.94655, 5.8091855, 8.019307)
-light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
-light_energy = 44.7
-light_indirect_energy = 2.59
-light_size = 0.224
-light_specular = 0.0
-light_bake_mode = 0
-spot_range = 14.295
-spot_attenuation = 1.8
-spot_angle = 66.89
-
-[node name="SpotLight3D7" type="SpotLight3D" parent="Lighting" unique_id=316869063]
+[node name="SpotLight3D7" type="SpotLight3D" parent="Lighting/ballroom" unique_id=316869063]
 transform = Transform3D(0.9996087, -1.6196894e-10, -0.027973976, 0.023567533, -0.5387267, 0.84215087, -0.0150703285, -0.8424806, -0.53851587, -4.276965, 5.8934255, 8.019307)
 light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
 light_energy = 44.7
 light_indirect_energy = 2.59
 light_size = 0.224
 light_specular = 0.0
-light_bake_mode = 0
+light_bake_mode = 1
 spot_range = 14.295
 spot_attenuation = 1.8
 spot_angle = 66.89
 
-[node name="SpotLight3D8" type="SpotLight3D" parent="Lighting" unique_id=992270434]
+[node name="SpotLight3D8" type="SpotLight3D" parent="Lighting/ballroom" unique_id=992270434]
 transform = Transform3D(0.9996087, -1.239264e-09, -0.027973978, 0.026401706, 0.3305309, 0.94342583, 0.009246264, -0.9437952, 0.33040157, 0.9264529, 6.1538415, -8.293931)
 light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
 light_energy = 44.7
 light_indirect_energy = 2.59
 light_size = 0.224
 light_specular = 0.0
-light_bake_mode = 0
+light_bake_mode = 1
 spot_range = 14.295
 spot_attenuation = 1.8
 spot_angle = 66.89
 
-[node name="SpotLight3D11" type="SpotLight3D" parent="Lighting" unique_id=1584932841]
-transform = Transform3D(0.9996087, -1.0065245e-09, -0.027973978, 0.027897883, 0.0737082, 0.9968896, 0.0020619105, -0.9972799, 0.07367935, 10.444467, 3.223474, -18.029036)
-light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
-light_energy = 44.7
-light_indirect_energy = 2.59
-light_size = 0.224
-light_specular = 0.0
-light_bake_mode = 0
-spot_range = 14.295
-spot_attenuation = 1.8
-spot_angle = 66.89
-
-[node name="SpotLight3D15" type="SpotLight3D" parent="Lighting" unique_id=1388832967]
-transform = Transform3D(0.99695843, 0.007790316, 0.07754529, -0.077908345, 0.073295355, 0.9942626, 0.0020619105, -0.9972799, 0.07367934, -18.004456, 4.331711, 8.056761)
-light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
-light_energy = 44.7
-light_indirect_energy = 2.59
-light_size = 0.224
-light_specular = 0.0
-light_bake_mode = 0
-spot_range = 5.311
-spot_attenuation = 1.8
-spot_angle = 29.39
-
-[node name="SpotLight3D16" type="SpotLight3D" parent="Lighting" unique_id=470216691]
-transform = Transform3D(0.97065425, 0.01971377, 0.23967019, -0.24047075, 0.071022995, 0.96805453, 0.0020619102, -0.9972799, 0.07367934, -17.769855, 3.194664, 2.4333344)
+[node name="SpotLight3D16" type="SpotLight3D" parent="Lighting/ballroom" unique_id=470216691]
+transform = Transform3D(0.98820937, 0.013312062, 0.15252925, -0.15309517, 0.072496116, 0.9855487, 0.0020619086, -0.9972799, 0.07367934, -17.769855, 3.194664, 2.4333344)
 light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
 light_energy = 3.975
 light_indirect_energy = 2.192
 light_size = 0.224
 light_specular = 0.0
+light_bake_mode = 1
 spot_range = 4.146
 spot_attenuation = -1.7
 spot_angle = 66.89
 
-[node name="SpotLight3D13" type="SpotLight3D" parent="Lighting" unique_id=1512680956]
-transform = Transform3D(0.9996087, -1.8414931e-09, -0.027973974, 0.02761584, -0.1595021, 0.9868113, -0.0044619096, -0.9871976, -0.1594397, 7.8662014, 3.9375386, -13.755375)
+[node name="SpotLight3D17" type="SpotLight3D" parent="Lighting/ballroom" unique_id=10493920]
+transform = Transform3D(0.98820937, 0.013312062, 0.15252924, -0.15309517, 0.072496116, 0.9855487, 0.0020619086, -0.9972799, 0.07367934, -17.769855, 3.194664, 7.912627)
 light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
-light_energy = 53.57
-light_indirect_energy = 2.59
+light_energy = 3.975
+light_indirect_energy = 2.192
 light_size = 0.224
 light_specular = 0.0
-light_bake_mode = 0
-spot_range = 7.891
-spot_attenuation = 1.8
-spot_angle = 46.53
-
-[node name="SpotLight3D12" type="SpotLight3D" parent="Lighting" unique_id=2107523355]
-transform = Transform3D(0.9996087, -1.0065245e-09, -0.027973978, 0.027897883, 0.0737082, 0.9968896, 0.0020619105, -0.9972799, 0.07367935, 16.25507, 3.1620665, -18.22414)
-light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
-light_energy = 44.7
-light_indirect_energy = 2.59
-light_size = 0.224
-light_specular = 0.0
-light_bake_mode = 0
-spot_range = 14.295
-spot_attenuation = 1.8
+light_bake_mode = 1
+spot_range = 4.146
+spot_attenuation = -1.7
 spot_angle = 66.89
 
-[node name="SpotLight3D9" type="SpotLight3D" parent="Lighting" unique_id=1068592169]
+[node name="SpotLight3D9" type="SpotLight3D" parent="Lighting/ballroom" unique_id=1068592169]
 transform = Transform3D(0.75521255, -0.6249209, 0.19780762, 0.026401693, 0.3305309, 0.94342583, -0.65494806, -0.70726454, 0.26612008, -4.174206, 5.4381413, -4.326972)
 light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
 light_energy = 44.7
 light_indirect_energy = 2.59
 light_size = 0.224
 light_specular = 0.0
-light_bake_mode = 0
+light_bake_mode = 1
 spot_range = 14.295
 spot_attenuation = 1.8
 spot_angle = 66.89
 
-[node name="SpotLight3D10" type="SpotLight3D" parent="Lighting" unique_id=462166684]
-transform = Transform3D(0.68804634, -0.72491825, 0.03295234, 0.11730073, 0.06629226, -0.99088144, 0.7161235, 0.68563765, 0.13064557, -10.646539, 0.105671406, -4.8385286)
+[node name="SpotLight3D3" type="SpotLight3D" parent="Lighting/ballroom" unique_id=416478995]
+transform = Transform3D(0.97482353, 9.746675e-09, -0.22297792, 0.22297792, -4.261089e-08, 0.97482353, 0, -1, -4.3711392e-08, 24.057236, 5.633856, -4.130735)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lighting/ballroom/SpotLight3D3" unique_id=1522232507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5060673, -7.891322e-08, 1.8053236)
+light_color = Color(0.77912104, 0.63382876, 0.39382598, 1)
+light_energy = 2.105
+light_indirect_energy = 0.985
+light_bake_mode = 1
+omni_range = 6.148
+omni_attenuation = -0.366
+
+[node name="bathroom" type="Node" parent="Lighting" unique_id=1915275893]
+
+[node name="SpotLight3D10" type="SpotLight3D" parent="Lighting/bathroom" unique_id=462166684]
+transform = Transform3D(0.68804634, -0.7249183, 0.03295234, 0.11730073, 0.066292256, -0.99088144, 0.7161235, 0.6856376, 0.13064557, -10.646539, 0.11908549, -4.8385286)
 light_color = Color(0.58709943, 0.7644908, 0.57045436, 1)
 light_energy = 10.68
 light_indirect_energy = 2.59
@@ -241,29 +219,196 @@ spot_range = 5.64
 spot_attenuation = 1.8
 spot_angle = 92.61
 
-[node name="SpotLight3D3" type="SpotLight3D" parent="Lighting" unique_id=416478995]
-transform = Transform3D(0.97482353, 9.746675e-09, -0.22297792, 0.22297792, -4.261089e-08, 0.97482353, 0, -1, -4.3711392e-08, 24.057236, 5.633856, -4.130735)
+[node name="Entrance hall" type="Node" parent="Lighting" unique_id=1348681134]
+
+[node name="SpotLight3D11" type="SpotLight3D" parent="Lighting/Entrance hall" unique_id=621525217]
+transform = Transform3D(0.68804634, -0.7249183, 0.03295234, 0.11730073, 0.066292256, -0.99088144, 0.7161235, 0.6856376, 0.13064557, -24.005611, 0.11908549, 4.8608813)
+light_color = Color(0.58709943, 0.7644908, 0.57045436, 1)
+light_energy = 10.68
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 0
+spot_range = 5.64
+spot_attenuation = 1.8
+spot_angle = 92.61
+
+[node name="smoke room" type="Node" parent="Lighting" unique_id=1018131913]
+
+[node name="SpotLight3D20" type="SpotLight3D" parent="Lighting/smoke room" unique_id=2001137141]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.951086, 0.81006426, 24.16771)
+light_color = Color(0.74498534, 0.52862227, 0.34047502, 1)
+light_energy = 3.975
+light_indirect_energy = 2.192
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 4.146
+spot_attenuation = -1.7
+spot_angle = 66.89
+
+[node name="SpotLight3D15" type="SpotLight3D" parent="Lighting/smoke room" unique_id=1541373428]
+transform = Transform3D(0.6213119, 0.37359565, -0.68876547, 1.4901161e-08, 0.87901694, 0.4767906, 0.7835634, -0.2962357, 0.5461437, -10.358344, 3.828495, 21.358316)
 light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
 light_energy = 44.7
 light_indirect_energy = 2.59
 light_size = 0.224
 light_specular = 0.0
-light_bake_mode = 0
+light_bake_mode = 1
+spot_range = 3.364
+spot_attenuation = 2.45
+spot_angle = 43.42
+
+[node name="SpotLight3D22" type="SpotLight3D" parent="Lighting/smoke room" unique_id=1996714852]
+transform = Transform3D(1, 0, 0, 0, -0.084947415, 0.99638546, 0, -0.99638546, -0.084947415, -13.663409, 5.4059577, 26.46243)
+light_color = Color(0.74498534, 0.52862227, 0.34047502, 1)
+light_energy = 16.0
+light_indirect_energy = 2.192
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 8.42
+spot_attenuation = 0.75
+spot_angle = 72.69
+
+[node name="SpotLight3D21" type="SpotLight3D" parent="Lighting/smoke room" unique_id=533383844]
+transform = Transform3D(1, 0, 0, 0, -0.084947415, 0.99638546, 0, -0.99638546, -0.084947415, -22.951086, 5.4059577, 26.46243)
+light_color = Color(0.74498534, 0.52862227, 0.34047502, 1)
+light_energy = 16.0
+light_indirect_energy = 2.192
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 8.42
+spot_attenuation = 0.75
+spot_angle = 72.69
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lighting/smoke room" unique_id=640127258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.485659, 1.8322754, 26.936544)
+light_color = Color(0.8108803, 0.68664354, 0.35078904, 1)
+light_specular = 0.0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lighting/smoke room" unique_id=1454662119]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.51727, 1.8322754, 32.20555)
+light_color = Color(0.8108803, 0.68664354, 0.35078904, 1)
+light_specular = 0.0
+
+[node name="cheese room" type="Node" parent="Lighting" unique_id=1723202494]
+
+[node name="SpotLight3D18" type="SpotLight3D" parent="Lighting/cheese room" unique_id=1372649080]
+transform = Transform3D(0.98820937, 0.013312062, 0.15252924, -0.15309517, 0.072496116, 0.9855487, 0.0020619086, -0.9972799, 0.07367934, -18.316921, 2.766237, 14.775875)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 3.975
+light_indirect_energy = 2.192
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 4.146
+spot_attenuation = -1.7
+spot_angle = 66.89
+
+[node name="SpotLight3D6" type="SpotLight3D" parent="Lighting/cheese room" unique_id=1825985842]
+transform = Transform3D(0.9996087, -1.6196894e-10, -0.027973976, 0.023567533, -0.5387267, 0.84215087, -0.0150703285, -0.8424806, -0.53851587, -8.94655, 5.8091855, 8.019307)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
 spot_range = 14.295
 spot_attenuation = 1.8
 spot_angle = 66.89
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Lighting/SpotLight3D3" unique_id=1522232507]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5060673, -7.891322e-08, 1.8053236)
-light_color = Color(0.77912104, 0.63382876, 0.39382598, 1)
-light_energy = 2.105
-light_indirect_energy = 0.985
+[node name="SpotLight3D19" type="SpotLight3D" parent="Lighting/cheese room" unique_id=1784643660]
+transform = Transform3D(0.9822502, 0.013312064, -0.18710223, 0.18567823, 0.072496116, 0.97993267, 0.026609108, -0.9972799, 0.068737574, -20.074705, 4.7432013, 14.896125)
+light_color = Color(0.3754817, 0.2914677, 0.16349494, 1)
+light_energy = 0.199
+light_indirect_energy = 2.192
+light_size = 0.224
+light_specular = 0.0
 light_bake_mode = 1
-omni_range = 6.148
-omni_attenuation = -0.366
+spot_range = 7.43
+spot_attenuation = -2.27
+spot_angle = 63.54
+
+[node name="bathroom_nice" type="Node" parent="Lighting" unique_id=1637940811]
+
+[node name="SpotLight3D15" type="SpotLight3D" parent="Lighting/bathroom_nice" unique_id=548488055]
+transform = Transform3D(0.9996087, -1.0065245e-09, -0.027973978, 0.027897883, 0.0737082, 0.9968896, 0.0020619105, -0.9972799, 0.07367935, 13.484417, 5.7662163, -22.650581)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
+
+[node name="bedroom" type="Node" parent="Lighting" unique_id=308388962]
+
+[node name="SpotLight3D13" type="SpotLight3D" parent="Lighting/bedroom" unique_id=1512680956]
+transform = Transform3D(0.9996087, -1.8414931e-09, -0.027973974, 0.02761584, -0.1595021, 0.9868113, -0.0044619096, -0.9871976, -0.1594397, 7.8662014, 3.9375386, -13.755375)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 53.57
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 7.891
+spot_attenuation = 1.8
+spot_angle = 46.53
+
+[node name="SpotLight3D14" type="SpotLight3D" parent="Lighting/bedroom" unique_id=990982841]
+transform = Transform3D(0.9996087, -0.0041893753, -0.027658498, 0.02761584, -0.009918779, 0.9995694, -0.0044619096, -0.99994206, -0.009799212, 16.992975, 5.831028, -14.727772)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 53.57
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 7.891
+spot_attenuation = 1.8
+spot_angle = 46.53
+
+[node name="SpotLight3D15" type="SpotLight3D" parent="Lighting/bedroom" unique_id=1455088310]
+transform = Transform3D(0.9996087, -0.0041893753, -0.027658498, 0.02761584, -0.009918779, 0.9995694, -0.0044619096, -0.99994206, -0.009799212, -7.950876, 4.846425, -14.613501)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 53.57
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 7.891
+spot_attenuation = 1.8
+spot_angle = 46.53
+
+[node name="SpotLight3D11" type="SpotLight3D" parent="Lighting/bedroom" unique_id=1584932841]
+transform = Transform3D(0.9996087, -1.0065245e-09, -0.027973978, 0.027897883, 0.0737082, 0.9968896, 0.0020619105, -0.9972799, 0.07367935, 10.444467, 3.223474, -18.029036)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
+
+[node name="SpotLight3D12" type="SpotLight3D" parent="Lighting/bedroom" unique_id=2107523355]
+transform = Transform3D(0.9996087, -1.0065245e-09, -0.027973978, 0.027897883, 0.0737082, 0.9968896, 0.0020619105, -0.9972799, 0.07367935, 16.25507, 3.1620665, -18.22414)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 44.7
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 14.295
+spot_attenuation = 1.8
+spot_angle = 66.89
 
 [node name="Player" parent="." unique_id=665689080 instance=ExtResource("1_ulcgi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, 0)
+transform = Transform3D(0.03707973, 0, -0.9993123, 0, 1, 0, 0.9993123, 0, 0.03707973, -23.645895, 1, 4.656929)
 speed = 3.6
 
 [node name="Manager" parent="." unique_id=831551970 instance=ExtResource("2_nxogm")]
