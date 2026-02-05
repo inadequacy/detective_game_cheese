@@ -18,9 +18,7 @@ func _process(_delta: float) -> void:
 		$".".texture = inactive_texture
 
 func interact():
-	print(active, " and ", reversible)
 	if active and reversible:
-		"should be changed"
 		active = false
 	elif not active:
 		active = true

@@ -34,6 +34,7 @@ func game_lost():
 	$"../Player".position = $"../Player".start_loc 
 	for character in $"../Characters".get_children():
 		character.position = character.start_loc
+		character.rotation = character.start_rot
 		character.timer.start()
 	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 	timer.start()

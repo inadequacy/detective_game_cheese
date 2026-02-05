@@ -7,12 +7,14 @@ var animator
 var audio_player
 var was_pressed = false
 var start_loc
+var start_rot
 
 func _ready() -> void:
 	animator = $AnimationHandling/AnimationPlayer
 	audio_player=$AnimationHandling/AnimationPlayer/AudioStreamPlayer
 	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 	start_loc = position
+	start_rot = rotation
 
 func _physics_process(delta):
 	# Movement
