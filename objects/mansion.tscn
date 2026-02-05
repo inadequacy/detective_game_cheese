@@ -223,6 +223,78 @@ shape = SubResource("ConcavePolygonShape3D_jw8cx")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_005/StaticBody3D" index="0" unique_id=268666627]
 shape = SubResource("ConcavePolygonShape3D_a0aud")
 
+[node name="SpotLight3D15" type="SpotLight3D" parent="Cube_005" parent_id_path=PackedInt32Array(1627130394) index="1" unique_id=530003830]
+transform = Transform3D(0.9996087, -0.004189375, -0.027658494, 0.02761584, -0.009918779, 0.9995694, -0.0044619096, -0.99994206, -0.009799205, -7.950876, 2.5201058, -14.613501)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 53.57
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 7.891
+spot_attenuation = 1.8
+spot_angle = 91.53
+
+[node name="SpotLight3D16" type="SpotLight3D" parent="Cube_005" parent_id_path=PackedInt32Array(1627130394) index="2" unique_id=1514185450]
+transform = Transform3D(0.9996087, -0.004189375, -0.027658494, 0.02761584, -0.009918779, 0.9995694, -0.0044619096, -0.99994206, -0.009799205, -17.062874, 2.5201058, -13.4474535)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 53.57
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 7.891
+spot_attenuation = 1.8
+spot_angle = 91.53
+
+[node name="SpotLight3D17" type="SpotLight3D" parent="Cube_005" parent_id_path=PackedInt32Array(1627130394) index="3" unique_id=1363316855]
+transform = Transform3D(0.9996087, -0.004189375, -0.027658494, 0.02761584, -0.009918779, 0.9995694, -0.0044619096, -0.99994206, -0.009799205, -15.829759, 2.5201058, -4.8790236)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 53.57
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 7.891
+spot_attenuation = 1.8
+spot_angle = 91.53
+
+[node name="SpotLight3D18" type="SpotLight3D" parent="Cube_005" parent_id_path=PackedInt32Array(1627130394) index="4" unique_id=187639485]
+transform = Transform3D(0.9996087, -0.004189375, -0.027658494, 0.02761584, -0.009918779, 0.9995694, -0.0044619096, -0.99994206, -0.009799205, -4.6974344, 2.5201058, 13.560905)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 53.57
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 7.891
+spot_attenuation = 1.8
+spot_angle = 91.53
+
+[node name="SpotLight3D19" type="SpotLight3D" parent="Cube_005" parent_id_path=PackedInt32Array(1627130394) index="5" unique_id=903487466]
+transform = Transform3D(0.99960864, -0.0041893744, -0.027658492, 0.02797013, 0.13328764, 0.99068254, -0.00046380563, -0.99106854, 0.13335267, 0.122177124, 2.5201058, 14.133)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 53.57
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 7.891
+spot_attenuation = 1.8
+spot_angle = 91.53
+
+[node name="SpotLight3D20" type="SpotLight3D" parent="Cube_005" parent_id_path=PackedInt32Array(1627130394) index="6" unique_id=68792494]
+transform = Transform3D(0.99960864, -0.0041893744, -0.027658492, 0.026940726, -0.12206434, 0.9921565, -0.007532632, -0.99251336, -0.12190371, 6.156233, 2.5201058, 12.402359)
+light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
+light_energy = 53.57
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 1
+spot_range = 7.891
+spot_attenuation = 1.8
+spot_angle = 91.53
+
 [node name="StaticBody3D" type="StaticBody3D" parent="Cube_006" parent_id_path=PackedInt32Array(1287353079) index="0" unique_id=2080702604]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_006/StaticBody3D" index="0" unique_id=109657319]
