@@ -26,4 +26,4 @@ func _process(_delta):
 		interact_count = 3
 		set_process_input(true)
 	elif Input.is_anything_pressed() and interact_count == 3:
-		load("res://scene.tscn")
+		get_tree().change_scene_to_file("res://scene.tscn")
