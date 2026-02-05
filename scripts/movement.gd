@@ -6,8 +6,8 @@ var journal = false
 var animator
 var audio_player
 var was_pressed = false
-@onready var start_loc
-@onready var start_rot
+var start_loc
+var start_rot
 
 func _ready() -> void:
 	animator = $AnimationHandling/AnimationPlayer
@@ -45,7 +45,7 @@ func _physics_process(delta):
 			journal = true
 		else:
 			Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
-			journal=false
+			journal = false
 	# F to Pay Respect
 	for body in $InteractionTrigger.get_overlapping_bodies():
 		if body.is_in_group("interactable"):

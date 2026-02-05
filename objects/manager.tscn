@@ -6,6 +6,7 @@
 [node name="Manager" type="Node" unique_id=831551970]
 
 [node name="DialogueUI" parent="." unique_id=1774084481 instance=ExtResource("1_yriaq")]
+layer = 4
 
 [node name="Pinwand" parent="DialogueUI" unique_id=1529431941 instance=ExtResource("2_m3gqb")]
 top_level = true
