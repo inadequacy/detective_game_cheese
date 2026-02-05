@@ -1,10 +1,10 @@
 ~ merchant_sold_to_cheese_addict
 if not facts.merchant_sold_to_cheese_addict.known
 	set facts.merchant_sold_to_cheese_addict.known = true
-	Merchant: Enjoying the cheese? Ive sold more thahn i usuallyt do today...all of it porvided through me. If you veer desire more, I think Ella and I might have soemthing in store for next time.
-	Merchant: I dont have any faith in Ellla, that if she can get big cheese to agree with her
+	Brie the Merchant: Enjoying the cheese? Ive sold more thahn i usuallyt do today...all of it porvided through me. If you veer desire more, I think Ella and I might have soemthing in store for next time.
+	Brie the Merchant: I dont have any faith in Ellla, that if she can get big cheese to agree with her
 else:
-	Merchant: You heard what I fucking said.
+	Brie the Merchant: You heard what I fucking said.
 => END
 
 ~ start
@@ -12,6 +12,6 @@ if not npcs.Merchant.has_met
 	set npcs.Merchant.has_met = true
 	=>< merchant_sold_to_cheese_addict
 else:
-	Merchant: Back for more cheddar I see?
+	Brie the Merchant: Back for more cheddar I see?
 	=>< merchant_sold_to_cheese_addict
 => END

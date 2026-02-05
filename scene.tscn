@@ -516,10 +516,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 0)
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
 texture = ExtResource("14_o3hm7")
 
-[node name="Ella" parent="Characters" unique_id=1523782194 instance=ExtResource("5_y2354")]
+[node name="Ella x" parent="Characters" unique_id=1523782194 instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0358315, 1, 0)
 
-[node name="Sprite3D" parent="Characters/Ella" index="2" unique_id=1357997964]
+[node name="Sprite3D" parent="Characters/Ella x" index="2" unique_id=1357997964]
 transform = Transform3D(0.115, 0, 0, 0, 0.115, 0, 0, 0, 0.115, 0, 0, 0)
 texture = ExtResource("15_xpof7")
 
@@ -529,10 +529,10 @@ transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 3.460616, 1.3215399,
 [node name="Sprite3D" parent="Characters/Hal" index="2" unique_id=1357997964]
 texture = ExtResource("6_ni31j")
 
-[node name="Rosh the Twin" parent="Characters" unique_id=1257681979 instance=ExtResource("5_y2354")]
+[node name="Roch the Twin" parent="Characters" unique_id=1257681979 instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.946, 1, 3.754)
 
-[node name="Sprite3D" parent="Characters/Rosh the Twin" index="2" unique_id=1357997964]
+[node name="Sprite3D" parent="Characters/Roch the Twin" index="2" unique_id=1357997964]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 texture = ExtResource("7_ni31j")
 
@@ -560,9 +560,9 @@ texture = ExtResource("19_xpof7")
 
 [editable path="Characters/Big Cheese"]
 [editable path="Characters/Butler"]
-[editable path="Characters/Ella"]
+[editable path="Characters/Ella x"]
 [editable path="Characters/Hal"]
-[editable path="Characters/Rosh the Twin"]
+[editable path="Characters/Roch the Twin"]
 [editable path="Characters/Plod Stilton"]
 [editable path="Characters/Brie the Merchant"]
 [editable path="Characters/Ford the Twin"]

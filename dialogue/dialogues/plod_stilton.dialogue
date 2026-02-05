@@ -1,10 +1,10 @@
 ~ plod_knows_about_secret_pathway
 if not facts.plod_knows_about_secret_pathway.known
 	set facts.plod_knows_about_secret_pathway.known = true
-	Police Cat: If only there was more time....for it to end like this...tonight was the last night to make it all work
-	Police Cat: I went to the study through secret passage in the closset clothes room, I thought I could find dirt but I didnt find anything
+	Plod Stilton: If only there was more time....for it to end like this...tonight was the last night to make it all work
+	Plod Stilton: I went to the study through secret passage in the closset clothes room, I thought I could find dirt but I didnt find anything
 else:
-	Police Cat: You heard what I fucking said.
+	Plod Stilton: You heard what I fucking said.
 => END
 
 ~ start
@@ -12,6 +12,6 @@ if not npcs.PlodStilton.has_met
 	set npcs.PlodStilton.has_met = true
 	=>< plod_knows_about_secret_pathway
 else:
-	Police Cat: Back for more cheddar I see?
+	Plod Stilton: Back for more cheddar I see?
 	=>< plod_knows_about_secret_pathway
 => END

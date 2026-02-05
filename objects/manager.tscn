@@ -8,6 +8,7 @@
 [node name="DialogueUI" parent="." unique_id=1774084481 instance=ExtResource("1_yriaq")]
 
 [node name="Pinwand" parent="DialogueUI" unique_id=1529431941 instance=ExtResource("2_m3gqb")]
+top_level = true
 offset_left = 580.0
 offset_top = 325.0
 offset_right = 580.0
