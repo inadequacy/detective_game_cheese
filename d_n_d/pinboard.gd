@@ -70,7 +70,7 @@ var pinned_facts: Dictionary = {
 		},
 		rosh_was_in_the_kitchen_all_night = {
 			known = false,
-			content = "Rosh was in the kitchen all night"
+			content = "Roch was in the kitchen all night"
 		},
 		ford_knows_nothing = {
 			known = false,

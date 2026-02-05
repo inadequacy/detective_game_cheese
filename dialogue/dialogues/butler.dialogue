@@ -1,10 +1,10 @@
 ~ butler_hates_big_cheese
 if not facts.butler_hates_big_cheese.known
 	set facts.butler_hates_big_cheese.known = true
-	Butler: I am just little old me and I am here for fun
-	Butler: You dont really know how he is. The big cheese....[wait=0.5]hhaha...[wait=0.5]more like a big fraud
+	Wensley the Butler: I am just little old me and I am here for fun
+	Wensley the Butler: You dont really know how he is. The big cheese....[wait=0.5]hhaha...[wait=0.5]more like a big fraud
 else:
-	Butler: You heard what I fucking said.
+	Wensley the Butler: You heard what I fucking said.
 => END
 
 ~ start
@@ -12,6 +12,6 @@ if not npcs.Butler.has_met
 	set npcs.Butler.has_met = true
 	=>< butler_hates_big_cheese
 else:
-	Butler: Back for more cheddar I see?
+	Wensley the Butler: Back for more cheddar I see?
 	=>< butler_hates_big_cheese
 => END

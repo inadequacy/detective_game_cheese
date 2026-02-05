@@ -10,21 +10,21 @@ import "res://dialogue/dialogues/ford.dialogue" as ford
 ~ start
 set is_speaking = true
 match speaking_to
-	when "BigCheese"
+	when "Big Cheese"
 		=>< big_cheese/start
 	when "Butler"
 		=>< butler/start
-	when "CheeseAddict"
+	when "Hal"
 		=>< cheese_addict/start
-	when "FemmeFishFatale"
+	when "Ella x"
 		=>< femme_fish_fatale/start
-	when "Merchant"
+	when "Brie the Merchant"
 		=>< merchant/start
-	when "PlodStilton"
+	when "Plod Stilton"
 		=>< plod_stilton/start
-	when "Rosh"
+	when "Roch the Twin"
 		=>< rosh/start
-	when "Ford"
+	when "Ford the Twin"
 		=>< ford/start
 	else
 		DEBUG: unknown character name!

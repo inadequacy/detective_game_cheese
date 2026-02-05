@@ -1,10 +1,10 @@
 ~ cheese_addict_saw_twin_brooding
 if not facts.cheese_addict_saw_twin_brooding.known
 	set facts.cheese_addict_saw_twin_brooding.known = true
-	Cheese Addict: He..Y..y..Y...you fuckin...heheh...God I messed up so bad...why was my spouse looking at her all nigh...they art reason I broke my sobritey tonight I was betrayed
-	Cheese Addict: What do you mean I didnt have too much cheese...what about the twin who ate so much chesse bruding in the cigar lounge
+	Hal: He..Y..y..Y...you fuckin...heheh...God I messed up so bad...why was my spouse looking at her all nigh...they art reason I broke my sobritey tonight I was betrayed
+	Hal: What do you mean I didnt have too much cheese...what about the twin who ate so much chesse bruding in the cigar lounge
 else:
-	Cheese Addict: You heard what I fucking said.
+	Hal: You heard what I fucking said.
 => END
 
 ~ start
@@ -12,6 +12,6 @@ if not npcs.CheeseAddict.has_met
 	set npcs.CheeseAddict.has_met = true
 	=>< cheese_addict_saw_twin_brooding
 else:
-	Cheese Addict: Back for more cheddar I see?
+	Hal: Back for more cheddar I see?
 	=>< cheese_addict_saw_twin_brooding
 => END

@@ -1,9 +1,9 @@
 ~ rosh_was_in_the_kitchen_all_night
 if not facts.rosh_was_in_the_kitchen_all_night.known
 	set facts.rosh_was_in_the_kitchen_all_night.known = true
-	Roch: I was in the kitchen the whole night...I thought it was gonna be a great night....but I didnt wanna join the party looking like this
+	Roch the Twin: I was in the kitchen the whole night...I thought it was gonna be a great night....but I didnt wanna join the party looking like this
 else:
-	Roch: You heard what I fucking said.
+	Roch the Twin: You heard what I fucking said.
 => END
 
 ~ start
@@ -11,6 +11,6 @@ if not npcs.Rosh.has_met
 	set npcs.Rosh.has_met = true
 	=>< rosh_was_in_the_kitchen_all_night
 else:
-	Roch: Back for more cheddar I see?
+	Roch the Twin: Back for more cheddar I see?
 	=>< rosh_was_in_the_kitchen_all_night
 => END
