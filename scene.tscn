@@ -131,7 +131,7 @@ spot_angle = 66.89
 [node name="SpotLight3D17" type="SpotLight3D" parent="Lighting/ballroom" unique_id=10493920]
 transform = Transform3D(0.98820937, 0.013312062, 0.15252924, -0.15309517, 0.072496116, 0.9855487, 0.0020619086, -0.9972799, 0.07367934, -17.564024, 4.524622, 8.012054)
 light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
-light_energy = 3.975
+light_energy = 0.497
 light_indirect_energy = 2.192
 light_volumetric_fog_energy = 0.0
 light_size = 0.224
@@ -144,7 +144,7 @@ spot_angle = 81.42
 [node name="SpotLight3D18" type="SpotLight3D" parent="Lighting/ballroom" unique_id=989879183]
 transform = Transform3D(0.9031627, -0.008533765, 0.4292138, -0.42874873, -0.06852033, 0.9008216, 0.021722477, -0.9976133, -0.06554386, -17.493313, 4.909709, 2.714673)
 light_color = Color(0.68851346, 0.5584098, 0.35612667, 1)
-light_energy = 3.975
+light_energy = 0.596
 light_indirect_energy = 2.192
 light_volumetric_fog_energy = 0.0
 light_size = 0.224
@@ -203,6 +203,18 @@ light_size = 0.224
 light_specular = 0.0
 light_bake_mode = 0
 spot_range = 5.64
+spot_attenuation = 1.8
+spot_angle = 92.61
+
+[node name="SpotLight3D12" type="SpotLight3D" parent="Lighting/Entrance hall" unique_id=1447686453]
+transform = Transform3D(0.68804634, -0.7249183, 0.03295234, 0.11730073, 0.066292256, -0.99088144, 0.7161235, 0.6856376, 0.13064557, -21.124607, 0.19420782, 4.758158)
+light_color = Color(0.69313794, 0.71622723, 0.69228464, 1)
+light_energy = 2.63
+light_indirect_energy = 2.59
+light_size = 0.224
+light_specular = 0.0
+light_bake_mode = 0
+spot_range = 3.928
 spot_attenuation = 1.8
 spot_angle = 92.61
 
