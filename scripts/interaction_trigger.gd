@@ -15,8 +15,11 @@ func play_talking():
 	audio_stream_player.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+var contains_npc
+var contains_object
 func _process(_delta: float) -> void:
-	var contains_npc = false
+	contains_npc = false
+	contains_object = false
 	for body in get_overlapping_bodies():
 		var groups = body.get_groups()
 		if groups.has("npc"):
@@ -26,17 +29,18 @@ func _process(_delta: float) -> void:
 			interacting_with = body.name
 			interaction_label.text = "Press F to speak to " + interacting_with
 		if groups.has("interactable"):
+			contains_object = true
 			can_interact = true
 			interacting_with = body.name
 			interaction_label.text = "Press F to interact with " + interacting_with
 
-	if not contains_npc:
+	if not contains_npc and not contains_object:
 		can_interact = false
 		interaction_label.text = ""
 		interacting_with = ""
 
 func _input(_event: InputEvent) -> void:
-	if can_interact and Input.is_action_pressed("to_pay_respect") and not dialogue_ui.dialogue_state.is_speaking:
+	if contains_npc and Input.is_action_pressed("to_pay_respect") and not dialogue_ui.dialogue_state.is_speaking:
 		talk_to(interacting_with)
 
 func talk_to(who: String) -> void:
