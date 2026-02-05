@@ -3,6 +3,8 @@ extends Node
 @export var inactive_texture: Texture2D
 @export var active_texture: Texture2D
 @export var reversible: bool
+@export var image_note: PackedScene
+@export var was_interacted: bool = false
 var active = false
 
 # Called when the node enters the scene tree for the first time.
@@ -18,6 +20,7 @@ func _process(_delta: float) -> void:
 		$".".texture = inactive_texture
 
 func interact():
+
 	if active and reversible:
 		active = false
 	elif not active:

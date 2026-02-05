@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dvrrss18cib0j" path="res://characters/npc.tscn" id="5_y2354"]
 [ext_resource type="PackedScene" uid="uid://bvylrtrc0b0sp" path="res://end_game.tscn" id="6_akxrc"]
 [ext_resource type="Texture2D" uid="uid://brewisrm55co1" path="res://characters/art/Cheese Dreams_Big Cheese_1.png" id="6_ni31j"]
+[ext_resource type="PackedScene" uid="uid://ctjp4m6t07873" path="res://d_n_d/visual_notes/visual_note_example.tscn" id="6_xpof7"]
 [ext_resource type="Texture2D" uid="uid://dm8jjnpgyss3w" path="res://characters/art/Butler_01.png" id="7_ni31j"]
 [ext_resource type="Texture2D" uid="uid://vp2kwr3p3a3q" path="res://characters/art/Cheese Dreams_Cheese Addict_1.png" id="8_xlvrw"]
 [ext_resource type="Texture2D" uid="uid://bqpe4xgsfop7i" path="res://characters/art/plod stilton final.png" id="10_5juve"]
@@ -41,6 +42,7 @@ script = ExtResource("3_o3hm7")
 inactive_texture = ExtResource("2_8j1ou")
 active_texture = ExtResource("4_xpof7")
 reversible = true
+image_note = ExtResource("6_xpof7")
 
 [node name="Cupboard" type="StaticBody3D" parent="Mansion/Copboard" unique_id=1296034132 groups=["interactable"]]
 collision_mask = 0
