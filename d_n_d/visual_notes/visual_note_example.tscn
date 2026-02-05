@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://ctjp4m6t07873"]
+
+[ext_resource type="Texture2D" uid="uid://chc1dg4od3idx" path="res://d_n_d/visual_note_placeholder.png" id="1_qfghs"]
+[ext_resource type="Script" uid="uid://cdhk3xl7ih3gy" path="res://d_n_d/basic_d_n_d_child.gd" id="2_jglyn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(114.60549, 148.07846)
+
+[node name="VisualNote" type="Node2D" unique_id=1666435776]
+z_index = 2
+scale = Vector2(0.55843747, 0.55843747)
+script = ExtResource("2_jglyn")
+
+[node name="visual_clue" type="Sprite2D" parent="." unique_id=865575918]
+scale = Vector2(0.06786544, 0.067865446)
+texture = ExtResource("1_qfghs")
+
+[node name="Button" type="Button" parent="." unique_id=199599478]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -59.093456
+offset_top = -75.209854
+offset_right = 57.302746
+offset_bottom = 75.209854
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+
+[node name="OverlapSensor" type="Area2D" parent="." unique_id=1194151518]
+position = Vector2(-60.884167, -51.930614)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OverlapSensor" unique_id=1926999572]
+position = Vector2(61, 53.254917)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

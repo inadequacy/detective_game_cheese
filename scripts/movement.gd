@@ -8,6 +8,7 @@ var audio_player
 var was_pressed = false
 var start_loc
 var start_rot
+var pinboard
 
 func _ready() -> void:
 	animator = $AnimationHandling/AnimationPlayer
@@ -15,6 +16,13 @@ func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 	start_loc = position
 	start_rot = rotation
+	pinboard = get_tree().get_first_node_in_group("pinboard")
+	
+	
+	
+	
+	
+	
 
 func _physics_process(delta):
 	# Movement
@@ -50,5 +58,14 @@ func _physics_process(delta):
 	for body in $InteractionTrigger.get_overlapping_bodies():
 		if body.is_in_group("interactable"):
 			if Input.is_action_just_pressed("to_pay_respect"):
+				
 				print("happened 2")
 				body.get_parent().interact()
+				if body.get_parent().was_interacted == false:
+					pinboard.spawn_visual_note(body.get_parent().image_note)
+					pinboard.spawn_note("Add your text")
+					body.get_parent().was_interacted = true
+					
+				
+				
+				

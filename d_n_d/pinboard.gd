@@ -40,6 +40,12 @@ func spawn_note(text_label):
 	label.text = text_label
 	
 	book_node.add_child(note)
+	
+func spawn_visual_note(visual_note):
+	var note=visual_note.instantiate()
+	note.position = random_point_in_book()
+	book_node.add_child(note)
+
 
 var pinned_facts: Dictionary = {
 	speaking_to = "peacock",

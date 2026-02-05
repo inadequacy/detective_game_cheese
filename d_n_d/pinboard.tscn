@@ -53,7 +53,7 @@ size = Vector2(142, 185)
 
 [sub_resource type="Theme" id="Theme_5hean"]
 
-[node name="Pinwand" type="Control" unique_id=1529431941]
+[node name="Pinwand" type="Control" unique_id=1529431941 groups=["pinboard"]]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_3h13b")
