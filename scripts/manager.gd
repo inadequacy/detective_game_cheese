@@ -32,9 +32,9 @@ func game_lost():
 	$EndGame.set_visible(false)
 	end_screen = false
 	$"../Player".position = $"../Player".start_loc 
+	$"../Player".rotation = $"../Player".start_rot
 	for character in $"../Characters".get_children():
 		character.position = character.start_loc
-		character.rotation = character.start_rot
 		character.timer.start()
 	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 	timer.start()

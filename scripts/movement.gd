@@ -6,8 +6,8 @@ var journal = false
 var animator
 var audio_player
 var was_pressed = false
-var start_loc
-var start_rot
+@onready var start_loc
+@onready var start_rot
 
 func _ready() -> void:
 	animator = $AnimationHandling/AnimationPlayer
