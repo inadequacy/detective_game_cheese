@@ -561,7 +561,7 @@ shape = SubResource("ConcavePolygonShape3D_emmis")
 [node name="MANSIONobjects" parent="." index="50" unique_id=1083206359 instance=ExtResource("2_tnx15")]
 
 [node name="Sprite3D" type="Sprite3D" parent="." index="51" unique_id=1910380623]
-transform = Transform3D(0.355, 0, 0, 0, 0.355, 0, 0, 0, 0.355, 5.893403, -0.52171415, 9.532538)
+transform = Transform3D(0.355, 0, 0, 0, 0.355, 0, 0, 0, 0.355, 5.893403, -0.52171415, 9.686731)
 material_override = SubResource("StandardMaterial3D_a0aud")
 texture = ExtResource("4_juoq1")
 

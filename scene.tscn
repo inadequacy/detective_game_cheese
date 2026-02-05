@@ -46,6 +46,7 @@ reversible = true
 collision_mask = 0
 
 [node name="StaticBody3D" type="CollisionShape3D" parent="Mansion/Copboard/Cupboard" unique_id=552195158 groups=["interactable"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.06763713)
 shape = SubResource("CylinderShape3D_8j1ou")
 
 [node name="Lighting" type="Node" parent="." unique_id=1018692635]
