@@ -4,9 +4,9 @@
 [ext_resource type="Script" uid="uid://5uoectyq0pkl" path="res://videos/splashscreen.gd" id="1_pkkup"]
 [ext_resource type="Texture2D" uid="uid://c215negwvywpd" path="res://images/letter.png" id="3_cte4o"]
 [ext_resource type="Texture2D" uid="uid://1x2y5ujqn0vo" path="res://images/play.png" id="3_hrk2p"]
-[ext_resource type="Texture2D" uid="uid://d0rx3nrwjheb0" path="res://Cheese Cauldron_01.png" id="3_j3viy"]
 [ext_resource type="Texture2D" uid="uid://expfcca2gubs" path="res://images/creditsd.png" id="4_8q3rl"]
 [ext_resource type="Texture2D" uid="uid://c3bvfog1sycrb" path="res://images/owl.png" id="4_kdb2t"]
+[ext_resource type="Texture2D" uid="uid://di8dgvg2hi0aw" path="res://objects/full credits.png" id="5_hrk2p"]
 
 [sub_resource type="Animation" id="Animation_j3viy"]
 length = 0.001
@@ -179,8 +179,9 @@ flat = true
 
 [node name="Credits" type="Sprite2D" parent="CanvasLayer" unique_id=233774825]
 visible = false
-position = Vector2(569, 288)
-texture = ExtResource("3_j3viy")
+position = Vector2(580, 314)
+scale = Vector2(0.63, 0.63)
+texture = ExtResource("5_hrk2p")
 
 [node name="Letter" type="Sprite2D" parent="." unique_id=699361057]
 top_level = true
