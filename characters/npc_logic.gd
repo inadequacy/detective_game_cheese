@@ -26,6 +26,8 @@ var moving := false
 func _process(delta):
 	var time_passed = 120 - timer.time_left
 	
+	if time_passed == 0:
+		count = 0
 	if not route_one.is_empty():
 		if time_passed >= event_times[0] and !moving and count == 0:
 			move_to_node(route_one)
