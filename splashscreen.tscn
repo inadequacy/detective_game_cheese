@@ -3,7 +3,141 @@
 [ext_resource type="VideoStream" uid="uid://db7fhwn4e0rim" path="res://videos/splashscreen_game.ogv" id="1_2kxcd"]
 [ext_resource type="Script" uid="uid://5uoectyq0pkl" path="res://videos/splashscreen.gd" id="1_pkkup"]
 [ext_resource type="Texture2D" uid="uid://c215negwvywpd" path="res://images/letter.png" id="3_cte4o"]
+[ext_resource type="Texture2D" uid="uid://d0rx3nrwjheb0" path="res://Cheese Cauldron_01.png" id="3_j3viy"]
 [ext_resource type="Texture2D" uid="uid://c3bvfog1sycrb" path="res://images/owl.png" id="4_kdb2t"]
+
+[sub_resource type="Animation" id="Animation_j3viy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Owl:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Letter:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 709.825)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Owl:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.50552475]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Owl:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.45, 0.45)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Owl:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(335, -160)]
+}
+
+[sub_resource type="Animation" id="Animation_e1b45"]
+resource_name = "start_mination"
+length = 15.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Owl:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Letter:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 709.825), Vector2(0, -200)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Owl:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(10, 15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.45, 0.45), Vector2(2.56, 2.56)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Owl:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(10, 15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.50552475, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Owl:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(10, 15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(335, -160), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hrk2p"]
+_data = {
+&"RESET": SubResource("Animation_j3viy"),
+&"start_mination": SubResource("Animation_e1b45")
+}
 
 [node name="Node2D" type="Node2D" unique_id=1425960533]
 script = ExtResource("1_pkkup")
@@ -23,15 +157,41 @@ autoplay = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1012700970]
 
-[node name="Letter" type="Sprite2D" parent="." unique_id=699361057]
+[node name="play" type="Button" parent="CanvasLayer" unique_id=1247196594]
+offset_left = 860.0
+offset_top = 207.0
+offset_right = 1098.0
+offset_bottom = 318.0
+text = "play"
+
+[node name="credits" type="Button" parent="CanvasLayer" unique_id=595785491]
+offset_left = 863.0
+offset_top = 387.0
+offset_right = 1101.0
+offset_bottom = 498.0
+text = "credits"
+
+[node name="Credits" type="Sprite2D" parent="CanvasLayer" unique_id=233774825]
 visible = false
+position = Vector2(569, 288)
+texture = ExtResource("3_j3viy")
+
+[node name="Letter" type="Sprite2D" parent="." unique_id=699361057]
 top_level = true
-position = Vector2(291, 267)
+position = Vector2(0, 709.825)
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("3_cte4o")
 
 [node name="Owl" type="Sprite2D" parent="." unique_id=496129534]
-visible = false
-position = Vector2(-302, -128)
+modulate = Color(1, 1, 1, 0)
+top_level = true
+position = Vector2(335, -160)
+rotation = 0.50552475
 scale = Vector2(0.45, 0.45)
 texture = ExtResource("4_kdb2t")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1207480073]
+libraries/ = SubResource("AnimationLibrary_hrk2p")
+
+[connection signal="pressed" from="CanvasLayer/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="CanvasLayer/credits" to="." method="_on_credits_pressed"]
