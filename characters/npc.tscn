@@ -9,11 +9,8 @@ radius = 0.7
 top_radius = 0.7
 bottom_radius = 0.7
 
-[node name="NPC" type="CharacterBody3D" unique_id=228738560 node_paths=PackedStringArray("route_one", "route_two", "route_three") groups=["npc"]]
+[node name="NPC" type="CharacterBody3D" unique_id=228738560 groups=["npc"]]
 script = ExtResource("1_ppmss")
-route_one = [null, null, null]
-route_two = [null, null, null]
-route_three = [null, null, null]
 event_times = Array[int]([0, 0, 0])
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=435531988]

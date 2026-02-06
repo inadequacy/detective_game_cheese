@@ -1,11 +1,19 @@
 [gd_scene format=3 uid="uid://d0mgpraj6c620"]
 
 [ext_resource type="Texture2D" uid="uid://rfg7ssy6uapq" path="res://images/cheesewheel.png" id="1_w74om"]
+[ext_resource type="Script" uid="uid://c0td7l50x1eso" path="res://objects/quick_label_baby.gd" id="2_3g24n"]
 
 [node name="GoToPoint" type="Node3D" unique_id=310165342]
+script = ExtResource("2_3g24n")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=1362960159]
 transform = Transform3D(0.195, 0, 0, 0, 0.385, 0, 0, 0, 0.21, 0, 2, 0)
-visible = false
 billboard = 1
 texture = ExtResource("1_w74om")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=1814261690]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.292995, 0)
+billboard = 1
+text = "@SubViewport@9108 GoToPoint"
+font_size = 46
+outline_size = 15
