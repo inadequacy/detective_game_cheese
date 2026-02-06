@@ -3,7 +3,9 @@
 [ext_resource type="VideoStream" uid="uid://db7fhwn4e0rim" path="res://videos/splashscreen_game.ogv" id="1_2kxcd"]
 [ext_resource type="Script" uid="uid://5uoectyq0pkl" path="res://videos/splashscreen.gd" id="1_pkkup"]
 [ext_resource type="Texture2D" uid="uid://c215negwvywpd" path="res://images/letter.png" id="3_cte4o"]
+[ext_resource type="Texture2D" uid="uid://1x2y5ujqn0vo" path="res://images/play.png" id="3_hrk2p"]
 [ext_resource type="Texture2D" uid="uid://d0rx3nrwjheb0" path="res://Cheese Cauldron_01.png" id="3_j3viy"]
+[ext_resource type="Texture2D" uid="uid://expfcca2gubs" path="res://images/creditsd.png" id="4_8q3rl"]
 [ext_resource type="Texture2D" uid="uid://c3bvfog1sycrb" path="res://images/owl.png" id="4_kdb2t"]
 
 [sub_resource type="Animation" id="Animation_j3viy"]
@@ -158,18 +160,22 @@ autoplay = true
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1012700970]
 
 [node name="play" type="Button" parent="CanvasLayer" unique_id=1247196594]
-offset_left = 860.0
-offset_top = 207.0
-offset_right = 1098.0
-offset_bottom = 318.0
-text = "play"
+offset_left = 74.0
+offset_top = 397.0
+offset_right = 418.0
+offset_bottom = 587.0
+scale = Vector2(0.55, 0.55)
+icon = ExtResource("3_hrk2p")
+flat = true
 
 [node name="credits" type="Button" parent="CanvasLayer" unique_id=595785491]
-offset_left = 863.0
-offset_top = 387.0
-offset_right = 1101.0
-offset_bottom = 498.0
-text = "credits"
+offset_left = 80.0
+offset_top = 477.0
+offset_right = 424.0
+offset_bottom = 667.0
+scale = Vector2(0.55, 0.55)
+icon = ExtResource("4_8q3rl")
+flat = true
 
 [node name="Credits" type="Sprite2D" parent="CanvasLayer" unique_id=233774825]
 visible = false
