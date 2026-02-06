@@ -192,6 +192,43 @@ _data = {
 &"walking": SubResource("Animation_4flbx")
 }
 
+[sub_resource type="Animation" id="Animation_2hs0m"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Clock/Hand:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [6.2831855]
+}
+
+[sub_resource type="Animation" id="Animation_1jxqw"]
+resource_name = "clock"
+length = 120.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Clock/Hand:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 120),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.5707964, 4.712389]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dw050"]
+_data = {
+&"RESET": SubResource("Animation_2hs0m"),
+&"clock": SubResource("Animation_1jxqw")
+}
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_i3pqv"]
 size = Vector3(1, 1, 1.9208984)
 
@@ -254,12 +291,18 @@ offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 2
 
+[node name="ClockAnim" type="AnimationPlayer" parent="AnimationHandling/Control" unique_id=1567834799]
+libraries/ = SubResource("AnimationLibrary_dw050")
+autoplay = &"clock"
+
 [node name="Clock" type="Sprite2D" parent="AnimationHandling/Control" unique_id=386315347]
 position = Vector2(1078, 86)
 scale = Vector2(0.11, 0.11)
 texture = ExtResource("2_2hs0m")
 
 [node name="Hand" type="Sprite2D" parent="AnimationHandling/Control/Clock" unique_id=1217346927]
+position = Vector2(-9.090909, 172.72726)
+rotation = 6.2831855
 texture = ExtResource("3_1jxqw")
 
 [node name="InteractionTrigger" type="Area3D" parent="." unique_id=128746108]

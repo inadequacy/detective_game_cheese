@@ -38,6 +38,7 @@ func game_lost():
 	who_done_it = false
 	$"../Player".position = $"../Player".start_loc 
 	$"../Player".rotation = $"../Player".start_rot
+	$"../Player/AnimationHandling/Control/ClockAnim".play("clock")
 	for character in $"../Characters".get_children():
 		character.position = character.start_loc
 		character.timer.start()
