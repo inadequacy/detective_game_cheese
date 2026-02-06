@@ -502,9 +502,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -14)
 
 [node name="Characters" type="Node3D" parent="." unique_id=1343866329]
 
-[node name="Big Cheese" parent="Characters" unique_id=228738560 instance=ExtResource("5_y2354")]
+[node name="Big Cheese" parent="Characters" unique_id=228738560 node_paths=PackedStringArray("route_one") instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6885872, 1, 0.012382984)
-event_times = Array[int]([0])
+route_one = [NodePath("../../NodeHolder/BigRoom/GoToPoint"), NodePath("../../NodeHolder/BigRoom/GoToPoint5")]
+event_times = Array[int]([10])
+speed = 6.0
 
 [node name="Sprite3D" parent="Characters/Big Cheese" index="2" unique_id=1357997964]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
@@ -516,6 +518,7 @@ process_callback = 1
 [node name="Butler" parent="Characters" unique_id=1273146221 instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.8745, 1, 2.59098)
 event_times = Array[int]([])
+speed = 8.0
 
 [node name="Sprite3D" parent="Characters/Butler" index="2" unique_id=1357997964]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
@@ -533,6 +536,7 @@ texture = ExtResource("15_xpof7")
 [node name="Hal" parent="Characters" unique_id=1328599140 instance=ExtResource("5_y2354")]
 transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 11.505322, 1.3215399, 2.0142858)
 event_times = Array[int]([])
+speed = 3.0
 
 [node name="Sprite3D" parent="Characters/Hal" index="2" unique_id=1357997964]
 texture = ExtResource("6_ni31j")
@@ -540,6 +544,7 @@ texture = ExtResource("6_ni31j")
 [node name="Roch the Twin" parent="Characters" unique_id=1257681979 instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8201492, 1, 6.3635645)
 event_times = Array[int]([])
+speed = 3.0
 
 [node name="Sprite3D" parent="Characters/Roch the Twin" index="2" unique_id=1357997964]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
@@ -548,6 +553,7 @@ texture = ExtResource("7_ni31j")
 [node name="Plod Stilton" parent="Characters" unique_id=290421130 instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.4444685, 1.3788459, 8.556544)
 event_times = Array[int]([])
+speed = 3.0
 
 [node name="Sprite3D" parent="Characters/Plod Stilton" index="2" unique_id=1357997964]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
@@ -556,6 +562,7 @@ texture = ExtResource("10_5juve")
 [node name="Brie the Merchant" parent="Characters" unique_id=351613942 instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.553158, 1.3788459, 4.5793495)
 event_times = Array[int]([])
+speed = 3.0
 
 [node name="Sprite3D" parent="Characters/Brie the Merchant" index="2" unique_id=1357997964]
 transform = Transform3D(0.175, 0, 0, 0, 0.175, 0, 0, 0, 0.175, 12.553158, 1.3788459, 4.5793495)
@@ -565,6 +572,7 @@ texture = ExtResource("18_o3hm7")
 [node name="Ford the Twin" parent="Characters" unique_id=311256380 instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.32505, 1, 23.927969)
 event_times = Array[int]([])
+speed = 3.0
 
 [node name="Sprite3D" parent="Characters/Ford the Twin" index="2" unique_id=1357997964]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0.26089597, 0)

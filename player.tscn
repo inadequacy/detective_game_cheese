@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://bcg7p15c5ofuq"]
 
 [ext_resource type="Script" uid="uid://g2r5l8b02voj" path="res://scripts/movement.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://c0p0ie43xdu18" path="res://images/clock.png" id="2_2hs0m"]
 [ext_resource type="AudioStream" uid="uid://bodoun56wrjh7" path="res://sound_effects/footsteps.mp3" id="2_hqtel"]
+[ext_resource type="Texture2D" uid="uid://badxpsq2auo4l" path="res://images/clock_hand.png" id="3_1jxqw"]
 [ext_resource type="Script" uid="uid://c2sm2lcn8yiy4" path="res://scripts/interaction_trigger.gd" id="3_hqtel"]
 [ext_resource type="Texture2D" uid="uid://c3sncs6ut22y1" path="res://images/hand_left.png" id="3_i3pqv"]
 
@@ -242,6 +244,23 @@ scale = Vector2(0.51800007, 0.51800007)
 texture = ExtResource("3_i3pqv")
 centered = false
 flip_h = true
+
+[node name="Control" type="Control" parent="AnimationHandling" unique_id=748542894]
+top_level = true
+z_index = 3
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="Clock" type="Sprite2D" parent="AnimationHandling/Control" unique_id=386315347]
+position = Vector2(1078, 86)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("2_2hs0m")
+
+[node name="Hand" type="Sprite2D" parent="AnimationHandling/Control/Clock" unique_id=1217346927]
+texture = ExtResource("3_1jxqw")
 
 [node name="InteractionTrigger" type="Area3D" parent="." unique_id=128746108]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.203125, -0.7355957)
