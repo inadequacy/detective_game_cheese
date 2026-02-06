@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://cyoxiyfkfl6rj" path="res://d_n_d/art/names/brie the merchant.png" id="16_egsj6"]
 [ext_resource type="Texture2D" uid="uid://c1pybu08lrnf4" path="res://d_n_d/art/names/butler.png" id="18_k66nm"]
 [ext_resource type="Texture2D" uid="uid://q5occlg152mo" path="res://d_n_d/art/names/plod stilton.png" id="20_scok3"]
+[ext_resource type="Texture2D" uid="uid://djv0dm2ox1f2p" path="res://images/u lose.png" id="21_pjxtf"]
 
 [sub_resource type="Theme" id="Theme_5mt7g"]
 
@@ -28,30 +29,30 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Fade:color")
+tracks/0/path = NodePath("WrongULose:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(0, 0, 0, 0)]
+"values": [Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_ksvyt"]
 resource_name = "end_game_fade"
-length = 4.0
+length = 5.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Fade:color")
+tracks/0/path = NodePath("WrongULose:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2, 3, 4),
+"times": PackedFloat32Array(0, 2, 4, 5),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pjxtf"]
@@ -445,11 +446,11 @@ text = "Who's done it?"
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=190262036]
 libraries/ = SubResource("AnimationLibrary_pjxtf")
 
-[node name="Fade" type="ColorRect" parent="." unique_id=92182949]
-offset_right = 1153.0
-offset_bottom = 650.0
-mouse_filter = 2
-color = Color(0, 0, 0, 0)
+[node name="WrongULose" type="Sprite2D" parent="." unique_id=1847425704]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(573, 326)
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("21_pjxtf")
 
 [connection signal="pressed" from="Node2D/Polaroid/Button" to="Node2D/Polaroid" method="_on_button_pressed"]
 [connection signal="pressed" from="Node2D/Polaroid2/Button" to="Node2D/Polaroid2" method="_on_button_pressed"]
