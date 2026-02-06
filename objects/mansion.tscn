@@ -673,7 +673,7 @@ material_override = SubResource("StandardMaterial3D_a0aud")
 texture = ExtResource("4_juoq1")
 
 [node name="Sprite3D3" type="Sprite3D" parent="." index="54" unique_id=1280030308]
-transform = Transform3D(0.355, 0, 0, 0, 0.355, 0, 0, 0, 0.355, 13.707317, -0.52171415, -18.941639)
+transform = Transform3D(0.355, 0, 0, 0, 0.355, 0, 0, 0, 0.355, 13.707317, -0.52171415, -19.012632)
 material_override = SubResource("StandardMaterial3D_a0aud")
 texture = ExtResource("4_juoq1")
 
@@ -723,7 +723,7 @@ material_override = SubResource("StandardMaterial3D_g7gme")
 texture = ExtResource("4_juoq1")
 
 [node name="Sprite3D6" type="Sprite3D" parent="." index="64" unique_id=1773522509]
-transform = Transform3D(0.355, 0, 0, 0, 0.355, 0, 0, 0, 0.355, -16.692732, -0.52171415, 0.08300948)
+transform = Transform3D(0.355, 0, 0, 0, 0.355, 0, 0, 0, 0.355, -16.692732, -0.52171415, 0.0059528947)
 material_override = SubResource("StandardMaterial3D_a0aud")
 texture = ExtResource("4_juoq1")
 
@@ -806,7 +806,7 @@ material_override = SubResource("StandardMaterial3D_a0aud")
 texture = ExtResource("4_juoq1")
 
 [node name="Sprite3D7" type="Sprite3D" parent="." index="71" unique_id=853610768]
-transform = Transform3D(0.355, 0, 0, 0, 0.355, 0, 0, 0, 0.355, -10.39273, -0.52171415, 0.08300948)
+transform = Transform3D(0.355, 0, 0, 0, 0.355, 0, 0, 0, 0.355, -10.39273, -0.52171415, 0.038036942)
 material_override = SubResource("StandardMaterial3D_a0aud")
 texture = ExtResource("4_juoq1")
 
