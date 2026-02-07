@@ -14,6 +14,8 @@ func _ready() -> void:
 func _on_button_pressed() -> void:
 	if murderer == true:
 		text_out.text = "You won"
+		$"../../AnimationPlayer".play("win_fade")
+		await $"../../AnimationPlayer".animation_finished
 		print_debug("You won")
 	else:
 		text_out.text = "You lost"
