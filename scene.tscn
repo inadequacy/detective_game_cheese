@@ -86,7 +86,7 @@ transform = Transform3D(0.03707973, 0, -0.9993123, 0, 1, 0, 0.9993123, 0, 0.0370
 speed = 3.6
 
 [node name="Mansion" parent="." unique_id=218848142 instance=ExtResource("1_3253y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0029160976, 2.0953176, 0.0055589676)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004892111, 2.132519, 0.009964943)
 
 [node name="Copboard" type="Sprite3D" parent="Mansion" unique_id=1999734537 groups=["interactable"]]
 transform = Transform3D(0.375, 0, 0, 0, 0.375, 0, 0, 0, 0.375, -0.9258561, -0.60891676, 18.124172)
