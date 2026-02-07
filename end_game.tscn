@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bvylrtrc0b0sp"]
 
-[ext_resource type="Script" uid="uid://chm7gmu51e610" path="res://scripts/end_game.gd" id="1_5swap"]
+[ext_resource type="Script" path="res://scripts/end_game.gd" id="1_5swap"]
 [ext_resource type="Texture2D" uid="uid://kxijfu2dl4tx" path="res://d_n_d/art/cork board.png" id="1_semjh"]
 [ext_resource type="Texture2D" uid="uid://b40v8sc82y26x" path="res://d_n_d/art/polaroid.png" id="2_4amj7"]
 [ext_resource type="Script" uid="uid://dfon2oj4eqy2r" path="res://polaroid.gd" id="3_h3nuw"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://q5occlg152mo" path="res://d_n_d/art/names/plod stilton.png" id="20_scok3"]
 [ext_resource type="Texture2D" uid="uid://djv0dm2ox1f2p" path="res://images/u lose.png" id="21_pjxtf"]
 [ext_resource type="Texture2D" uid="uid://buv8cbncsv0sx" path="res://images/cheese death2.png" id="22_0uf8p"]
+[ext_resource type="Texture2D" uid="uid://cmw0l0bfm2ssl" path="res://objects/Artboard 9@4x.png" id="22_yr3yu"]
 [ext_resource type="Texture2D" uid="uid://c3dg51woic8k4" path="res://images/u win.png" id="23_k0n3j"]
 [ext_resource type="Texture2D" uid="uid://cnaspu4lmqdcj" path="res://images/lemme play again.png" id="25_k66nm"]
 [ext_resource type="Texture2D" uid="uid://bkpsjkmajwvle" path="res://images/tell me.png" id="26_scok3"]
@@ -626,7 +627,11 @@ offset_right = 83.0
 offset_bottom = -186.0
 theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 theme_override_font_sizes/font_size = 25
-text = "Who's done it?"
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Label" unique_id=823846803]
+position = Vector2(93.115, 13.175)
+scale = Vector2(0.645, 0.645)
+texture = ExtResource("22_yr3yu")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=190262036]
 libraries/ = SubResource("AnimationLibrary_pjxtf")
@@ -646,7 +651,7 @@ texture = ExtResource("22_0uf8p")
 
 [node name="CorrectAndWin" type="Sprite2D" parent="." unique_id=1445094834]
 modulate = Color(1, 1, 1, 0)
-position = Vector2(573, 326)
+position = Vector2(579, 328)
 scale = Vector2(0.97, 0.97)
 texture = ExtResource("23_k0n3j")
 
