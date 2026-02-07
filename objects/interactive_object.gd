@@ -20,7 +20,6 @@ func _process(_delta: float) -> void:
 		$".".texture = inactive_texture
 
 func interact():
-
 	if active and reversible:
 		active = false
 	elif not active:
