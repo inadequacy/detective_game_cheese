@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://npn2lpucay17"]
+
+[ext_resource type="Texture2D" uid="uid://dxhdv6jem7bph" path="res://images/door (1).png" id="1_ba8gm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6wd4v"]
+transparency = 2
+alpha_scissor_threshold = 0.836
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("1_ba8gm")
+
+[node name="Door" type="Sprite3D" unique_id=528802495]
+transform = Transform3D(-1.5298985e-08, 0, 0.35, 0, 0.35, 0, -0.35, 0, -1.5298985e-08, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_6wd4v")
+texture = ExtResource("1_ba8gm")

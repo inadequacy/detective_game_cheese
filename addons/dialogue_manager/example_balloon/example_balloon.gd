@@ -90,9 +90,16 @@ func _process(delta: float) -> void:
 		progress.visible = not dialogue_label.is_typing and dialogue_line.responses.size() == 0 and not dialogue_line.has_tag("voice")
 
 
-func _unhandled_input(_event: InputEvent) -> void:
-	# Only the balloon is allowed to handle input while it's showing
+func _unhandled_input(event: InputEvent) -> void:
 	get_viewport().set_input_as_handled()
+	if event.is_pressed() and (event is InputEventKey or event is InputEventMouseButton):
+		if dialogue_label.is_typing:
+			dialogue_label.skip_typing()
+			get_viewport().set_input_as_handled()
+		return
+	if not dialogue_label.is_typing:
+		next(dialogue_line.next_id)
+		get_viewport().set_input_as_handled()
 
 
 func _notification(what: int) -> void:
