@@ -6,11 +6,14 @@ var who_done_it = false
 
 @onready var scream_audio = $"Scream"
 var scream = preload("res://sound_effects/screamlonger.mp3")
+var animator
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	timer = $Timer
 	timer.start()
+	animator = find_child("AnimationPlayer")
+	print(animator)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float):
@@ -25,6 +28,8 @@ func who_did_it():
 	scream_audio.play()
 	end_screen = true
 	$EndGame.set_visible(true)
+	animator.play("murder_and_who_done_it")
+	await animator.animation_finished
 	var lose = false
 	if lose == true:
 		$EndGame.set_visible(false)

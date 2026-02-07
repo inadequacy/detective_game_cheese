@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://c1pybu08lrnf4" path="res://d_n_d/art/names/butler.png" id="18_k66nm"]
 [ext_resource type="Texture2D" uid="uid://q5occlg152mo" path="res://d_n_d/art/names/plod stilton.png" id="20_scok3"]
 [ext_resource type="Texture2D" uid="uid://djv0dm2ox1f2p" path="res://images/u lose.png" id="21_pjxtf"]
+[ext_resource type="Texture2D" uid="uid://buv8cbncsv0sx" path="res://images/cheese death2.png" id="22_0uf8p"]
 
 [sub_resource type="Theme" id="Theme_5mt7g"]
 
@@ -38,10 +39,34 @@ tracks/0/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 0)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_ksvyt"]
 resource_name = "end_game_fade"
-length = 5.0
+length = 10.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -49,16 +74,93 @@ tracks/0/path = NodePath("WrongULose:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2, 4, 5),
+"times": PackedFloat32Array(0, 2, 8, 10),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DeathScreen:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(7.45),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(7.45),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("WrongULose:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_0uf8p"]
+resource_name = "murder_and_who_done_it"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(5, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("DeathScreen:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pjxtf"]
 _data = {
 &"RESET": SubResource("Animation_pjxtf"),
-&"end_game_fade": SubResource("Animation_ksvyt")
+&"end_game_fade": SubResource("Animation_ksvyt"),
+&"murder_and_who_done_it": SubResource("Animation_0uf8p")
 }
 
 [node name="EndGame" type="CanvasLayer" unique_id=1288185]
@@ -451,6 +553,13 @@ modulate = Color(1, 1, 1, 0)
 position = Vector2(573, 326)
 scale = Vector2(0.96, 0.96)
 texture = ExtResource("21_pjxtf")
+
+[node name="DeathScreen" type="Sprite2D" parent="." unique_id=811983604]
+visible = false
+z_index = -1
+position = Vector2(573, 326)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("22_0uf8p")
 
 [connection signal="pressed" from="Node2D/Polaroid/Button" to="Node2D/Polaroid" method="_on_button_pressed"]
 [connection signal="pressed" from="Node2D/Polaroid2/Button" to="Node2D/Polaroid2" method="_on_button_pressed"]

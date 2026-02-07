@@ -672,6 +672,7 @@ transform = Transform3D(-0.020261016, 0, -0.014645521, 0, 0.025, 0, 0.014645521,
 material_override = SubResource("StandardMaterial3D_iloo5")
 mesh = ExtResource("32_nb0s3")
 
+[editable path="Manager/EndGame"]
 [editable path="Characters/Big Cheese"]
 [editable path="Characters/Butler"]
 [editable path="Characters/Ella x"]

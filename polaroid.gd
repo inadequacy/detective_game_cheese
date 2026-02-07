@@ -18,7 +18,7 @@ func _on_button_pressed() -> void:
 	else:
 		text_out.text = "You lost"
 		$"../../AnimationPlayer".play("end_game_fade")
-		await get_tree().create_timer(3).timeout
+		await $"../../AnimationPlayer".animation_finished
 		manager.game_lost()
 		text_out.text = "Who's done it?"
 		await get_tree().create_timer(1).timeout
