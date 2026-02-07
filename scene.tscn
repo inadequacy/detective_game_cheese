@@ -434,6 +434,7 @@ autostart = true
 
 [node name="EndGame" parent="Manager" unique_id=1688594479 instance=ExtResource("6_akxrc")]
 visible = false
+script = null
 
 [node name="Scream" type="AudioStreamPlayer" parent="Manager" unique_id=1171511605]
 
