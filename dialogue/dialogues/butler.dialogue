@@ -3,7 +3,7 @@ if not facts.butler_knife.known
 	set facts.butler_knife.known = true
 	set facts.butler_secrets.known = true
 	Wensley the Butler: Greetings esteemed guest. It is I, Wensley, your butler tonight. Tirelessly working to make sure the night goes on swimmingly, every glass filled, every cheese tray with a cheese knife, and every mask hiding a smile. 
-	Wensley the Butler: We You won't need to worry about a thing, what happens at Cheese Ball naturally stays at Cheese Ball. As the loyal butler of Cheese Manor all secrets are safe with me. Now then, if you'll excuse me. I'm just doing a bit of cleaning up.
+	Wensley the Butler: You won't need to worry about a thing, what happens at Cheese Ball naturally stays at Cheese Ball. As the loyal butler of Cheese Manor all secrets are safe with me. Now then, if you'll excuse me. I'm just doing a bit of cleaning up.
 elif not facts.butler_stilton.known
 	set facts.butler_stilton.known = true
 	set facts.butler_closet.known = true
