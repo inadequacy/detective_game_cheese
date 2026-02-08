@@ -6,14 +6,12 @@ var who_done_it = false
 
 @onready var scream_audio = $"Scream"
 var scream = preload("res://sound_effects/screamlonger.mp3")
-var animator
+@onready var animator = $EndGame/AnimationPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	timer = $Timer
 	timer.start()
-	animator = find_child("AnimationPlayer")
-	print(animator)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float):
@@ -38,15 +36,15 @@ func who_did_it():
 		pass
 
 func game_lost():
-	$EndGame.set_visible(false)
 	end_screen = false
 	who_done_it = false
 	$"../Player".position = $"../Player".start_loc 
 	$"../Player".rotation = $"../Player".start_rot
-	$"../Player/AnimationHandling/Control/ClockAnim".play("clock")
 	for character in $"../Characters".get_children():
 		character.position = character.start_loc
 		character.reset_all()
 		character.timer.start()
+	$EndGame.set_visible(false)
+	$"../Player/AnimationHandling/Control/ClockAnim".play("clock")
 	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 	timer.start()

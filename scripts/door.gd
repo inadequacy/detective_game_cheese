@@ -7,7 +7,7 @@ var done_playing = false
 var was_interacted = true
 @onready var animator = $"../../AnimationPlayer"
 
-func _process(delta):
+func _process(_delta):
 	if active and not open and not done_playing:
 		open = true
 		animator.play("door_open")

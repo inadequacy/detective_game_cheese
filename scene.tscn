@@ -610,7 +610,15 @@ autostart = true
 
 [node name="EndGame" parent="Manager" unique_id=1688594479 instance=ExtResource("6_akxrc")]
 visible = false
-script = null
+
+[node name="DeathScreen" parent="Manager/EndGame" index="3" unique_id=811983604]
+visible = false
+
+[node name="CorrectAndWin" parent="Manager/EndGame" index="4" unique_id=1445094834]
+visible = false
+
+[node name="Win Buttons" parent="Manager/EndGame" index="5" unique_id=770149418]
+visible = false
 
 [node name="Scream" type="AudioStreamPlayer" parent="Manager" unique_id=1171511605]
 

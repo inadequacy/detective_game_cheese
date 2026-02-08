@@ -8,8 +8,6 @@ var manager
 func _ready() -> void:
 	manager = $"../../.."
 	text_out=$"../Label"
-	pass # Replace with function body.
-
 
 func _on_button_pressed() -> void:
 	if murderer == true:
