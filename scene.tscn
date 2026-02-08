@@ -746,7 +746,7 @@ speed = 5.0
 texture = ExtResource("6_ni31j")
 
 [node name="Brie the Merchant" parent="Characters" unique_id=351613942 node_paths=PackedStringArray("route_one", "route_two", "route_three") instance=ExtResource("5_y2354")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.553158, 1.3788459, 4.5793495)
+transform = Transform3D(0.175, 0, 0, 0, 0.175, 0, 0, 0, 0.175, 12.553158, 1.3788459, 4.5793495)
 route_one = [NodePath("../../NodeHolder/BigRoom/GoToPoint4"), NodePath("../../NodeHolder/CrapToilet/GoToPoint14")]
 route_two = [NodePath("../../NodeHolder/BigRoom/GoToPoint4"), NodePath("../../NodeHolder/BigRoom/GoToPoint12"), NodePath("../../NodeHolder/CheeseRoom/GoToPoint13"), NodePath("../../NodeHolder/CheeseRoom/GoToPoint17")]
 route_three = [NodePath("../../NodeHolder/CheeseRoom/GoToPoint13"), NodePath("../../NodeHolder/BigRoom/GoToPoint12"), NodePath("../../NodeHolder/BigRoom/GoToPoint6")]
@@ -754,8 +754,6 @@ event_times = Array[int]([10, 30, 45])
 speed = 3.5
 
 [node name="Sprite3D" parent="Characters/Brie the Merchant" index="2" unique_id=1357997964]
-transform = Transform3D(0.175, 0, 0, 0, 0.175, 0, 0, 0, 0.175, 12.553158, 1.3788459, 4.5793495)
-top_level = true
 texture = ExtResource("18_o3hm7")
 
 [editable path="Mansion/Door"]
