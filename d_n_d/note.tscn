@@ -8,7 +8,7 @@ size = Vector2(150.58826, 148.07846)
 
 [node name="Note" type="Sprite2D" unique_id=838163697]
 z_index = 2
-scale = Vector2(0.55843747, 0.55843747)
+scale = Vector2(0.2624755, 0.2624755)
 texture = ExtResource("1_64jy2")
 script = ExtResource("2_6fdag")
 
@@ -17,9 +17,9 @@ self_modulate = Color(1, 1, 1, 0)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -80.313736
+offset_left = -80.00747
 offset_top = -77.803925
-offset_right = -82.313736
+offset_right = -82.31374
 offset_bottom = -82.803925
 grow_horizontal = 2
 grow_vertical = 2
@@ -33,13 +33,16 @@ position = Vector2(61.000008, 53.254917)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="TexLabel" type="Label" parent="." unique_id=401421906]
-offset_left = -67.76471
-offset_top = -55.21569
-offset_right = 67.764725
-offset_bottom = 67.76472
+offset_left = -68.577835
+offset_top = -68.57785
+offset_right = 68.577835
+offset_bottom = 76.1976
 theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 theme_override_font_sizes/font_size = 28
-autowrap_mode = 1
+text = "word word word word"
+autowrap_mode = 3
+clip_text = true
+max_lines_visible = 15
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
