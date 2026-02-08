@@ -33,12 +33,14 @@ position = Vector2(61.000008, 53.254917)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="TexLabel" type="Label" parent="." unique_id=401421906]
-offset_left = -68.577835
-offset_top = -68.57785
-offset_right = 68.577835
-offset_bottom = 76.1976
-theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
-theme_override_font_sizes/font_size = 28
+offset_left = -64.76795
+offset_top = -64.76795
+offset_right = 72.38772
+offset_bottom = 80.0075
+theme_override_colors/font_color = Color(0.13081008, 0.12207248, 0.17028323, 1)
+theme_override_constants/line_spacing = -6
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 20
 text = "word word word word"
 autowrap_mode = 3
 clip_text = true
