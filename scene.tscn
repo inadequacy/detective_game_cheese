@@ -35,7 +35,9 @@
 [ext_resource type="PackedScene" uid="uid://diuxowxhdxb0l" path="res://d_n_d/visual_notes/safe.tscn" id="25_jrtx1"]
 [ext_resource type="Texture2D" uid="uid://drpy8wny6qvty" path="res://images/Table_01_lambert1SG_Roughness.png" id="25_m514l"]
 [ext_resource type="ArrayMesh" uid="uid://0ql1aiqkcaml" path="res://images/Table_01.obj" id="26_llic6"]
+[ext_resource type="PackedScene" uid="uid://bqdejf6r3fhj2" path="res://d_n_d/visual_notes/cigar.tscn" id="27_aobm4"]
 [ext_resource type="Texture2D" uid="uid://05fytedt1l30" path="res://images/StudyRoom_Chair.png" id="27_yjo7n"]
+[ext_resource type="PackedScene" uid="uid://ce6v5pdtq7fqy" path="res://d_n_d/visual_notes/broken_wine.tscn" id="29_arlik"]
 [ext_resource type="Texture2D" uid="uid://deqcaabh82l58" path="res://images/Safe_01_BaseColor_Dithered.png" id="29_llic6"]
 [ext_resource type="Texture2D" uid="uid://dhpimsypaon6j" path="res://objects/Globe.png" id="29_yjo7n"]
 [ext_resource type="Texture2D" uid="uid://bc8216sj4pbo3" path="res://images/Safe_01_Metallic.png" id="30_yjo7n"]
@@ -108,6 +110,10 @@ albedo_texture = ExtResource("17_iloo5")
 [sub_resource type="BoxShape3D" id="BoxShape3D_hyak3"]
 size = Vector3(9.79, 5.245, 8.71)
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_aobm4"]
+height = 18.364
+radius = 5.045
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iloo5"]
 cull_mode = 2
 albedo_texture = ExtResource("29_llic6")
@@ -118,6 +124,10 @@ roughness_texture = ExtResource("31_6wd4v")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7842m"]
 size = Vector3(75.880615, 147.08783, 61.275635)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jrtx1"]
+height = 12.909
+radius = 5.045
 
 [node name="Scene" type="Node3D" unique_id=350646142 groups=["interactable"]]
 
@@ -280,6 +290,19 @@ image_note = ExtResource("20_7842m")
 transform = Transform3D(0.8480481, 0, -0.52991927, 0, 1, 0, 0.52991927, 0, 0.8480481, -1.81, -3.935, -1.55)
 shape = SubResource("BoxShape3D_hyak3")
 
+[node name="Wine" type="Sprite3D" parent="Mansion/Interactables" unique_id=1844892539 groups=["interactable"]]
+transform = Transform3D(-0.004373134, 0, -0.10490889, 0, 0.105, 0, 0.10490889, 0, -0.004373134, 16.561289, 0.24806756, 4.838876)
+billboard = 2
+texture = ExtResource("25_7842m")
+script = ExtResource("3_o3hm7")
+image_note = ExtResource("29_arlik")
+
+[node name="Spilled Wine" type="StaticBody3D" parent="Mansion/Interactables/Wine" unique_id=2000795664 groups=["interactable"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Interactables/Wine/Spilled Wine" unique_id=1811990677 groups=["interactable"]]
+transform = Transform3D(1, 0, 7.450581e-09, 0, 1.0000004, 0, -7.450581e-09, 0, 1, 0, 3.371382, 0)
+shape = SubResource("CylinderShape3D_aobm4")
+
 [node name="Safe" type="MeshInstance3D" parent="Mansion/Interactables" unique_id=1941599983 groups=["interactable"]]
 transform = Transform3D(-0.020261014, 0, -0.0146455215, 0, 0.025, 0, 0.0146455215, 0, -0.020261014, -4.5952196, -0.08898163, -11.143158)
 material_override = SubResource("StandardMaterial3D_iloo5")
@@ -294,22 +317,15 @@ transform = Transform3D(0.9999999, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0,
 shape = SubResource("BoxShape3D_7842m")
 
 [node name="Cigar" type="Sprite3D" parent="Mansion/Interactables" unique_id=1493109689 groups=["interactable"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.1457, 0.84221995, 25.707747)
+transform = Transform3D(0.042166397, 0, 0.13349906, 0, 0.13999999, 0, -0.13349906, 0, 0.042166397, -8.75731, 0.84221995, 23.805922)
 texture = ExtResource("24_hyak3")
 script = ExtResource("3_o3hm7")
+image_note = ExtResource("27_aobm4")
 
 [node name="Cigar" type="StaticBody3D" parent="Mansion/Interactables/Cigar" unique_id=968212994 groups=["interactable"]]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Interactables/Cigar/Cigar" unique_id=1579074563 groups=["interactable"]]
-
-[node name="Wine" type="Sprite3D" parent="Mansion/Interactables" unique_id=1844892539 groups=["interactable"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.826664, 1.9234743, 3.0994873)
-texture = ExtResource("25_7842m")
-script = ExtResource("3_o3hm7")
-
-[node name="Spilled Wine" type="StaticBody3D" parent="Mansion/Interactables/Wine" unique_id=2000795664 groups=["interactable"]]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Interactables/Wine/Spilled Wine" unique_id=1811990677 groups=["interactable"]]
+shape = SubResource("CylinderShape3D_jrtx1")
 
 [node name="Lighting" type="Node" parent="." unique_id=1018692635]
 

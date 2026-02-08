@@ -45,7 +45,7 @@ func spawn_note(text_label):
 	note.fit_text()
 
 func spawn_visual_note(visual_note):
-	var note=visual_note.instantiate()
+	var note = visual_note.instantiate()
 	note.position = random_point_in_book()
 	book_node.add_child(note)
 	note.attach_to_book()

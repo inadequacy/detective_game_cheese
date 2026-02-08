@@ -289,7 +289,7 @@ text = "Name"
 metadata/_edit_use_anchors_ = true
 
 [node name="Card4" type="Sprite2D" parent="Board" unique_id=1781011620 groups=["base"]]
-position = Vector2(149, 57)
+position = Vector2(243, 43)
 texture = SubResource("CompressedTexture2D_uuvgj")
 script = ExtResource("2_ubymx")
 
@@ -349,7 +349,7 @@ metadata/_edit_use_anchors_ = true
 texture = ExtResource("18_kkqtx")
 
 [node name="Card5" type="Sprite2D" parent="Board" unique_id=1146576230 groups=["base"]]
-position = Vector2(383, 50)
+position = Vector2(503, 40)
 texture = SubResource("CompressedTexture2D_uuvgj")
 script = ExtResource("2_ubymx")
 
