@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://2iigvxqttct"]
 
 [ext_resource type="PackedScene" uid="uid://dvrrss18cib0j" path="res://characters/npc.tscn" id="1_pfkwt"]
-[ext_resource type="PackedScene" uid="uid://e47n22u4x0do" path="res://objects/manager.tscn" id="2_tgd1l"]
+[ext_resource type="PackedScene" uid="uid://duu5frrlx44ix" path="res://objects/manager.tscn" id="2_tgd1l"]
 [ext_resource type="PackedScene" uid="uid://bcg7p15c5ofuq" path="res://player.tscn" id="3_tgd1l"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_tgd1l"]
@@ -12,9 +12,8 @@ size = Vector3(1, 5, 5)
 [node name="go to" type="Node3D" parent="." unique_id=1206849261]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
 
-[node name="NPC" parent="." unique_id=1363036756 node_paths=PackedStringArray("route_one") instance=ExtResource("1_pfkwt")]
+[node name="NPC" parent="." unique_id=1363036756 instance=ExtResource("1_pfkwt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 16)
-route_one = NodePath("../go to")
 
 [node name="Manager" parent="." unique_id=831551970 instance=ExtResource("2_tgd1l")]
 

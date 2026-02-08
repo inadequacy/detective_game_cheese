@@ -60,7 +60,6 @@ func _physics_process(delta):
 			$AnimationHandling/Hands/RightHand.texture = hand_normal
 		if body.is_in_group("interactable"):
 			if Input.is_action_just_pressed("to_pay_respect"):
-				print("happened 2")
 				body.get_parent().interact()
 				if body.get_parent().was_interacted == false:
 					pinboard.spawn_visual_note(body.get_parent().image_note)

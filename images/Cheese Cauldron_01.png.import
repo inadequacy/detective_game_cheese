@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b53a21h1ldi1r"
-path="res://.godot/imported/door frame.png-4224d86878d4bb0fad2df14c9fc20bc6.ctex"
+uid="uid://d0rx3nrwjheb0"
+path="res://.godot/imported/Cheese Cauldron_01.png-8b0ee4a4fef33d4fb2ad50d50c4f3586.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://door frame.png"
-dest_files=["res://.godot/imported/door frame.png-4224d86878d4bb0fad2df14c9fc20bc6.ctex"]
+source_file="res://images/Cheese Cauldron_01.png"
+dest_files=["res://.godot/imported/Cheese Cauldron_01.png-8b0ee4a4fef33d4fb2ad50d50c4f3586.ctex"]
 
 [params]
 

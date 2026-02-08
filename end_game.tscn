@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bvylrtrc0b0sp"]
 
-[ext_resource type="Script" path="res://scripts/end_game.gd" id="1_5swap"]
+[ext_resource type="Script" uid="uid://chm7gmu51e610" path="res://scripts/end_game.gd" id="1_5swap"]
 [ext_resource type="Texture2D" uid="uid://kxijfu2dl4tx" path="res://d_n_d/art/cork board.png" id="1_semjh"]
 [ext_resource type="Texture2D" uid="uid://b40v8sc82y26x" path="res://d_n_d/art/polaroid.png" id="2_4amj7"]
-[ext_resource type="Script" uid="uid://dfon2oj4eqy2r" path="res://polaroid.gd" id="3_h3nuw"]
+[ext_resource type="Script" uid="uid://dfon2oj4eqy2r" path="res://scripts/polaroid.gd" id="3_h3nuw"]
 [ext_resource type="Texture2D" uid="uid://chd45e3uvp3ej" path="res://d_n_d/art/baby twin mask.png" id="4_jppxx"]
 [ext_resource type="Texture2D" uid="uid://cp8bejbeco5ke" path="res://d_n_d/art/tapename.png" id="5_2goxq"]
 [ext_resource type="Texture2D" uid="uid://dtonv8fp0q6jo" path="res://d_n_d/art/Big Cheese_Mask_01.png" id="6_b8sqn"]

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://npn2lpucay17"]
 
 [ext_resource type="Texture2D" uid="uid://dxhdv6jem7bph" path="res://images/door (1).png" id="1_ba8gm"]
-[ext_resource type="Script" uid="uid://ew1vsxg4uvrv" path="res://door.gd" id="2_v6xrn"]
+[ext_resource type="Script" uid="uid://ew1vsxg4uvrv" path="res://scripts/door.gd" id="2_v6xrn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6wd4v"]
 transparency = 2
@@ -13,14 +13,60 @@ albedo_texture = ExtResource("1_ba8gm")
 [sub_resource type="BoxShape3D" id="BoxShape3D_0phs7"]
 size = Vector3(3.776123, 8.800185, 0.54)
 
-[node name="Door" type="Sprite3D" unique_id=528802495]
-transform = Transform3D(-1.5298985e-08, 0, 0.35, 0, 0.35, 0, -0.35, 0, -1.5298985e-08, 0, 0, 0)
+[sub_resource type="Animation" id="Animation_v6xrn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_0phs7"]
+resource_name = "door_open"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 2.0856686, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_50cdl"]
+_data = {
+&"RESET": SubResource("Animation_v6xrn"),
+&"door_open": SubResource("Animation_0phs7")
+}
+
+[node name="Door" type="Node3D" unique_id=1356751772]
+
+[node name="Pivot" type="Node3D" parent="." unique_id=1887617834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.7606691)
+
+[node name="Door" type="Sprite3D" parent="Pivot" unique_id=528802495]
+transform = Transform3D(-1.5298985e-08, 0, -0.35, 0, 0.35, 0, 0.35, 0, -1.5298985e-08, 0, 0, -0.7525284)
 material_override = SubResource("StandardMaterial3D_6wd4v")
+flip_h = true
 texture = ExtResource("1_ba8gm")
 script = ExtResource("2_v6xrn")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=260297076]
+[node name="Door" type="StaticBody3D" parent="Pivot/Door" unique_id=260297076]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=131633810]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pivot/Door/Door" unique_id=131633810]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06359863, 0.18378447, 2.220446e-16)
 shape = SubResource("BoxShape3D_0phs7")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=133261136]
+libraries/ = SubResource("AnimationLibrary_50cdl")

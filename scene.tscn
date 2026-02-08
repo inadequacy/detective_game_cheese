@@ -15,10 +15,10 @@
 [ext_resource type="PackedScene" uid="uid://ctjp4m6t07873" path="res://d_n_d/visual_notes/visual_note_example.tscn" id="6_xpof7"]
 [ext_resource type="Texture2D" uid="uid://mx1dx533ap7t" path="res://objects/Birth Certificate_01.png" id="7_nb0s3"]
 [ext_resource type="Texture2D" uid="uid://dm8jjnpgyss3w" path="res://characters/art/Butler_01.png" id="7_ni31j"]
-[ext_resource type="Texture2D" uid="uid://dxhdv6jem7bph" path="res://images/door (1).png" id="7_xb05w"]
 [ext_resource type="Texture2D" uid="uid://cb0myjpuyeg8e" path="res://objects/door frame.png" id="8_iloo5"]
 [ext_resource type="Texture2D" uid="uid://kfagn0kpafrv" path="res://objects/Cheese Platter_Baby Bell_01.png" id="8_wncyr"]
 [ext_resource type="Texture2D" uid="uid://vp2kwr3p3a3q" path="res://characters/art/Cheese Dreams_Cheese Addict_1.png" id="8_xlvrw"]
+[ext_resource type="PackedScene" uid="uid://npn2lpucay17" path="res://door.tscn" id="9_iloo5"]
 [ext_resource type="Texture2D" uid="uid://bqpe4xgsfop7i" path="res://characters/art/plod stilton final.png" id="10_5juve"]
 [ext_resource type="Texture2D" uid="uid://bejfxitcgct57" path="res://characters/art/baby twin.png" id="14_o3hm7"]
 [ext_resource type="Texture2D" uid="uid://bsnwbhj7oox5h" path="res://characters/art/Femme Fatale_01.png" id="15_xpof7"]
@@ -46,13 +46,6 @@ alpha_scissor_threshold = 0.974
 alpha_antialiasing_mode = 0
 cull_mode = 2
 albedo_texture = ExtResource("7_nb0s3")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6wd4v"]
-transparency = 2
-alpha_scissor_threshold = 0.836
-alpha_antialiasing_mode = 0
-cull_mode = 2
-albedo_texture = ExtResource("7_xb05w")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pou65"]
 transparency = 2
@@ -136,10 +129,16 @@ transform = Transform3D(-0.14782912, 0.07837221, 0.0033539617, 0.10092793, 0.114
 material_override = SubResource("StandardMaterial3D_hyak3")
 texture = ExtResource("8_iloo5")
 
-[node name="Door" type="Sprite3D" parent="Mansion" unique_id=1272261146]
-transform = Transform3D(-1.5298985e-08, 0, 0.35, 0, 0.35, 0, -0.35, 0, -1.5298985e-08, -3.1081872, -0.6165595, -14.478212)
-material_override = SubResource("StandardMaterial3D_6wd4v")
-texture = ExtResource("7_xb05w")
+[node name="Door" parent="Mansion" unique_id=1356751772 groups=["interactable"] instance=ExtResource("9_iloo5")]
+transform = Transform3D(0.9999748, 0, -0.0071033835, 0, 1, 0, 0.0071033835, 0, 0.9999748, -3.1081872, -0.6165595, -14.478212)
+
+[node name="Pivot" parent="Mansion/Door" index="0" unique_id=1887617834 groups=["interactable"]]
+
+[node name="Door" parent="Mansion/Door/Pivot" index="0" unique_id=528802495 groups=["interactable"]]
+
+[node name="Door" parent="Mansion/Door/Pivot/Door" index="0" unique_id=260297076 groups=["interactable"]]
+
+[node name="CollisionShape3D" parent="Mansion/Door/Pivot/Door/Door" index="0" unique_id=131633810 groups=["interactable"]]
 
 [node name="Sprite3D15" type="Sprite3D" parent="Mansion" unique_id=874277459]
 transform = Transform3D(0.10888268, 0, -0.13700207, 0, 0.175, 0, 0.13700207, 0, 0.10888268, 16.143394, -1.6984845, -22.454952)
@@ -150,6 +149,44 @@ texture = ExtResource("8_wncyr")
 transform = Transform3D(-0.006372981, 0, -0.17488393, 0, 0.175, 0, 0.17488393, 0, -0.006372981, 16.891323, -1.6984845, -21.513866)
 material_override = SubResource("StandardMaterial3D_pou65")
 texture = ExtResource("8_wncyr")
+
+[node name="Table01" type="MeshInstance3D" parent="Mansion" unique_id=172811681]
+transform = Transform3D(-1.9670125e-08, 0, 0.45, 0, 0.45, 0, -0.45, 0, -1.9670125e-08, -8.372976, -2.2075856, -13.183401)
+material_override = SubResource("StandardMaterial3D_nb0s3")
+mesh = ExtResource("26_llic6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mansion/Table01" unique_id=405496444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3989735, 2.2620635, -2.0612187)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Table01/StaticBody3D" unique_id=1469730234]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4186077, -0.80589294, 2.0155354)
+shape = SubResource("BoxShape3D_iloo5")
+
+[node name="Sprite3D17" type="Sprite3D" parent="Mansion" unique_id=1753978152]
+transform = Transform3D(0.325, 0, 0, 0, 0.325, 0, 0, 0, 0.325, -8.488991, -1.3738225, -11.520905)
+material_override = SubResource("StandardMaterial3D_g4bmd")
+texture = ExtResource("27_yjo7n")
+
+[node name="Sprite3D18" type="Sprite3D" parent="Mansion" unique_id=915326017]
+transform = Transform3D(0.3835849, 0, -0.30810165, 0, 0.625, 0, 0.30810165, 0, 0.3835849, -11.937684, -0.79266036, -11.520905)
+material_override = SubResource("StandardMaterial3D_x5hgh")
+texture = ExtResource("27_yjo7n")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mansion/Sprite3D18" unique_id=1177850183]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Sprite3D18/StaticBody3D" unique_id=1720841938]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.121094465, 0)
+shape = SubResource("CylinderShape3D_hyak3")
+
+[node name="Sprite3D19" type="Sprite3D" parent="Mansion" unique_id=1915964239]
+transform = Transform3D(0.29919034, 0, 0.39057538, 0, 0.625, 0, -0.39057538, 0, 0.29919034, -11.937684, -0.79266036, -11.520905)
+material_override = SubResource("StandardMaterial3D_x5hgh")
+texture = ExtResource("27_yjo7n")
+
+[node name="Safe01" type="MeshInstance3D" parent="Mansion" unique_id=1941599983]
+transform = Transform3D(-0.020261016, 0, -0.014645521, 0, 0.025, 0, 0.014645521, 0, -0.020261016, -4.5997896, -2.2215006, -11.158589)
+material_override = SubResource("StandardMaterial3D_iloo5")
+mesh = ExtResource("32_nb0s3")
 
 [node name="Lighting" type="Node" parent="." unique_id=1018692635]
 
@@ -687,44 +724,7 @@ transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0.26089597, 0)
 flip_h = true
 texture = ExtResource("19_xpof7")
 
-[node name="Table01" type="MeshInstance3D" parent="." unique_id=172811681]
-transform = Transform3D(-1.9670125e-08, 0, 0.45, 0, 0.45, 0, -0.45, 0, -1.9670125e-08, -8.368084, -0.07506657, -13.173436)
-material_override = SubResource("StandardMaterial3D_nb0s3")
-mesh = ExtResource("26_llic6")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Table01" unique_id=405496444]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3989735, 2.2620635, -2.0612187)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Table01/StaticBody3D" unique_id=1469730234]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4186077, -0.80589294, 2.0155354)
-shape = SubResource("BoxShape3D_iloo5")
-
-[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1753978152]
-transform = Transform3D(0.325, 0, 0, 0, 0.325, 0, 0, 0, 0.325, -8.484098, 0.75869656, -11.51094)
-material_override = SubResource("StandardMaterial3D_g4bmd")
-texture = ExtResource("27_yjo7n")
-
-[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=915326017]
-transform = Transform3D(0.3835849, 0, -0.30810165, 0, 0.625, 0, 0.30810165, 0, 0.3835849, -11.932792, 1.3398587, -11.51094)
-material_override = SubResource("StandardMaterial3D_x5hgh")
-texture = ExtResource("27_yjo7n")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Sprite3D2" unique_id=1177850183]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Sprite3D2/StaticBody3D" unique_id=1720841938]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.121094465, 0)
-shape = SubResource("CylinderShape3D_hyak3")
-
-[node name="Sprite3D3" type="Sprite3D" parent="." unique_id=1915964239]
-transform = Transform3D(0.29919034, 0, 0.39057538, 0, 0.625, 0, -0.39057538, 0, 0.29919034, -11.932792, 1.3398587, -11.51094)
-material_override = SubResource("StandardMaterial3D_x5hgh")
-texture = ExtResource("27_yjo7n")
-
-[node name="Safe01" type="MeshInstance3D" parent="." unique_id=1941599983]
-transform = Transform3D(-0.020261016, 0, -0.014645521, 0, 0.025, 0, 0.014645521, 0, -0.020261016, -4.5948973, -0.08898163, -11.148624)
-material_override = SubResource("StandardMaterial3D_iloo5")
-mesh = ExtResource("32_nb0s3")
-
+[editable path="Mansion/Door"]
 [editable path="Manager/EndGame"]
 [editable path="Characters/Big Cheese"]
 [editable path="Characters/Butler"]
