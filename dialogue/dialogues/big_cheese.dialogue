@@ -5,7 +5,11 @@ if not facts.big_cheese_retiring.known
 	Big Cheese: It's a shame that your first Cheese Ball is the last one, after tonight, I'll be retiring as The Big Cheese, it was a bit of a shock to the others but all good things must come to an end.
 	Big Cheese: Regardless, we're happy to have you! I hope you enjoy yourself, theres nowhere else I'd rather be than here with my loyal friends, my found family, and that includes you now!
 else:
-	Big Cheese: Go be merry! You should be enjoying yourself.
+	Big Cheese: You didn't hear anything earlier did you? Ella and I were having a....conversation.  It didn't go so well. She's rather upset about my retirement, which is understandable given that we started this together. Have you seen the cheese knife thats supposed to be on this tray? 
+	Big Cheese: Gosh, Wensley has really been slacking tonight! The state of Cheese Manor tonight, honestly. First I find my safe all scratched up, what did Wensley do, clean it with a cheese knife? Right of course and then I find a cheese knife missing from the tray!
+	Big Cheese: How can anyone be expected to eat the cheese without a cheese knife?! After spending a fortune on cheese for every ball? It doesn't matter anymore, I really cannot bear to eat any more cheese after tonight.
+	Big Cheese: I've always hated cheese... I've always hated these nights....especially the cheese.... my love... I can no longer bear to be near you and not have you...  
+	Big Cheese: Oh- you're still here. Please forget you heard that. Excuse me, I need a moment to myself.
 => END
 
 ~ start
