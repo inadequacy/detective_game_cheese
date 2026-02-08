@@ -35,7 +35,7 @@ size = Vector2(636.1946, 535.41125)
 load_path = "res://.godot/imported/icon.svg-40d11009b022ae281956dc38e8f8d85e.ctex"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
-size = Vector2(142, 185)
+size = Vector2(167, 198)
 
 [sub_resource type="Theme" id="Theme_5hean"]
 
@@ -192,7 +192,7 @@ texture = ExtResource("7_uuvgj")
 position = Vector2(-61, -52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card2/DropZone" unique_id=801467907]
-position = Vector2(61, 42.5)
+position = Vector2(64, 48)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Board/Card2" unique_id=2061177031]
@@ -254,7 +254,7 @@ texture = ExtResource("7_uuvgj")
 position = Vector2(-61, -52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card3/DropZone" unique_id=805258854]
-position = Vector2(61, 42.5)
+position = Vector2(62, 50)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Board/Card3" unique_id=1810619883]
@@ -315,7 +315,7 @@ texture = ExtResource("7_uuvgj")
 position = Vector2(-61, -52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card4/DropZone" unique_id=1375200057]
-position = Vector2(61, 42.5)
+position = Vector2(60.5, 49)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Board/Card4" unique_id=1563945312]
@@ -375,7 +375,7 @@ texture = ExtResource("7_uuvgj")
 position = Vector2(-61, -52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card5/DropZone" unique_id=1892167147]
-position = Vector2(61, 42.5)
+position = Vector2(64, 48)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Board/Card5" unique_id=1309345758]
@@ -436,7 +436,7 @@ texture = ExtResource("7_uuvgj")
 position = Vector2(-61, -52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card6/DropZone" unique_id=570560982]
-position = Vector2(61, 42.5)
+position = Vector2(61, 45)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Board/Card6" unique_id=218061656]
@@ -497,7 +497,7 @@ texture = ExtResource("7_uuvgj")
 position = Vector2(-61, -52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card7/DropZone" unique_id=2038952004]
-position = Vector2(61, 42.5)
+position = Vector2(62, 48)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Board/Card7" unique_id=790609891]
@@ -558,7 +558,7 @@ texture = ExtResource("7_uuvgj")
 position = Vector2(-61, -52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Card8/DropZone" unique_id=727748423]
-position = Vector2(61, 42.5)
+position = Vector2(61, 48)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Board/Card8" unique_id=2072322261]

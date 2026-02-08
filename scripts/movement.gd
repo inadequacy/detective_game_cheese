@@ -11,6 +11,7 @@ var start_rot
 var pinboard
 var hand_normal = load("res://images/hand_left.png")
 var hand_if_f = load("res://images/hand_point.png")
+#@export var visual_clues: Dictionary = {"object_name": "text_for_journal"}
 
 func _ready() -> void:
 	animator = $AnimationHandling/AnimationPlayer
@@ -19,6 +20,10 @@ func _ready() -> void:
 	start_loc = position
 	start_rot = rotation
 	pinboard = get_tree().get_first_node_in_group("pinboard")
+
+var visual_clues: Dictionary = {
+	"Cupboard": "Birthcirts cupboard",
+}
 
 func _physics_process(delta):
 	# Movement
@@ -63,5 +68,5 @@ func _physics_process(delta):
 				body.get_parent().interact()
 				if body.get_parent().was_interacted == false:
 					pinboard.spawn_visual_note(body.get_parent().image_note)
-					pinboard.spawn_note("Add your text")
+					pinboard.spawn_note(visual_clues[body.name])
 					body.get_parent().was_interacted = true

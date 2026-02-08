@@ -12,8 +12,8 @@ var book_area
 
 func _ready() -> void:
 	book = $Book/Book
-	book_node=$Book
-	book_area=$Book/Book/DropZone/CollisionShape2D
+	book_node = $Book
+	book_area = $Book/Book/DropZone/CollisionShape2D
 
 
 func random_point_in_book() -> Vector2:

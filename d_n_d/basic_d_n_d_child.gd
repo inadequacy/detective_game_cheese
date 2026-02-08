@@ -6,16 +6,13 @@ var saved_size
 @export var max_font_size=28
 @export var min_font_size=1
 
-
 @onready var sensor: Area2D = $OverlapSensor
 var saved_scale = scale
 
 # Waiting a physics frame supresses the errors, might not fix ???
 func _ready() -> void:
 	await get_tree().physics_frame
-	
-	
-	
+
 func fit_text():
 	if get_child(2) == $TexLabel:
 		var font = get_child(2).get_theme_font("font")
@@ -32,7 +29,6 @@ func fit_text():
 
 			font_size -= 1
 		#$TexLabel.add_theme_font_size_override("font",font_size)
-		
 
 func attach_to_book()->void:
 	
@@ -40,10 +36,6 @@ func attach_to_book()->void:
 	book.add_child(self)
 	saved_size=scale
 	fit_text()
-	
-	
-	
-	
 
 func _process(_delta: float) -> void:
 	if dragging:
