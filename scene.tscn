@@ -20,8 +20,10 @@
 [ext_resource type="Texture2D" uid="uid://vp2kwr3p3a3q" path="res://characters/art/Cheese Dreams_Cheese Addict_1.png" id="8_xlvrw"]
 [ext_resource type="PackedScene" uid="uid://npn2lpucay17" path="res://door.tscn" id="9_iloo5"]
 [ext_resource type="Texture2D" uid="uid://bqpe4xgsfop7i" path="res://characters/art/plod stilton final.png" id="10_5juve"]
+[ext_resource type="Texture2D" uid="uid://7qvheg8jgon5" path="res://objects/Cheese Platter_Camamber_01.png" id="11_g4bmd"]
 [ext_resource type="Texture2D" uid="uid://bejfxitcgct57" path="res://characters/art/baby twin.png" id="14_o3hm7"]
 [ext_resource type="Texture2D" uid="uid://bsnwbhj7oox5h" path="res://characters/art/Femme Fatale_01.png" id="15_xpof7"]
+[ext_resource type="Texture2D" uid="uid://m8cdmm8tbv3h" path="res://objects/Cheese Platter_No Knife_01.png" id="17_iloo5"]
 [ext_resource type="Texture2D" uid="uid://byfpun723y3vp" path="res://characters/art/charactermerchantcarol2.png" id="18_o3hm7"]
 [ext_resource type="Texture2D" uid="uid://p08u0whtkn0t" path="res://characters/art/big twin.png" id="19_xpof7"]
 [ext_resource type="Texture2D" uid="uid://caie0gol6fanu" path="res://images/dithered-image.png" id="22_wncyr"]
@@ -54,6 +56,13 @@ alpha_antialiasing_mode = 0
 cull_mode = 2
 albedo_texture = ExtResource("8_wncyr")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jrtx1"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("11_g4bmd")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nb0s3"]
 albedo_texture = ExtResource("22_wncyr")
 roughness_texture = ExtResource("25_m514l")
@@ -73,6 +82,13 @@ alpha_scissor_threshold = 0.967
 alpha_antialiasing_mode = 0
 cull_mode = 2
 albedo_texture = ExtResource("27_yjo7n")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7842m"]
+transparency = 2
+alpha_scissor_threshold = 0.967
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("17_iloo5")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x5hgh"]
 transparency = 2
@@ -146,6 +162,56 @@ transform = Transform3D(0.10888268, 0, -0.13700207, 0, 0.175, 0, 0.13700207, 0, 
 material_override = SubResource("StandardMaterial3D_pou65")
 texture = ExtResource("8_wncyr")
 
+[node name="Sprite3D21" type="Sprite3D" parent="Mansion" unique_id=2014078470]
+transform = Transform3D(-0.14419785, 0, 0.099156365, 0, 0.175, 0, -0.099156365, 0, -0.14419785, -15.251648, -1.1929625, 26.101164)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D23" type="Sprite3D" parent="Mansion" unique_id=458878046]
+transform = Transform3D(0.16126917, 0, -0.0679504, 0, 0.175, 0, 0.0679504, 0, 0.16126917, -20.727766, -1.6879724, 21.556114)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D26" type="Sprite3D" parent="Mansion" unique_id=553098958]
+transform = Transform3D(-0.16509339, 0, -0.058044627, 0, 0.175, 0, 0.058044627, 0, -0.16509339, 9.644971, -1.2011917, 8.82425)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D28" type="Sprite3D" parent="Mansion" unique_id=1700869388]
+transform = Transform3D(-0.017809466, 0, -0.17409144, 0, 0.175, 0, 0.17409144, 0, -0.017809466, 23.571562, -1.6796818, 0.023720399)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D30" type="Sprite3D" parent="Mansion" unique_id=2100287679]
+transform = Transform3D(0.15865159, 0, -0.073855795, 0, 0.175, 0, 0.073855795, 0, 0.15865159, 20.556816, -1.2095051, -9.408112)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D24" type="Sprite3D" parent="Mansion" unique_id=942491423]
+transform = Transform3D(-0.16695641, 0, -0.052445784, 0, 0.175, 0, 0.052445784, 0, -0.16695641, -20.341425, -1.6879724, 21.94264)
+material_override = SubResource("StandardMaterial3D_jrtx1")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D27" type="Sprite3D" parent="Mansion" unique_id=294005676]
+transform = Transform3D(-0.06274007, 0, -0.16336673, 0, 0.175, 0, 0.16336673, 0, -0.06274007, 14.878885, -0.38791323, 3.6194293)
+material_override = SubResource("StandardMaterial3D_jrtx1")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D29" type="Sprite3D" parent="Mansion" unique_id=1182070727]
+transform = Transform3D(-0.17483333, 0, -0.007636424, 0, 0.175, 0, 0.007636424, 0, -0.17483333, 15.212633, -1.1764084, -9.513564)
+material_override = SubResource("StandardMaterial3D_jrtx1")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D25" type="Sprite3D" parent="Mansion" unique_id=930479843]
+transform = Transform3D(0.016797341, 0, 0.174192, 0, 0.175, 0, -0.174192, 0, 0.016797341, -8.888389, -1.6879724, 16.908794)
+material_override = SubResource("StandardMaterial3D_jrtx1")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D22" type="Sprite3D" parent="Mansion" unique_id=1415176287]
+transform = Transform3D(-0.12537627, 0, 0.1220893, 0, 0.175, 0, -0.1220893, 0, -0.12537627, -20.956991, -1.1299365, 28.974405)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
 [node name="Sprite3D16" type="Sprite3D" parent="Mansion" unique_id=1199856462]
 transform = Transform3D(-0.006372981, 0, -0.17488393, 0, 0.175, 0, 0.17488393, 0, -0.006372981, 16.891323, -1.6984845, -21.513866)
 material_override = SubResource("StandardMaterial3D_pou65")
@@ -166,6 +232,11 @@ shape = SubResource("BoxShape3D_iloo5")
 [node name="Sprite3D17" type="Sprite3D" parent="Mansion" unique_id=1753978152]
 transform = Transform3D(0.325, 0, 0, 0, 0.325, 0, 0, 0, 0.325, -8.488991, -1.3738225, -11.520905)
 material_override = SubResource("StandardMaterial3D_g4bmd")
+texture = ExtResource("27_yjo7n")
+
+[node name="Sprite3D20" type="Sprite3D" parent="Mansion" unique_id=1092497203]
+transform = Transform3D(0.17593637, 0, 0.1052207, 0, 0.205, 0, -0.1052207, 0, 0.17593637, -7.938304, -0.65365005, -13.049473)
+material_override = SubResource("StandardMaterial3D_7842m")
 texture = ExtResource("27_yjo7n")
 
 [node name="Sprite3D18" type="Sprite3D" parent="Mansion" unique_id=915326017]
