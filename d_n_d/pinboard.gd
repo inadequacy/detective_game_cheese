@@ -39,12 +39,16 @@ func spawn_note(text_label):
 	var label := note.get_node("TexLabel") as Label
 	label.text = text_label
 	
+	
 	book_node.add_child(note)
+	note.attach_to_book()
+	note.fit_text()
 	
 func spawn_visual_note(visual_note):
 	var note=visual_note.instantiate()
 	note.position = random_point_in_book()
 	book_node.add_child(note)
+	note.attach_to_book()
 
 
 var pinned_facts: Dictionary = {
