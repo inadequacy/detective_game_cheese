@@ -48,7 +48,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 func open_door():
-	var door = $"../../Mansion/Door/Pivot/Door"
+	var door = $"../../Mansion/Interactables/Door/Pivot/Door"
 	door.reversible = true
 	if not door.open:
 		door.interact()

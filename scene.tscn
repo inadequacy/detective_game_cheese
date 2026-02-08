@@ -11,8 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://cosv02l57uk2g" path="res://objects/cupboard open.png" id="4_xpof7"]
 [ext_resource type="PackedScene" uid="uid://dvrrss18cib0j" path="res://characters/npc.tscn" id="5_y2354"]
 [ext_resource type="PackedScene" uid="uid://bvylrtrc0b0sp" path="res://end_game.tscn" id="6_akxrc"]
+[ext_resource type="PackedScene" uid="uid://ipamid3btc0v" path="res://d_n_d/visual_notes/birth_cirts.tscn" id="6_g4bmd"]
 [ext_resource type="Texture2D" uid="uid://brewisrm55co1" path="res://characters/art/Cheese Dreams_Big Cheese_1.png" id="6_ni31j"]
-[ext_resource type="PackedScene" uid="uid://ctjp4m6t07873" path="res://d_n_d/visual_notes/visual_note_example.tscn" id="6_xpof7"]
 [ext_resource type="Texture2D" uid="uid://mx1dx533ap7t" path="res://objects/Birth Certificate_01.png" id="7_nb0s3"]
 [ext_resource type="Texture2D" uid="uid://dm8jjnpgyss3w" path="res://characters/art/Butler_01.png" id="7_ni31j"]
 [ext_resource type="Texture2D" uid="uid://cb0myjpuyeg8e" path="res://objects/door frame.png" id="8_iloo5"]
@@ -26,9 +26,13 @@
 [ext_resource type="Texture2D" uid="uid://m8cdmm8tbv3h" path="res://objects/Cheese Platter_No Knife_01.png" id="17_iloo5"]
 [ext_resource type="Texture2D" uid="uid://byfpun723y3vp" path="res://characters/art/charactermerchantcarol2.png" id="18_o3hm7"]
 [ext_resource type="Texture2D" uid="uid://p08u0whtkn0t" path="res://characters/art/big twin.png" id="19_xpof7"]
+[ext_resource type="PackedScene" uid="uid://b7s2hiao8140i" path="res://d_n_d/visual_notes/cheese_knife.tscn" id="20_7842m"]
 [ext_resource type="Texture2D" uid="uid://caie0gol6fanu" path="res://images/dithered-image.png" id="22_wncyr"]
 [ext_resource type="Texture2D" uid="uid://c3qli5c3hji6g" path="res://images/Table_01_lambert1SG_Height.png" id="23_pou65"]
+[ext_resource type="Texture2D" uid="uid://drsy7nuiqedeg" path="res://images/cigar.png" id="24_hyak3"]
 [ext_resource type="Texture2D" uid="uid://dttesfkihl5y1" path="res://images/Table_01_lambert1SG_Normal.png" id="24_otx46"]
+[ext_resource type="Texture2D" uid="uid://bnfbf7jfi43yc" path="res://images/Broken Wine Glass_01.png" id="25_7842m"]
+[ext_resource type="PackedScene" uid="uid://diuxowxhdxb0l" path="res://d_n_d/visual_notes/safe.tscn" id="25_jrtx1"]
 [ext_resource type="Texture2D" uid="uid://drpy8wny6qvty" path="res://images/Table_01_lambert1SG_Roughness.png" id="25_m514l"]
 [ext_resource type="ArrayMesh" uid="uid://0ql1aiqkcaml" path="res://images/Table_01.obj" id="26_llic6"]
 [ext_resource type="Texture2D" uid="uid://05fytedt1l30" path="res://images/StudyRoom_Chair.png" id="27_yjo7n"]
@@ -38,16 +42,36 @@
 [ext_resource type="Texture2D" uid="uid://b1iwys7o0jsyu" path="res://images/Safe_01_Roughness.png" id="31_6wd4v"]
 [ext_resource type="ArrayMesh" uid="uid://mbw12eghpil2" path="res://images/Safe_01.obj" id="32_nb0s3"]
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_8j1ou"]
-height = 11.709
-radius = 8.267
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hyak3"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g4bmd"]
 transparency = 2
-alpha_scissor_threshold = 0.974
+alpha_scissor_threshold = 0.967
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("7_nb0s3")
+albedo_texture = ExtResource("27_yjo7n")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nb0s3"]
+albedo_texture = ExtResource("22_wncyr")
+roughness_texture = ExtResource("25_m514l")
+normal_enabled = true
+normal_scale = 0.0
+normal_texture = ExtResource("24_otx46")
+heightmap_enabled = true
+heightmap_scale = -1.073
+heightmap_texture = ExtResource("23_pou65")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iloo5"]
+size = Vector3(4.4712524, 2.7252808, 4.922119)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x5hgh"]
+transparency = 2
+alpha_scissor_threshold = 0.967
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("29_yjo7n")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_hyak3"]
+height = 4.0966797
+radius = 1.3735352
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pou65"]
 transparency = 2
@@ -63,25 +87,16 @@ alpha_antialiasing_mode = 0
 cull_mode = 2
 albedo_texture = ExtResource("11_g4bmd")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nb0s3"]
-albedo_texture = ExtResource("22_wncyr")
-roughness_texture = ExtResource("25_m514l")
-normal_enabled = true
-normal_scale = 0.0
-normal_texture = ExtResource("24_otx46")
-heightmap_enabled = true
-heightmap_scale = -1.073
-heightmap_texture = ExtResource("23_pou65")
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_8j1ou"]
+height = 11.709
+radius = 8.267
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_iloo5"]
-size = Vector3(4.4712524, 2.7252808, 4.922119)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g4bmd"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hyak3"]
 transparency = 2
-alpha_scissor_threshold = 0.967
+alpha_scissor_threshold = 0.974
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("27_yjo7n")
+albedo_texture = ExtResource("7_nb0s3")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7842m"]
 transparency = 2
@@ -90,16 +105,8 @@ alpha_antialiasing_mode = 0
 cull_mode = 2
 albedo_texture = ExtResource("17_iloo5")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x5hgh"]
-transparency = 2
-alpha_scissor_threshold = 0.967
-alpha_antialiasing_mode = 0
-cull_mode = 2
-albedo_texture = ExtResource("29_yjo7n")
-
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_hyak3"]
-height = 4.0966797
-radius = 1.3735352
+[sub_resource type="BoxShape3D" id="BoxShape3D_hyak3"]
+size = Vector3(9.79, 5.245, 8.71)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iloo5"]
 cull_mode = 2
@@ -108,6 +115,9 @@ metallic = 0.48
 metallic_specular = 0.24
 metallic_texture = ExtResource("30_yjo7n")
 roughness_texture = ExtResource("31_6wd4v")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7842m"]
+size = Vector3(75.880615, 147.08783, 61.275635)
 
 [node name="Scene" type="Node3D" unique_id=350646142 groups=["interactable"]]
 
@@ -118,150 +128,188 @@ speed = 3.6
 [node name="Mansion" parent="." unique_id=218848142 instance=ExtResource("1_3253y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0045700073, 2.132519, 0.015431881)
 
-[node name="Copboard" type="Sprite3D" parent="Mansion" unique_id=1999734537 groups=["interactable"]]
-transform = Transform3D(0.375, 0, 0, 0, 0.375, 0, 0, 0, 0.375, -0.9258561, -0.60891676, 18.124172)
+[node name="Non-Interactables" type="Node" parent="Mansion" unique_id=779467329]
+
+[node name="Sprite3D17" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=1753978152]
+transform = Transform3D(0.325, 0, 0, 0, 0.325, 0, 0, 0, 0.325, -8.484421, 0.75869656, -11.505472)
+material_override = SubResource("StandardMaterial3D_g4bmd")
+texture = ExtResource("27_yjo7n")
+
+[node name="Table01" type="MeshInstance3D" parent="Mansion/Non-Interactables" unique_id=172811681]
+transform = Transform3D(-1.9670125e-08, 0, 0.45, 0, 0.45, 0, -0.45, 0, -1.9670125e-08, -8.368406, -0.07506657, -13.167969)
+material_override = SubResource("StandardMaterial3D_nb0s3")
+mesh = ExtResource("26_llic6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mansion/Non-Interactables/Table01" unique_id=405496444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3989735, 2.2620635, -2.0612187)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Non-Interactables/Table01/StaticBody3D" unique_id=1469730234]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4186077, -0.80589294, 2.0155354)
+shape = SubResource("BoxShape3D_iloo5")
+
+[node name="Sprite3D18" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=915326017]
+transform = Transform3D(0.3835849, 0, -0.30810165, 0, 0.625, 0, 0.30810165, 0, 0.3835849, -11.933114, 1.3398587, -11.505472)
+material_override = SubResource("StandardMaterial3D_x5hgh")
+texture = ExtResource("27_yjo7n")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mansion/Non-Interactables/Sprite3D18" unique_id=1177850183]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Non-Interactables/Sprite3D18/StaticBody3D" unique_id=1720841938]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.121094465, 0)
+shape = SubResource("CylinderShape3D_hyak3")
+
+[node name="Sprite3D19" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=1915964239]
+transform = Transform3D(0.29919034, 0, 0.39057538, 0, 0.625, 0, -0.39057538, 0, 0.29919034, -11.933114, 1.3398587, -11.505472)
+material_override = SubResource("StandardMaterial3D_x5hgh")
+texture = ExtResource("27_yjo7n")
+
+[node name="Sprite3D15" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=874277459]
+transform = Transform3D(0.10888268, 0, -0.13700207, 0, 0.175, 0, 0.13700207, 0, 0.10888268, 16.147964, 0.43403447, -22.43952)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D21" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=2014078470]
+transform = Transform3D(-0.14419785, 0, 0.099156365, 0, 0.175, 0, -0.099156365, 0, -0.14419785, -15.247078, 0.9395565, 26.116596)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D23" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=458878046]
+transform = Transform3D(0.16126917, 0, -0.0679504, 0, 0.175, 0, 0.0679504, 0, 0.16126917, -20.723196, 0.44454658, 21.571547)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D26" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=553098958]
+transform = Transform3D(-0.16509339, 0, -0.058044627, 0, 0.175, 0, 0.058044627, 0, -0.16509339, 9.649541, 0.93132734, 8.839682)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D28" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=1700869388]
+transform = Transform3D(-0.017809466, 0, -0.17409144, 0, 0.175, 0, 0.17409144, 0, -0.017809466, 23.576132, 0.45283723, 0.03915228)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D30" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=2100287679]
+transform = Transform3D(0.15865159, 0, -0.073855795, 0, 0.175, 0, 0.073855795, 0, 0.15865159, 20.561386, 0.9230139, -9.392679)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D24" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=942491423]
+transform = Transform3D(-0.16695641, 0, -0.052445784, 0, 0.175, 0, 0.052445784, 0, -0.16695641, -20.336855, 0.44454658, 21.958073)
+material_override = SubResource("StandardMaterial3D_jrtx1")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D27" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=294005676]
+transform = Transform3D(-0.06274007, 0, -0.16336673, 0, 0.175, 0, 0.16336673, 0, -0.06274007, 14.883455, 1.7446058, 3.6348612)
+material_override = SubResource("StandardMaterial3D_jrtx1")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D29" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=1182070727]
+transform = Transform3D(-0.17483333, 0, -0.007636424, 0, 0.175, 0, 0.007636424, 0, -0.17483333, 15.217203, 0.9561106, -9.498133)
+material_override = SubResource("StandardMaterial3D_jrtx1")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D25" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=930479843]
+transform = Transform3D(0.016797341, 0, 0.174192, 0, 0.175, 0, -0.174192, 0, 0.016797341, -8.883819, 0.44454658, 16.924227)
+material_override = SubResource("StandardMaterial3D_jrtx1")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D22" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=1415176287]
+transform = Transform3D(-0.12537627, 0, 0.1220893, 0, 0.175, 0, -0.1220893, 0, -0.12537627, -20.952421, 1.0025826, 28.989838)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Sprite3D16" type="Sprite3D" parent="Mansion/Non-Interactables" unique_id=1199856462]
+transform = Transform3D(-0.006372981, 0, -0.17488393, 0, 0.175, 0, 0.17488393, 0, -0.006372981, 16.895893, 0.43403447, -21.498434)
+material_override = SubResource("StandardMaterial3D_pou65")
+texture = ExtResource("8_wncyr")
+
+[node name="Interactables" type="Node" parent="Mansion" unique_id=674269662]
+
+[node name="Door" parent="Mansion/Interactables" unique_id=1356751772 groups=["interactable"] instance=ExtResource("9_iloo5")]
+transform = Transform3D(0.9999748, 0, -0.0071033835, 0, 1, 0, 0.0071033835, 0, 0.9999748, -3.1036172, 1.5159595, -14.46278)
+
+[node name="Pivot" parent="Mansion/Interactables/Door" index="0" unique_id=1887617834 groups=["interactable"]]
+
+[node name="Door" parent="Mansion/Interactables/Door/Pivot" index="0" unique_id=528802495 groups=["interactable"]]
+reversible = false
+
+[node name="Door" parent="Mansion/Interactables/Door/Pivot/Door" index="0" unique_id=260297076 groups=["interactable"]]
+
+[node name="CollisionShape3D" parent="Mansion/Interactables/Door/Pivot/Door/Door" index="0" unique_id=131633810 groups=["interactable"]]
+
+[node name="AnimationPlayer" parent="Mansion/Interactables/Door" index="1" unique_id=133261136]
+reset_on_save = false
+
+[node name="Copboard" type="Sprite3D" parent="Mansion/Interactables" unique_id=1999734537 groups=["interactable"]]
+transform = Transform3D(0.375, 0, 0, 0, 0.375, 0, 0, 0, 0.375, -0.9212861, 1.5236022, 18.139605)
 gi_mode = 0
 texture = ExtResource("2_8j1ou")
 script = ExtResource("3_o3hm7")
 inactive_texture = ExtResource("2_8j1ou")
 active_texture = ExtResource("4_xpof7")
 reversible = true
-image_note = ExtResource("6_xpof7")
+image_note = ExtResource("6_g4bmd")
 
-[node name="Cupboard" type="StaticBody3D" parent="Mansion/Copboard" unique_id=1296034132 groups=["interactable"]]
+[node name="Cupboard" type="StaticBody3D" parent="Mansion/Interactables/Copboard" unique_id=1296034132 groups=["interactable"]]
 collision_mask = 0
 
-[node name="StaticBody3D" type="CollisionShape3D" parent="Mansion/Copboard/Cupboard" unique_id=552195158 groups=["interactable"]]
+[node name="StaticBody3D" type="CollisionShape3D" parent="Mansion/Interactables/Copboard/Cupboard" unique_id=552195158 groups=["interactable"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.2845497)
 shape = SubResource("CylinderShape3D_8j1ou")
 
-[node name="secret door book12" type="Sprite3D" parent="Mansion/Copboard" unique_id=189553523]
+[node name="secret door book12" type="Sprite3D" parent="Mansion/Interactables/Copboard" unique_id=189553523 groups=["interactable"]]
 transform = Transform3D(-0.16630706, -0.05140026, 0.003353962, -0.06619338, 0.12914674, -1.3022633e-10, -0.0011842923, -0.00036602738, -0.47098807, 4.8224397, 0.7100029, -0.02405461)
 material_override = SubResource("StandardMaterial3D_hyak3")
 texture = ExtResource("8_iloo5")
 
-[node name="secret door book13" type="Sprite3D" parent="Mansion/Copboard" unique_id=1813549917]
+[node name="secret door book13" type="Sprite3D" parent="Mansion/Interactables/Copboard" unique_id=1813549917 groups=["interactable"]]
 transform = Transform3D(-0.14782912, 0.07837221, 0.0033539617, 0.10092793, 0.11479758, 0, -0.0010527086, 0.00055809773, -0.47098807, 4.816322, -0.97843003, -0.024098177)
 material_override = SubResource("StandardMaterial3D_hyak3")
 texture = ExtResource("8_iloo5")
 
-[node name="Door" parent="Mansion" unique_id=1356751772 groups=["interactable"] instance=ExtResource("9_iloo5")]
-transform = Transform3D(0.9999748, 0, -0.0071033835, 0, 1, 0, 0.0071033835, 0, 0.9999748, -3.1081872, -0.6165595, -14.478212)
-
-[node name="Pivot" parent="Mansion/Door" index="0" unique_id=1887617834 groups=["interactable"]]
-
-[node name="Door" parent="Mansion/Door/Pivot" index="0" unique_id=528802495 groups=["interactable"]]
-reversible = false
-
-[node name="Door" parent="Mansion/Door/Pivot/Door" index="0" unique_id=260297076 groups=["interactable"]]
-
-[node name="CollisionShape3D" parent="Mansion/Door/Pivot/Door/Door" index="0" unique_id=131633810 groups=["interactable"]]
-
-[node name="AnimationPlayer" parent="Mansion/Door" index="1" unique_id=133261136]
-reset_on_save = false
-
-[node name="Sprite3D15" type="Sprite3D" parent="Mansion" unique_id=874277459]
-transform = Transform3D(0.10888268, 0, -0.13700207, 0, 0.175, 0, 0.13700207, 0, 0.10888268, 16.143394, -1.6984845, -22.454952)
-material_override = SubResource("StandardMaterial3D_pou65")
-texture = ExtResource("8_wncyr")
-
-[node name="Sprite3D21" type="Sprite3D" parent="Mansion" unique_id=2014078470]
-transform = Transform3D(-0.14419785, 0, 0.099156365, 0, 0.175, 0, -0.099156365, 0, -0.14419785, -15.251648, -1.1929625, 26.101164)
-material_override = SubResource("StandardMaterial3D_pou65")
-texture = ExtResource("8_wncyr")
-
-[node name="Sprite3D23" type="Sprite3D" parent="Mansion" unique_id=458878046]
-transform = Transform3D(0.16126917, 0, -0.0679504, 0, 0.175, 0, 0.0679504, 0, 0.16126917, -20.727766, -1.6879724, 21.556114)
-material_override = SubResource("StandardMaterial3D_pou65")
-texture = ExtResource("8_wncyr")
-
-[node name="Sprite3D26" type="Sprite3D" parent="Mansion" unique_id=553098958]
-transform = Transform3D(-0.16509339, 0, -0.058044627, 0, 0.175, 0, 0.058044627, 0, -0.16509339, 9.644971, -1.2011917, 8.82425)
-material_override = SubResource("StandardMaterial3D_pou65")
-texture = ExtResource("8_wncyr")
-
-[node name="Sprite3D28" type="Sprite3D" parent="Mansion" unique_id=1700869388]
-transform = Transform3D(-0.017809466, 0, -0.17409144, 0, 0.175, 0, 0.17409144, 0, -0.017809466, 23.571562, -1.6796818, 0.023720399)
-material_override = SubResource("StandardMaterial3D_pou65")
-texture = ExtResource("8_wncyr")
-
-[node name="Sprite3D30" type="Sprite3D" parent="Mansion" unique_id=2100287679]
-transform = Transform3D(0.15865159, 0, -0.073855795, 0, 0.175, 0, 0.073855795, 0, 0.15865159, 20.556816, -1.2095051, -9.408112)
-material_override = SubResource("StandardMaterial3D_pou65")
-texture = ExtResource("8_wncyr")
-
-[node name="Sprite3D24" type="Sprite3D" parent="Mansion" unique_id=942491423]
-transform = Transform3D(-0.16695641, 0, -0.052445784, 0, 0.175, 0, 0.052445784, 0, -0.16695641, -20.341425, -1.6879724, 21.94264)
-material_override = SubResource("StandardMaterial3D_jrtx1")
-texture = ExtResource("8_wncyr")
-
-[node name="Sprite3D27" type="Sprite3D" parent="Mansion" unique_id=294005676]
-transform = Transform3D(-0.06274007, 0, -0.16336673, 0, 0.175, 0, 0.16336673, 0, -0.06274007, 14.878885, -0.38791323, 3.6194293)
-material_override = SubResource("StandardMaterial3D_jrtx1")
-texture = ExtResource("8_wncyr")
-
-[node name="Sprite3D29" type="Sprite3D" parent="Mansion" unique_id=1182070727]
-transform = Transform3D(-0.17483333, 0, -0.007636424, 0, 0.175, 0, 0.007636424, 0, -0.17483333, 15.212633, -1.1764084, -9.513564)
-material_override = SubResource("StandardMaterial3D_jrtx1")
-texture = ExtResource("8_wncyr")
-
-[node name="Sprite3D25" type="Sprite3D" parent="Mansion" unique_id=930479843]
-transform = Transform3D(0.016797341, 0, 0.174192, 0, 0.175, 0, -0.174192, 0, 0.016797341, -8.888389, -1.6879724, 16.908794)
-material_override = SubResource("StandardMaterial3D_jrtx1")
-texture = ExtResource("8_wncyr")
-
-[node name="Sprite3D22" type="Sprite3D" parent="Mansion" unique_id=1415176287]
-transform = Transform3D(-0.12537627, 0, 0.1220893, 0, 0.175, 0, -0.1220893, 0, -0.12537627, -20.956991, -1.1299365, 28.974405)
-material_override = SubResource("StandardMaterial3D_pou65")
-texture = ExtResource("8_wncyr")
-
-[node name="Sprite3D16" type="Sprite3D" parent="Mansion" unique_id=1199856462]
-transform = Transform3D(-0.006372981, 0, -0.17488393, 0, 0.175, 0, 0.17488393, 0, -0.006372981, 16.891323, -1.6984845, -21.513866)
-material_override = SubResource("StandardMaterial3D_pou65")
-texture = ExtResource("8_wncyr")
-
-[node name="Table01" type="MeshInstance3D" parent="Mansion" unique_id=172811681]
-transform = Transform3D(-1.9670125e-08, 0, 0.45, 0, 0.45, 0, -0.45, 0, -1.9670125e-08, -8.372976, -2.2075856, -13.183401)
-material_override = SubResource("StandardMaterial3D_nb0s3")
-mesh = ExtResource("26_llic6")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Mansion/Table01" unique_id=405496444]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3989735, 2.2620635, -2.0612187)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Table01/StaticBody3D" unique_id=1469730234]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4186077, -0.80589294, 2.0155354)
-shape = SubResource("BoxShape3D_iloo5")
-
-[node name="Sprite3D17" type="Sprite3D" parent="Mansion" unique_id=1753978152]
-transform = Transform3D(0.325, 0, 0, 0, 0.325, 0, 0, 0, 0.325, -8.488991, -1.3738225, -11.520905)
-material_override = SubResource("StandardMaterial3D_g4bmd")
-texture = ExtResource("27_yjo7n")
-
-[node name="Sprite3D20" type="Sprite3D" parent="Mansion" unique_id=1092497203]
-transform = Transform3D(0.17593637, 0, 0.1052207, 0, 0.205, 0, -0.1052207, 0, 0.17593637, -7.938304, -0.65365005, -13.049473)
+[node name="Cheese" type="Sprite3D" parent="Mansion/Interactables" unique_id=1092497203 groups=["interactable"]]
+transform = Transform3D(0.17593637, 0, 0.1052207, 0, 0.205, 0, -0.1052207, 0, 0.17593637, -7.933734, 1.478869, -13.03404)
 material_override = SubResource("StandardMaterial3D_7842m")
 texture = ExtResource("27_yjo7n")
+script = ExtResource("3_o3hm7")
+image_note = ExtResource("20_7842m")
 
-[node name="Sprite3D18" type="Sprite3D" parent="Mansion" unique_id=915326017]
-transform = Transform3D(0.3835849, 0, -0.30810165, 0, 0.625, 0, 0.30810165, 0, 0.3835849, -11.937684, -0.79266036, -11.520905)
-material_override = SubResource("StandardMaterial3D_x5hgh")
-texture = ExtResource("27_yjo7n")
+[node name="Cheese" type="StaticBody3D" parent="Mansion/Interactables/Cheese" unique_id=2005143402 groups=["interactable"]]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Mansion/Sprite3D18" unique_id=1177850183]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Interactables/Cheese/Cheese" unique_id=1771434576 groups=["interactable"]]
+transform = Transform3D(0.8480481, 0, -0.52991927, 0, 1, 0, 0.52991927, 0, 0.8480481, -1.81, -3.935, -1.55)
+shape = SubResource("BoxShape3D_hyak3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Sprite3D18/StaticBody3D" unique_id=1720841938]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.121094465, 0)
-shape = SubResource("CylinderShape3D_hyak3")
-
-[node name="Sprite3D19" type="Sprite3D" parent="Mansion" unique_id=1915964239]
-transform = Transform3D(0.29919034, 0, 0.39057538, 0, 0.625, 0, -0.39057538, 0, 0.29919034, -11.937684, -0.79266036, -11.520905)
-material_override = SubResource("StandardMaterial3D_x5hgh")
-texture = ExtResource("27_yjo7n")
-
-[node name="Safe01" type="MeshInstance3D" parent="Mansion" unique_id=1941599983]
-transform = Transform3D(-0.020261016, 0, -0.014645521, 0, 0.025, 0, 0.014645521, 0, -0.020261016, -4.5997896, -2.2215006, -11.158589)
+[node name="Safe" type="MeshInstance3D" parent="Mansion/Interactables" unique_id=1941599983 groups=["interactable"]]
+transform = Transform3D(-0.020261014, 0, -0.0146455215, 0, 0.025, 0, 0.0146455215, 0, -0.020261014, -4.5952196, -0.08898163, -11.143158)
 material_override = SubResource("StandardMaterial3D_iloo5")
 mesh = ExtResource("32_nb0s3")
+script = ExtResource("3_o3hm7")
+image_note = ExtResource("25_jrtx1")
+
+[node name="Safe" type="StaticBody3D" parent="Mansion/Interactables/Safe" unique_id=1302697784 groups=["interactable"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Interactables/Safe/Safe" unique_id=1418973917 groups=["interactable"]]
+transform = Transform3D(0.9999999, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 0.9999999, 0.99775696, 23.543915, 2.1575928)
+shape = SubResource("BoxShape3D_7842m")
+
+[node name="Cigar" type="Sprite3D" parent="Mansion/Interactables" unique_id=1493109689 groups=["interactable"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.1457, 0.84221995, 25.707747)
+texture = ExtResource("24_hyak3")
+script = ExtResource("3_o3hm7")
+
+[node name="Cigar" type="StaticBody3D" parent="Mansion/Interactables/Cigar" unique_id=968212994 groups=["interactable"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Interactables/Cigar/Cigar" unique_id=1579074563 groups=["interactable"]]
+
+[node name="Wine" type="Sprite3D" parent="Mansion/Interactables" unique_id=1844892539 groups=["interactable"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.826664, 1.9234743, 3.0994873)
+texture = ExtResource("25_7842m")
+script = ExtResource("3_o3hm7")
+
+[node name="Spilled Wine" type="StaticBody3D" parent="Mansion/Interactables/Wine" unique_id=2000795664 groups=["interactable"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mansion/Interactables/Wine/Spilled Wine" unique_id=1811990677 groups=["interactable"]]
 
 [node name="Lighting" type="Node" parent="." unique_id=1018692635]
 
@@ -830,7 +878,7 @@ speed = 3.5
 [node name="Sprite3D" parent="Characters/Brie the Merchant" index="2" unique_id=1357997964]
 texture = ExtResource("18_o3hm7")
 
-[editable path="Mansion/Door"]
+[editable path="Mansion/Interactables/Door"]
 [editable path="Manager/EndGame"]
 [editable path="Characters/Big Cheese"]
 [editable path="Characters/Ella x"]

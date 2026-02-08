@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b7s2hiao8140i"]
 
 [ext_resource type="Script" uid="uid://cdhk3xl7ih3gy" path="res://d_n_d/basic_d_n_d_child.gd" id="1_nl7n6"]
-[ext_resource type="Texture2D" uid="uid://chc1dg4od3idx" path="res://d_n_d/visual_note_placeholder.png" id="2_rp77w"]
+[ext_resource type="Texture2D" uid="uid://m8cdmm8tbv3h" path="res://objects/Cheese Platter_No Knife_01.png" id="2_nl7n6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
-size = Vector2(114.60549, 148.07846)
+size = Vector2(114.60549, 96.69839)
 
 [node name="VisualNote" type="Node2D" unique_id=1666435776]
 z_index = 2
@@ -12,8 +12,8 @@ scale = Vector2(0.55843747, 0.55843747)
 script = ExtResource("1_nl7n6")
 
 [node name="visual_clue" type="Sprite2D" parent="." unique_id=865575918]
-scale = Vector2(0.06786544, 0.067865446)
-texture = ExtResource("2_rp77w")
+scale = Vector2(0.18152288, 0.18152288)
+texture = ExtResource("2_nl7n6")
 
 [node name="Button" type="Button" parent="." unique_id=199599478]
 self_modulate = Color(1, 1, 1, 0)
@@ -32,7 +32,7 @@ action_mode = 0
 position = Vector2(-60.884167, -51.930614)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OverlapSensor" unique_id=1926999572]
-position = Vector2(61, 53.254917)
+position = Vector2(61, 51.930614)
 shape = SubResource("RectangleShape2D_0e48y")
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]

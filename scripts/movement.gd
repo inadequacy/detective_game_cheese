@@ -26,7 +26,9 @@ func _ready() -> void:
 var visual_clues: Dictionary = {
 	"Cupboard": "Two birth certificates with the same date",
 	"Safe": "Scratches on safe door",
-	"Clue Cheese": "Cheese tray in study missing knife",
+	"Cheese": "Not all the trays have knives",
+	"Cigar": "A cigar, nervously chewed on",
+	"Spilled Wine": "Someone must've knocked over this wine",
 }
 
 func _physics_process(delta):
