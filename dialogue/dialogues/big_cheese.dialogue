@@ -1,16 +1,17 @@
 ~ big_cheese_retiring
 if not facts.big_cheese_retiring.known
 	set facts.big_cheese_retiring.known = true
-	Big Cheese: God I am so fustrated. This is the last cheese ball and she birngs this us. Ella wants to take my place. This isnt about power or prestege. For me its about family
-	Big Cheese: I dont know what to do about them tho...[wait=0.5]they know all my secrets
+	Big Cheese: I'm The Big Cheese, don't worry, you've only missed the toast. But you're just in time for the fun! Have you tried the cheese? What do you think? Did it taste funny?...[wait=0.5] No? Perhaps my palate needs cleansing.
+	Big Cheese: It's a shame that your first Cheese Ball is the last one, after tonight, I'll be retiring as The Big Cheese, it was a bit of a shock to the others but all good things must come to an end.
+	Big Cheese: Regardless, we're happy to have you! I hope you enjoy yourself, theres nowhere else I'd rather be than here with my loyal friends, my found family, and that includes you now!
 else:
-	Big Cheese: You heard what I fucking said.
+	Big Cheese: Go be merry! You should be enjoying yourself.
 => END
 
 ~ start
 if not npcs.BigCheese.has_met
 	set npcs.BigCheese.has_met = true
-	Big Cheese: You want some of this cheddar?
+	Big Cheese: Oh! Well hello there! You're fashionably late to the Cheese Ball! 
 	=>< big_cheese_retiring
 else:
 	Big Cheese: Back for more cheddar I see?
