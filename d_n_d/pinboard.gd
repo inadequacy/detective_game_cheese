@@ -57,7 +57,7 @@ var pinned_facts: Dictionary = {
 			known = false,
 			content = "Big Cheese is retiring."
 		},
-						big_cheese_loves_ella = {
+		big_cheese_loves_ella = {
 			known = false,
 			content = "Big Cheese loves Ella."
 		},

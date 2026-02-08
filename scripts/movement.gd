@@ -5,6 +5,7 @@ extends CharacterBody3D
 var journal = false
 var animator
 var audio_player
+var audio_player2
 var was_pressed = false
 var start_loc
 var start_rot
@@ -15,14 +16,17 @@ var hand_if_f = load("res://images/hand_point.png")
 
 func _ready() -> void:
 	animator = $AnimationHandling/AnimationPlayer
-	audio_player=$AnimationHandling/AnimationPlayer/AudioStreamPlayer
+	audio_player = $AnimationHandling/AnimationPlayer/Footsteps
+	audio_player2 = $AnimationHandling/AnimationPlayer/Clue
 	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 	start_loc = position
 	start_rot = rotation
 	pinboard = get_tree().get_first_node_in_group("pinboard")
 
 var visual_clues: Dictionary = {
-	"Cupboard": "Birthcirts cupboard",
+	"Cupboard": "Two birth certificates with the same date",
+	"Safe": "Scratches on safe door",
+	"Clue Cheese": "Cheese tray in study missing knife",
 }
 
 func _physics_process(delta):
@@ -67,6 +71,7 @@ func _physics_process(delta):
 			if Input.is_action_just_pressed("to_pay_respect"):
 				body.get_parent().interact()
 				if body.get_parent().was_interacted == false:
+					audio_player2.play()
 					pinboard.spawn_visual_note(body.get_parent().image_note)
 					pinboard.spawn_note(visual_clues[body.name])
 					body.get_parent().was_interacted = true
