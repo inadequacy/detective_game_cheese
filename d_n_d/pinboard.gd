@@ -101,7 +101,7 @@ func _input(_event):
 		# RN just makes hands invisible.
 		var player_hands = $"../../../Player/AnimationHandling/Hands"
 		player_hands.set_visible(!player_hands.is_visible())
-		if journal_open == false:
+		if journal_open == false && player_hands.visible == false:
 			$AnimationPlayer.play("instructions")
 		manager = $".."
 		state_d = manager.dialogue_state

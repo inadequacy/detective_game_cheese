@@ -141,6 +141,9 @@ reversible = false
 
 [node name="CollisionShape3D" parent="Mansion/Door/Pivot/Door/Door" index="0" unique_id=131633810 groups=["interactable"]]
 
+[node name="AnimationPlayer" parent="Mansion/Door" index="1" unique_id=133261136]
+reset_on_save = false
+
 [node name="Sprite3D15" type="Sprite3D" parent="Mansion" unique_id=874277459]
 transform = Transform3D(0.10888268, 0, -0.13700207, 0, 0.175, 0, 0.13700207, 0, 0.10888268, 16.143394, -1.6984845, -22.454952)
 material_override = SubResource("StandardMaterial3D_pou65")
