@@ -48,8 +48,8 @@ func _physics_process(delta):
 	move_and_slide()
 
 func open_door():
-	$"../../Mansion/Door/Pivot/Door".interact()
 	$"../../Mansion/Door/Pivot/Door".reversible = true
+	$"../../Mansion/Door/Pivot/Door".interact()
 
 func move_to_node(routes : Array[Node3D]):
 	current_route = routes
