@@ -2,6 +2,7 @@
 .godot/
 /android/
 .nomedia
+/game
 
 # Godot-specific ignores
 .import/
