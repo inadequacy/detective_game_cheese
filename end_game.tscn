@@ -27,7 +27,8 @@
 [ext_resource type="Texture2D" uid="uid://c3dg51woic8k4" path="res://images/u win.png" id="23_k0n3j"]
 [ext_resource type="Texture2D" uid="uid://cnaspu4lmqdcj" path="res://images/lemme play again.png" id="25_k66nm"]
 [ext_resource type="Texture2D" uid="uid://bkpsjkmajwvle" path="res://images/tell me.png" id="26_scok3"]
-[ext_resource type="Texture2D" uid="uid://c215negwvywpd" path="res://images/letter.png" id="27_scok3"]
+[ext_resource type="Texture2D" uid="uid://duw5vsgyf6knl" path="res://images/letter final.png" id="26_yr3yu"]
+[ext_resource type="Texture2D" uid="uid://dse48p7gl8n5y" path="res://images/seal.png" id="27_fa25c"]
 
 [sub_resource type="Theme" id="Theme_5mt7g"]
 
@@ -80,6 +81,18 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Win Buttons/Letter:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(581, 1350)]
 }
 
 [sub_resource type="Animation" id="Animation_ksvyt"]
@@ -174,6 +187,22 @@ tracks/2/keys = {
 "values": [true]
 }
 
+[sub_resource type="Animation" id="Animation_yr3yu"]
+resource_name = "the_reveal"
+length = 60.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Win Buttons/Letter:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 60),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(581, 1350), Vector2(581, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_5swap"]
 resource_name = "win_fade"
 length = 8.0
@@ -243,12 +272,12 @@ _data = {
 &"RESET": SubResource("Animation_pjxtf"),
 &"end_game_fade": SubResource("Animation_ksvyt"),
 &"murder_and_who_done_it": SubResource("Animation_0uf8p"),
+&"the_reveal": SubResource("Animation_yr3yu"),
 &"win_fade": SubResource("Animation_5swap")
 }
 
 [node name="EndGame" type="CanvasLayer" unique_id=1288185]
 layer = 8
-follow_viewport_enabled = true
 script = ExtResource("1_5swap")
 
 [node name="Node2D" type="Node2D" parent="." unique_id=654196274]
@@ -658,14 +687,24 @@ scale = Vector2(0.97, 0.97)
 texture = ExtResource("23_k0n3j")
 
 [node name="Win Buttons" type="Control" parent="." unique_id=770149418]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 
 [node name="Letter" type="Sprite2D" parent="Win Buttons" unique_id=629084402]
-visible = false
-position = Vector2(583, 338)
-scale = Vector2(0.3667753, 0.3667753)
-texture = ExtResource("27_scok3")
+position = Vector2(581, 1350)
+scale = Vector2(1.45, 1.45)
+texture = ExtResource("26_yr3yu")
+
+[node name="quit" type="Button" parent="Win Buttons/Letter" unique_id=1043780619]
+offset_left = 85.51722
+offset_top = 276.5517
+offset_right = 863.5172
+offset_bottom = 974.5517
+scale = Vector2(0.3, 0.3)
+mouse_default_cursor_shape = 2
+icon = ExtResource("27_fa25c")
+flat = true
 
 [node name="retry" type="Button" parent="Win Buttons" unique_id=1316665173]
 layout_mode = 0
@@ -697,6 +736,7 @@ flat = true
 [connection signal="pressed" from="Node2D/Polaroid6/Button" to="Node2D/Polaroid6" method="_on_button_pressed"]
 [connection signal="pressed" from="Node2D/Polaroid7/Button" to="Node2D/Polaroid7" method="_on_button_pressed"]
 [connection signal="pressed" from="Node2D/Polaroid9/Button" to="Node2D/Polaroid9" method="_on_button_pressed"]
+[connection signal="pressed" from="Win Buttons/Letter/quit" to="." method="_on_quit_pressed"]
 [connection signal="button_down" from="Win Buttons/retry" to="." method="_on_retry_button_down"]
 [connection signal="pressed" from="Win Buttons/retry" to="." method="_on_retry_pressed"]
 [connection signal="button_down" from="Win Buttons/reveal" to="." method="_on_reveal_button_down"]

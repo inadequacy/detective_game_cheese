@@ -47,6 +47,8 @@ func talk_to(who: String) -> void:
 	play_talking()
 	dialogue_ui.dialogue_state.speaking_to = who
 	DialogueManager.show_dialogue_balloon(dialogue_ui.dialogue_resource, "start", [dialogue_ui.dialogue_state])
+	await get_tree().create_timer(5).timeout
+	$"../AnimationHandling/AnimationPlayer/Clue".play()
 
 func laugh_audio() -> void:
 	pass

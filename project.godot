@@ -13,7 +13,7 @@ config_version=5
 config/name="detective_game"
 config/description="Explore everything you've missed to try and solve the mystery!"
 config/version="1.02.07"
-run/main_scene="uid://qkx0elk5ahg4"
+run/main_scene="uid://hg4nufaeahl8"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="uid://rfg7ssy6uapq"
 
