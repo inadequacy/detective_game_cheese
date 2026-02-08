@@ -611,7 +611,7 @@ autostart = true
 [node name="EndGame" parent="Manager" unique_id=1688594479 instance=ExtResource("6_akxrc")]
 visible = false
 
-[node name="Win Buttons" parent="Manager/EndGame" index="5" unique_id=770149418]
+[node name="Letter" parent="Manager/EndGame/Win Buttons" parent_id_path=PackedInt32Array(1688594479, 770149418) index="0" unique_id=629084402]
 visible = false
 
 [node name="Scream" type="AudioStreamPlayer" parent="Manager" unique_id=1171511605]
