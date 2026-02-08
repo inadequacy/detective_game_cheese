@@ -43,13 +43,12 @@ func spawn_note(text_label):
 	book_node.add_child(note)
 	note.attach_to_book()
 	note.fit_text()
-	
+
 func spawn_visual_note(visual_note):
 	var note=visual_note.instantiate()
 	note.position = random_point_in_book()
 	book_node.add_child(note)
 	note.attach_to_book()
-
 
 var pinned_facts: Dictionary = {
 	speaking_to = "peacock",
@@ -102,6 +101,8 @@ func _input(_event):
 		# RN just makes hands invisible.
 		var player_hands = $"../../../Player/AnimationHandling/Hands"
 		player_hands.set_visible(!player_hands.is_visible())
+		if journal_open == false:
+			$AnimationPlayer.play("instructions")
 		manager = $".."
 		state_d = manager.dialogue_state
 		
