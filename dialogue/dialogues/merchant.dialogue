@@ -1,17 +1,19 @@
-~ merchant_sold_to_cheese_addict
-if not facts.merchant_sold_to_cheese_addict.known
-	set facts.merchant_sold_to_cheese_addict.known = true
-	Brie the Merchant: Enjoying the cheese? Ive sold more thahn i usuallyt do today...all of it porvided through me. If you veer desire more, I think Ella and I might have soemthing in store for next time.
-	Brie the Merchant: I dont have any faith in Ellla, that if she can get big cheese to agree with her
-else:
-	Brie the Merchant: You heard what I fucking said.
+~ start
+if not facts.merchant_sold_to_big_cheese.known
+	set facts.merchant_sold_to_big_cheese.known = true
+	Brie the Merchant: Hello there! It's a pleasure to meet you! Have you sampled the cheese? Do you love it? 
+	Brie the Merchant: It's the bees knees isn't it! Well it's all sourced by me! I'm Brie, your fabulous merchant of all things exquisite. I absolutely love it here at the Cheese Ball, infact I plan my whole year around it! 
+	Brie the Merchant: The Big Cheese and I have been in business for a long time you see, he's my number one customer! If you're interested, whenever the need arises, just give me a ring! Now that you're a member of our elite little club, let's be in business! 
+	Brie the Merchant: Have you seen my partner Hal? He's around here somewhere, I feel like it's been a while since he left to powder his nose. hmm... If you find him you'll let me know won't you? 
+	Brie the Merchant: Now then, if you'll excuse me I have to check up on the spread. Oh and do try the cheese!
+elif not facts.merchant_needs_business.known
+	set facts.merchant_needs_business.known = true
+	Brie the Merchant: Hey there, have you thought about my offer? I'd be more than happy to connect you with the best cheese in the valley. I'm going to need all the business I can get soon, seeing as how my number one customer will soon be disappearing into a puff of smoke. 
+	Brie the Marchant: In light of this being the last Cheese Ball, I'm ready to throw my hat in with Ella. She's got big plans and I'm going to follow her into the future! You should join us! It seems disappointing for your first Cheese Ball to also be your last! 
+	Brie the Marchant: If all goes well there will be many more to come! Hal and I really need things to work out, if Cheese Ball ends then things are going to get quite difficult for us.
+	Brie the Marchant: It doesn't make any sense why the Big Cheese would step out now after all this time. He said so himself at the toast that he loves Cheese Ball and what we've built here. 
+	Brie the Marchant: He's always loved Cheese too! Ella's described him as a selfish brute, I'm honestly reluctant to believe that but I'm starting to think she might be right... 
+	Brie the Marchant: Cheese Ball did wonders for my business, of course I love being here and being part of this 'family', but that alone doesn't pay the bills and the inventory Hal 'lost'. Hm...have you seen him around?
+	Brie the Marchant: I'm getting antsy thinking about what tomorrow has in store for us, it all depends on how the night turns out. I would rather he enjoy himself whilst Ella and I deal with business matters here. If you see him around you should say hello!  
 => END
 
-~ start
-if not npcs.Merchant.has_met
-	set npcs.Merchant.has_met = true
-	=>< merchant_sold_to_cheese_addict
-else:
-	Brie the Merchant: Back for more cheddar I see?
-	=>< merchant_sold_to_cheese_addict
-=> END

@@ -1,4 +1,3 @@
-
 ~ start
 if not facts.big_cheese_retiring.known
 	set facts.big_cheese_retiring.known = true

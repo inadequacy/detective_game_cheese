@@ -1,17 +1,18 @@
-~ cheese_addict_saw_twin_brooding
-if not facts.cheese_addict_saw_twin_brooding.known
-	set facts.cheese_addict_saw_twin_brooding.known = true
-	Hal: He..Y..y..Y...you fuckin...heheh...God I messed up so bad...why was my spouse looking at her all nigh...they art reason I broke my sobritey tonight I was betrayed
-	Hal: What do you mean I didnt have too much cheese...what about the twin who ate so much chesse bruding in the cigar lounge
-else:
-	Hal: You heard what I fucking said.
-=> END
-
 ~ start
-if not npcs.CheeseAddict.has_met
-	set npcs.CheeseAddict.has_met = true
-	=>< cheese_addict_saw_twin_brooding
-else:
-	Hal: Back for more cheddar I see?
-	=>< cheese_addict_saw_twin_brooding
+if not facts.cheese_addict_addicted.known
+	set facts.cheese_addict_addicted.known = true
+	Hal: Oh! Hello! I was just in here to powder my nose. I've actually been in here for quite a while. 
+	Hal: Ella and The Big Cheese suddenly came through, having a fight, about The Big Cheese's retirement I think. Theres no way I could've walked out of here in that situation! 
+	Hal: ....Why am I still in here? Well uh, I found this tray of cheese in here. It was already here when I got here! I'm just keeping it company so it doesn't get lonely. 
+	Hal: E- Eat it?! Of course not! You missed all the best speeches earlier, my darling wife Brie toasted to my cheese sobriety, it's been a wonder for our marriage and our business. Oh and we also toasted to The Big Cheese's retirement of course. He says Cheese Ball ends because he's retiring. 
+	Hal: Ahh my wonderful wife Brie, I would never betray her by eating cheese! Not after being a whole year clean of it! Of beautiful delicious scrumptious cheese..... if you see her, don't tell her I'm here. 
+	Hal: She would just be worried, let her enjoy the party. Otherwise we're the ones who will be toasted. Run along now!
+elif not facts.cheese_addict_ella.known
+	set facts.cheese_addict_ella.known = true
+	Hal: OH GOSH! DONT LOOK AT ME! NO! IM DISGUSTING! IT WAS AN ACCIDENT I SWEAR! BRIE IM SORRY! 
+	Hal: .......OOOHH! Hello there owl mask! I didnt mean to be in here all night, I couldn't get out! I was just taking this tray into the bedroom to keep it safe... this beautiful delicious cheese tray... 
+	Hal: ... but then The Big Cheese came in, so did Ella, then I had to hide... they would've taken the cheese from me...Their conversation was REALLY intense, theres no way I could've walked out into a moment like that! 
+	Hal: They moved into the study but if I left then this cheese tray would've been lonely..... Hehe... 
+	Hal: Oh god Brie I'm so sorry!! What have I done?! One whole week of cheese sobriety out the window! NO! No it's HER fault I've done this! Why is my darling wife spending the last Cheese Ball talking to that harlot Ella instead of me?? 
+	Hal: WHY BRIE WHYYYY. DON'T LOOK AT ME, WHO EVEN ARE YOU?? LEAVE ME ALONE!
 => END

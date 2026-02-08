@@ -1,17 +1,20 @@
-~ plod_knows_about_secret_pathway
+~ start
 if not facts.plod_knows_about_secret_pathway.known
 	set facts.plod_knows_about_secret_pathway.known = true
-	Plod Stilton: If only there was more time....for it to end like this...tonight was the last night to make it all work
-	Plod Stilton: I went to the study through secret passage in the closset clothes room, I thought I could find dirt but I didnt find anything
-else:
-	Plod Stilton: You heard what I fucking said.
-=> END
-
-~ start
-if not npcs.PlodStilton.has_met
-	set npcs.PlodStilton.has_met = true
-	=>< plod_knows_about_secret_pathway
-else:
-	Plod Stilton: Back for more cheddar I see?
-	=>< plod_knows_about_secret_pathway
+	Plod Stilton: It can't end like this... It's too soon... tonight is my last chance. 
+	Plod Stilton: Ah! Hello there I didn't see you there!. Welcome to the Cheese Ball young owl! I am Plod Stilton, I represent the law here in Cheese Valley. You look like a natural troublemaker! Or perhaps trouble finds you? 
+	Plod Stilton: No funny business and you'll have nothing to fear from me. Haha! Only pulling your leg! I'm off duty tonight. The Big Cheese and I have been friends since we were boys!  
+	Plod Stilton: I'm a man who appreciates history. which is just another reason I love being here. Cheese Manor has been around for generations. Did you know the manor is so old that there are secret passages for staff and servants? 
+	Plod Stilton: But really, if you do see anything strange, let me know and we can take care of it. Cheese Valley may be a sleepy area in terms of crime, but you can never be too careful around here. It's almost enough to make you wish more crime were to happen around these parts! 
+	Plod Stilton: It certainly would do my career a favour! Bahaha! 
+	Plod Stilton: Enjoy the ball! And stay out of trouble you rascal!
+elif not facts.plod_knife_safe.known
+	set facts.plod_knife_safe.known = true
+	Plod Stilton: Urrgh.... 
+	Plod Stilton: I'm going to be an unmemorable washed up copper... I can already see it now. My father was right, my hunches are always wrong... I did everything I could think of... my knife is all bent now, and I couldn't even get the safe open... 
+	Plod Stilton: The law in Cheese Valley means NOTHING to these folks... 
+	Plod Stilton: Y-yknow what I mean? I know they all look down on me, the damn butler wouldn't even look me in the eye and speak to me anymore. Difference between me and the Big Cheese is when I retire soon I won't have anything but my anticlimactic career. 
+	Plod Stilton: I AM JUSTICE INCARNATE DAMN IT! What's the point of being a copper when nothing in Cheese Valley touches these people, no laws, no mould.... Why am I even still at the Cheese Ball. 
+	Plod Stilton: STOP LOOKING DOWN ON ME DAMN YOU! I CAN SEE IT IN YOUR EYES.
+	Plod Stilton: I did everything I was told to do so why didn't it work out?  S-...something must be done about this before it all ends...
 => END

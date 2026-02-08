@@ -61,33 +61,61 @@ var pinned_facts: Dictionary = {
 			known = false,
 			content = "Big Cheese loves Ella."
 		},
-		butler_hates_big_cheese = {
+		butler_knife = {
 			known = false,
-			content = "The Butler secretly hates Big Cheese"
+			content = "Butler puts a knife on every cheese tray"
 		},
-		cheese_addict_saw_twin_brooding = {
+		butler_stilton = {
 			known = false,
-			content = "One of the twins was brooding"
+			content = "Stilton broke into the study"
 		},
-		femme_fish_fatale_wants_family = {
+		cheese_addict_addicted = {
 			known = false,
-			content = "Femme Fish Fatale wants a family with Big Cheese"
+			content = "Hal is addicted to cheese"
 		},
-		merchant_sold_to_cheese_addict = {
+		cheese_addict_ella = {
 			known = false,
-			content = "Merchant sold cheese to Cheese Addict",
+			content = "Ella arguing in the study"
+		},
+		femme_fish_fatale_collude = {
+			known = false,
+			content = "Ella wants a private word with Big Cheese"
+		},
+		femme_fish_fatale_next_cheese = {
+			known = false,
+			content = "Ella wants to be the next Big Cheese"
+		},
+		merchant_sold_to_big_cheese = {
+			known = false,
+			content = "Big Cheese is Brie's number 1 customer",
+		},
+		merchant_needs_business = {
+			known = false,
+			content = "Brie's business has troubles",
 		},
 		plod_knows_about_secret_pathway = {
 			known = false,
-			content = "Police Cat knows about a secret pathway in the closet",
+			content = "Stilton knows about a secret pathway in the closet",
 		},
-		rosh_was_in_the_kitchen_all_night = {
+		plod_knife_safe = {
 			known = false,
-			content = "Roch was in the kitchen all night"
+			content = "Plod bent a cheese knife trying to open the safe",
 		},
-		ford_knows_nothing = {
+		rosh_swapped_masks = {
 			known = false,
-			content = "Ford has no idea what is going on"
+			content = "Roch swapped masks with Wensley"
+		},
+		rosh_stilton_knife = {
+			known = false,
+			content = "Stilton searching for a knife"
+		},
+		ford_new_twin = {
+			known = false,
+			content = "twins were Cheese Ball's newest members"
+		},
+		ford_hate = {
+			known = false,
+			content = "Ford hates Big Cheese"
 		},
 	},
 }

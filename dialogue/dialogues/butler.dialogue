@@ -1,17 +1,15 @@
-~ butler_hates_big_cheese
-if not facts.butler_hates_big_cheese.known
-	set facts.butler_hates_big_cheese.known = true
-	Wensley the Butler: I am just little old me and I am here for fun
-	Wensley the Butler: You dont really know how he is. The big cheese....[wait=0.5]hhaha...[wait=0.5]more like a big fraud
-else:
-	Wensley the Butler: You heard what I fucking said.
+~ start
+if not facts.butler_knife.known
+	set facts.butler_knife.known = true
+	Wensley the Butler: Greetings esteemed guest. It is I, Wensley, your butler tonight. Tirelessly working to make sure the night goes on swimmingly, every glass filled, every cheese tray with a cheese knife, and every mask hiding a smile. 
+	Wensley the Butler: We You won't need to worry about a thing, what happens at Cheese Ball naturally stays at Cheese Ball. As the loyal butler of Cheese Manor all secrets are safe with me. Now then, if you'll excuse me. I'm just doing a bit of cleaning up.
+elif not facts.butler_stilton.known
+	set facts.butler_stilton.known = true
+	Wensley the Butler: Oh you found me! Roch the little twin! Just kidding, it's still me, Wensley. Why aren't I wearing my mask? The poor lad wanted a break from the festivities, he isn't feeling himself tonight, so I've given him my mask for the time being. 
+	Wensley the Butler: Me on the other hand, theres plenty to keep me occupied in here. He doesn't need me out and about right now. God knows I've done enough for the Big Cheese for an entire lifetime. After all, I'm the one who keeps Cheese Manor breathing, the Big Cheese is choking it. 
+	Wensley the Butler: Are you here to get into the study? My my how naughty you are to use the secret doors, you're not the first naughty guest tonight either, Plod Stilton was through just a moment ago. Lady Ella has spent a lot of time in there too.  
+	Wensley the Butler: It's usually where the Big Cheese goes to hide during balls, what a hot room the study is turning out to be tonight! 
+	Wensley the Butler: You better get out there and enjoy the Ball while you can, I'll be staying in here. 
 => END
 
-~ start
-if not npcs.Butler.has_met
-	set npcs.Butler.has_met = true
-	=>< butler_hates_big_cheese
-else:
-	Wensley the Butler: Back for more cheddar I see?
-	=>< butler_hates_big_cheese
-=> END
+

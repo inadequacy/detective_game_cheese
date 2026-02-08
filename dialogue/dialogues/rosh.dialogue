@@ -1,16 +1,18 @@
-~ rosh_was_in_the_kitchen_all_night
-if not facts.rosh_was_in_the_kitchen_all_night.known
-	set facts.rosh_was_in_the_kitchen_all_night.known = true
-	Roch the Twin: I was in the kitchen the whole night...I thought it was gonna be a great night....but I didnt wanna join the party looking like this
-else:
-	Roch the Twin: You heard what I fucking said.
-=> END
-
 ~ start
-if not npcs.Rosh.has_met
-	set npcs.Rosh.has_met = true
-	=>< rosh_was_in_the_kitchen_all_night
-else:
-	Roch the Twin: Back for more cheddar I see?
-	=>< rosh_was_in_the_kitchen_all_night
+if not facts.rosh_swapped_masks.known
+	set facts.rosh_swapped_masks.known = true
+	Roch the Twin: O-Oh, hey! It's me Roch! I-I'm not Wensley! 
+	Roch the Twin: I mean I'm not the butler! 
+	Roch the Twin: ...Sorry, I'm not really feeling myself right now.  It's nice to see a new face! or uh, a new mask! Everyone here is really friendly b-but you shouldn't trust them too much, I never did. 
+	Roch the Twin: S-sorry if I'm acting strange, we got some tough news earlier. Thats why I'm hiding out in the kitchen right now while wearing the butlers mask, w-with Wensleys permission of course!. W-we as in my twin and I, his name is Ford. Have you met him yet? 
+	Roch the Twin: Maybe it's best you don't tonight, last I saw him he was going for all the hard cheese. I hope he doesn't get too messy this time...He can be a lot but he means well! 
+	Roch the Twin: A-anyways.... I'm just going to stay in here for tonight. Don't let me keep you... 
+elif not facts.rosh_stilton_knife.known
+	set facts.rosh_stilton_knife.known = true
+	Roch the Twin: AAH! Please don't shout at me!! 
+	Roch the Twin: Oh it's y-you! Sorry! I thought you were Stilton. He was in here earlier and was really intense, he said some strange things thinking I was Wensley since I'm wearing his mask. 
+	Roch the Twin: Like, interrogating me! I didn't know what to say at all I couldn't even look at him I was so scared. 
+	Roch the Twin: It's too chaotic in there...but the chaos found me anyways.. I really don't want to join the party right now... 
+	Roch the Twin: Sorry, did you need something? I don't really know my way around here. You need a cheese knife or something? Stilton was looking for one, but they're all out. If you need one maybe you check the cabinet or find one out in the party? 
+	Roch the Twin: If you find Wensley he could tell you, he knows where everything is in Cheese Manor.
 => END

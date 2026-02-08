@@ -1,17 +1,15 @@
-~ femme_fish_fatale_wants_family
-if not facts.femme_fish_fatale_wants_family.known
-	set facts.femme_fish_fatale_wants_family.known = true
-	Ella x: I am just little old me and I am here for fun
-	Ella x: You dont really know how he is. The big cheese....[wait=0.5]hhaha...[wait=0.5]more like a big fraud
-else:
-	Ella x: You heard what I fucking said.
-=> END
-
 ~ start
-if not npcs.FemmeFishFatale.has_met
-	set npcs.FemmeFishFatale.has_met = true
-	=>< femme_fish_fatale_wants_family
-else:
-	Ella x: Back for more cheddar I see?
-	=>< femme_fish_fatale_wants_family
+if not facts.femme_fish_fatale_collude.known
+	set facts.femme_fish_fatale_collude.known = true
+	Ella x: Well helloooo darling! How wonderful to meet a new member of our Cheese Ball family! My name is Ella, the most senior member of the Cheese Ball, but the most youthful as well, haha! 
+	Ella x: You missed the most peculiar toast! The Big Cheese made a very heartfelt speech about the Cheese Ball, it was lovely, he called the Cheese Ball a family. and then immediately announced he's retiring as Big Cheese of Cheese Ball! What an absolute gag! 
+	Ella x: Oh yes I agree it's a shame indeed! Chin up darling, at Cheese Ball we keep things light and festive! You never know what the near future beholds! You never know when change is creeping right around the corner. 
+	Ella x: Now if you'll excuse I must go talk to the Big Cheese in his study, and you've got a ball to enjoy my darling! Get out there and make some friends! Or dare I say ...enemies? Haha I'm only poking fun my dear! Toodle-oo darling!
+elif not facts.femme_fish_fatale_next_cheese.known
+	set facts.femme_fish_fatale_next_cheese.known = true
+	Ella x: Hello again darling. I hope you've been having a finer night than I. I just can't understand why The Big Cheese wants to end the Cheese Ball with his retirement. 
+	Ella x: Can you imagine what I could do with the Cheese Ball if I were the new Big Cheese? All the most powerful people in Cheese Valley are here tonight! This isn't merely a fabulous get together over cheese and masks, the future of Cheese valley is happening right here in these walls. 
+	Ella x: He couldn't stand it if Cheese Ball continued without him, or with someone else at the helm. The man has the nerve to claim that for him its all about 'family' and 'loyalty', when he wouldn't know either if it was spelt in cheese. 
+	Ella x: He has no right to talk about family, especially not to me. Its good that you missed the toast, that man loves to spin tall tales. He may portray himself as a generous man, but after tonight he will go back to being who he's always been, a coward who runs from commitment. 
+	Ella x: I can't let tonight end like this, I refuse. 
 => END
