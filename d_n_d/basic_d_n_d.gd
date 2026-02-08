@@ -10,6 +10,11 @@ func _process(_delta: float) -> void:
 func _on_button_button_down() -> void:
 	dragging = true
 	offset = get_global_mouse_position() - global_position
+	move_to_front()
+	
+	
+
 
 func _on_button_button_up() -> void:
 	dragging = false
+	
