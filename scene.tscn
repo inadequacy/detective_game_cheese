@@ -100,7 +100,7 @@ transform = Transform3D(0.03707973, 0, -0.9993123, 0, 1, 0, 0.9993123, 0, 0.0370
 speed = 3.6
 
 [node name="Mansion" parent="." unique_id=218848142 instance=ExtResource("1_3253y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004892111, 2.132519, 0.009964943)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0045700073, 2.132519, 0.015431881)
 
 [node name="Copboard" type="Sprite3D" parent="Mansion" unique_id=1999734537 groups=["interactable"]]
 transform = Transform3D(0.375, 0, 0, 0, 0.375, 0, 0, 0, 0.375, -0.9258561, -0.60891676, 18.124172)
@@ -135,6 +135,7 @@ transform = Transform3D(0.9999748, 0, -0.0071033835, 0, 1, 0, 0.0071033835, 0, 0
 [node name="Pivot" parent="Mansion/Door" index="0" unique_id=1887617834 groups=["interactable"]]
 
 [node name="Door" parent="Mansion/Door/Pivot" index="0" unique_id=528802495 groups=["interactable"]]
+reversible = false
 
 [node name="Door" parent="Mansion/Door/Pivot/Door" index="0" unique_id=260297076 groups=["interactable"]]
 
@@ -495,7 +496,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 5)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 8)
 
 [node name="GoToPoint2" parent="NodeHolder/BigRoom" unique_id=1408129335 instance=ExtResource("4_u3cyc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.456335)
+
+[node name="GoToPoint14" parent="NodeHolder/BigRoom" unique_id=310165342 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.6393795)
 
 [node name="GoToPoint9" parent="NodeHolder/BigRoom" unique_id=148576527 instance=ExtResource("4_u3cyc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
@@ -507,13 +511,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 7)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -8)
 
 [node name="GoToPoint6" parent="NodeHolder/BigRoom" unique_id=102162024 instance=ExtResource("4_u3cyc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.044561, 0, 5)
+
+[node name="GoToPoint13" parent="NodeHolder/BigRoom" unique_id=1135833460 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.044561, 0, 1.8523562)
 
 [node name="GoToPoint7" parent="NodeHolder/BigRoom" unique_id=1779950607 instance=ExtResource("4_u3cyc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, -6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.265697, 0, -6)
 
 [node name="GoToPoint8" parent="NodeHolder/BigRoom" unique_id=1311059456 instance=ExtResource("4_u3cyc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.018593, 0, 7.5142736)
 
 [node name="CheeseRoom" type="Node" parent="NodeHolder" unique_id=1446699061]
 
@@ -537,17 +544,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 13)
 
 [node name="Lounge" type="Node" parent="NodeHolder" unique_id=2138972516]
 
-[node name="GoToPoint19" parent="NodeHolder/Lounge" unique_id=310165342 instance=ExtResource("4_u3cyc")]
+[node name="GoToPoint19" parent="NodeHolder/Lounge" unique_id=845496068 instance=ExtResource("4_u3cyc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 20)
 
 [node name="GoToPoint20" parent="NodeHolder/Lounge" unique_id=279205980 instance=ExtResource("4_u3cyc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 30)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 27.420193)
 
 [node name="GoToPoint21" parent="NodeHolder/Lounge" unique_id=528047163 instance=ExtResource("4_u3cyc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 31)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.605873, 0, 29.213787)
 
 [node name="GoToPoint22" parent="NodeHolder/Lounge" unique_id=127221433 instance=ExtResource("4_u3cyc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 23)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 23.586437)
 
 [node name="Entrance" type="Node" parent="NodeHolder" unique_id=1804628153]
 
@@ -607,6 +614,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8341923, 0, -17.389378)
 [node name="GoToPoint14" parent="NodeHolder/BedRoom" unique_id=157936099 instance=ExtResource("4_u3cyc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -17)
 
+[node name="GoToPoint18" parent="NodeHolder/BedRoom" unique_id=1334234541 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.333673, 0, -17.227306)
+
 [node name="GoToPoint15" parent="NodeHolder/BedRoom" unique_id=175800662 instance=ExtResource("4_u3cyc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -17)
 
@@ -624,6 +634,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -14)
 [node name="GoToPoint23" parent="NodeHolder/CloakRoom" unique_id=144221259 instance=ExtResource("4_u3cyc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, -2)
 
+[node name="GoToPoint25" parent="NodeHolder/CloakRoom" unique_id=1802578374 instance=ExtResource("4_u3cyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.504683, 0, -3.8100908)
+
 [node name="GoToPoint24" parent="NodeHolder/CloakRoom" unique_id=1394781878 instance=ExtResource("4_u3cyc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -4)
 
@@ -633,7 +646,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -4)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -15)
 
 [node name="GoToPoint18" parent="NodeHolder/Office" unique_id=328058346 instance=ExtResource("4_u3cyc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -12)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.955286, 0, -11.378448)
 
 [node name="GoToPoint19" parent="NodeHolder/Office" unique_id=1269829927 instance=ExtResource("4_u3cyc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -17)
@@ -643,10 +656,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -14)
 
 [node name="Characters" type="Node3D" parent="." unique_id=1343866329]
 
-[node name="Big Cheese" parent="Characters" unique_id=228738560 node_paths=PackedStringArray("route_one") instance=ExtResource("5_y2354")]
+[node name="Big Cheese" parent="Characters" unique_id=228738560 node_paths=PackedStringArray("route_one", "route_two") instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6885872, 1, 0.012382984)
 route_one = [NodePath("../../NodeHolder/BigRoom/GoToPoint"), NodePath("../../NodeHolder/BigRoom/GoToPoint5"), NodePath("../../NodeHolder/BedRoom/GoToPoint13"), NodePath("../../NodeHolder/BedRoom/GoToPoint17")]
-event_times = Array[int]([25])
+route_two = [NodePath("../../NodeHolder/BedRoom/GoToPoint16"), NodePath("../../NodeHolder/Office/GoToPoint17"), NodePath("../../NodeHolder/Office/GoToPoint18")]
+event_times = Array[int]([5, 25])
 speed = 6.0
 
 [node name="Sprite3D" parent="Characters/Big Cheese" index="2" unique_id=1357997964]
@@ -656,48 +670,67 @@ texture = ExtResource("8_xlvrw")
 [node name="Timer" parent="Characters/Big Cheese" index="3" unique_id=1531728564]
 process_callback = 1
 
-[node name="Butler" parent="Characters" unique_id=1273146221 node_paths=PackedStringArray("route_one") instance=ExtResource("5_y2354")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.8745, 1, 2.59098)
-route_one = [NodePath("../../NodeHolder/BigRoom/GoToPoint12")]
-event_times = Array[int]([0])
-speed = 4.0
-
-[node name="Sprite3D" parent="Characters/Butler" index="2" unique_id=1357997964]
-transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
-texture = ExtResource("14_o3hm7")
-
-[node name="Ella x" parent="Characters" unique_id=1523782194 node_paths=PackedStringArray("route_one") instance=ExtResource("5_y2354")]
+[node name="Ella x" parent="Characters" unique_id=1523782194 node_paths=PackedStringArray("route_one", "route_two", "route_three", "route_four") instance=ExtResource("5_y2354")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02102065, 1, -0.08056784)
-route_one = [NodePath("../../NodeHolder/BigRoom/GoToPoint"), NodePath("../../NodeHolder/BigRoom/GoToPoint5"), NodePath("../../NodeHolder/BedRoom/GoToPoint13"), NodePath("../../NodeHolder/BedRoom/GoToPoint14")]
-event_times = Array[int]([30])
+route_one = [NodePath("../../NodeHolder/BigRoom/GoToPoint5"), NodePath("../../NodeHolder/BedRoom/GoToPoint13"), NodePath("../../NodeHolder/BedRoom/GoToPoint18")]
+route_two = [NodePath("../../NodeHolder/BedRoom/GoToPoint16"), NodePath("../../NodeHolder/Office/GoToPoint17"), NodePath("../../NodeHolder/Office/GoToPoint19")]
+route_three = [NodePath("../../NodeHolder/Office/GoToPoint17"), NodePath("../../NodeHolder/BedRoom/GoToPoint16"), NodePath("../../NodeHolder/BedRoom/GoToPoint17"), NodePath("../../NodeHolder/BedRoom/GoToPoint13"), NodePath("../../NodeHolder/BigRoom/GoToPoint5"), NodePath("../../NodeHolder/BigRoom/GoToPoint13")]
+route_four = [NodePath("../../NodeHolder/BigRoom/GoToPoint5"), NodePath("../../NodeHolder/BedRoom/GoToPoint13"), NodePath("../../NodeHolder/BedRoom/GoToPoint17"), NodePath("../../NodeHolder/BedRoom/GoToPoint16")]
+event_times = Array[int]([10, 25, 60, 109])
 speed = 3.0
 
 [node name="Sprite3D" parent="Characters/Ella x" index="2" unique_id=1357997964]
 transform = Transform3D(0.115, 0, 0, 0, 0.115, 0, 0, 0, 0.115, 0, 0, 0)
 texture = ExtResource("15_xpof7")
 
+[node name="Butler" parent="Characters" unique_id=1273146221 node_paths=PackedStringArray("route_one", "route_two", "route_three") instance=ExtResource("5_y2354")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.710011, 1, 6.0702567)
+route_one = [NodePath("../../NodeHolder/BigRoom/GoToPoint2"), NodePath("../../NodeHolder/BigRoom/GoToPoint3"), NodePath("../../NodeHolder/Kitchen/GoToPoint13"), NodePath("../../NodeHolder/Kitchen/GoToPoint14")]
+route_two = [NodePath("../../NodeHolder/Kitchen/GoToPoint13"), NodePath("../../NodeHolder/BigRoom/GoToPoint3"), NodePath("../../NodeHolder/BigRoom/GoToPoint"), NodePath("../../NodeHolder/BigRoom/GoToPoint12"), NodePath("../../NodeHolder/CheeseRoom/GoToPoint13"), NodePath("../../NodeHolder/CheeseRoom/GoToPoint17")]
+route_three = [NodePath("../../NodeHolder/CheeseRoom/GoToPoint13"), NodePath("../../NodeHolder/BigRoom/GoToPoint12"), NodePath("../../NodeHolder/BigRoom/GoToPoint10"), NodePath("../../NodeHolder/CloakRoom/GoToPoint23"), NodePath("../../NodeHolder/CloakRoom/GoToPoint24"), NodePath("../../NodeHolder/CloakRoom/GoToPoint21")]
+event_times = Array[int]([30, 50, 100])
+speed = 4.0
+
+[node name="Sprite3D" parent="Characters/Butler" index="2" unique_id=1357997964]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
+texture = ExtResource("14_o3hm7")
+
 [node name="Hal" parent="Characters" unique_id=1328599140 node_paths=PackedStringArray("route_one") instance=ExtResource("5_y2354")]
-transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, 11.505322, 1.3215399, 2.0142858)
-route_one = [NodePath("../../NodeHolder/BigRoom/GoToPoint5"), NodePath("../../NodeHolder/BedRoom/GoToPoint13"), NodePath("../../NodeHolder/BedRoom/GoToPoint14"), NodePath("../../NodeHolder/BetterBathroom/GoToPoint17"), NodePath("../../NodeHolder/BetterBathroom/GoToPoint18")]
-event_times = Array[int]([3])
-speed = 3.0
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, -16.397778, 1.3215399, 13.903237)
+route_one = [NodePath("../../NodeHolder/CheeseRoom/GoToPoint13"), NodePath("../../NodeHolder/BigRoom/GoToPoint12"), NodePath("../../NodeHolder/BigRoom/GoToPoint8"), NodePath("../../NodeHolder/BigRoom/GoToPoint7"), NodePath("../../NodeHolder/BigRoom/GoToPoint5"), NodePath("../../NodeHolder/BedRoom/GoToPoint13"), NodePath("../../NodeHolder/BedRoom/GoToPoint14"), NodePath("../../NodeHolder/BetterBathroom/GoToPoint17"), NodePath("../../NodeHolder/BetterBathroom/GoToPoint18")]
+event_times = Array[int]([0])
+speed = 5.0
 
 [node name="Sprite3D" parent="Characters/Hal" index="2" unique_id=1357997964]
 texture = ExtResource("6_ni31j")
 
-[node name="Roch the Twin" parent="Characters" unique_id=1257681979 instance=ExtResource("5_y2354")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8201492, 1, 6.3635645)
-event_times = Array[int]([])
+[node name="Roch the Twin" parent="Characters" unique_id=1257681979 node_paths=PackedStringArray("route_one", "route_two") instance=ExtResource("5_y2354")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8201492, 1, 5.239604)
+route_one = [NodePath("../../NodeHolder/BigRoom/GoToPoint3"), NodePath("../../NodeHolder/Kitchen/GoToPoint13"), NodePath("../../NodeHolder/Kitchen/GoToPoint17")]
+route_two = [NodePath("../../NodeHolder/Kitchen/GoToPoint13"), NodePath("../../NodeHolder/BigRoom/GoToPoint3"), NodePath("../../NodeHolder/BigRoom/GoToPoint12"), NodePath("../../NodeHolder/Lounge/GoToPoint19"), NodePath("../../NodeHolder/Lounge/GoToPoint20"), NodePath("../../NodeHolder/Lounge/GoToPoint21")]
+event_times = Array[int]([12, 65])
 speed = 3.0
 
 [node name="Sprite3D" parent="Characters/Roch the Twin" index="2" unique_id=1357997964]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 texture = ExtResource("7_ni31j")
 
-[node name="Plod Stilton" parent="Characters" unique_id=290421130 node_paths=PackedStringArray("route_one") instance=ExtResource("5_y2354")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.4444685, 1.3788459, 8.556544)
-route_one = [NodePath("../../NodeHolder/BigRoom/GoToPoint10")]
-event_times = Array[int]([0])
+[node name="Ford the Twin" parent="Characters" unique_id=311256380 node_paths=PackedStringArray("route_one", "route_two", "route_three") instance=ExtResource("5_y2354")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.741234, 1, 1.868417)
+route_one = [NodePath("../../NodeHolder/BigRoom/GoToPoint3"), NodePath("../../NodeHolder/Kitchen/GoToPoint13")]
+route_two = [NodePath("../../NodeHolder/BigRoom/GoToPoint3"), NodePath("../../NodeHolder/BigRoom/GoToPoint14")]
+route_three = [NodePath("../../NodeHolder/BigRoom/GoToPoint12"), NodePath("../../NodeHolder/CheeseRoom/GoToPoint13"), NodePath("../../NodeHolder/CheeseRoom/GoToPoint18"), NodePath("../../NodeHolder/CheeseRoom/GoToPoint14"), NodePath("../../NodeHolder/Lounge/GoToPoint20")]
+event_times = Array[int]([20, 26, 80])
+speed = 3.0
+
+[node name="Sprite3D" parent="Characters/Ford the Twin" index="2" unique_id=1357997964]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0.26089597, 0)
+flip_h = true
+texture = ExtResource("19_xpof7")
+
+[node name="Plod Stilton" parent="Characters" unique_id=290421130 instance=ExtResource("5_y2354")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.285711, 1.3788459, 1.877542)
+event_times = Array[int]([])
 speed = 3.0
 
 [node name="Sprite3D" parent="Characters/Plod Stilton" index="2" unique_id=1357997964]
@@ -714,23 +747,13 @@ transform = Transform3D(0.175, 0, 0, 0, 0.175, 0, 0, 0, 0.175, 12.553158, 1.3788
 top_level = true
 texture = ExtResource("18_o3hm7")
 
-[node name="Ford the Twin" parent="Characters" unique_id=311256380 instance=ExtResource("5_y2354")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.32505, 1, 23.927969)
-event_times = Array[int]([])
-speed = 3.0
-
-[node name="Sprite3D" parent="Characters/Ford the Twin" index="2" unique_id=1357997964]
-transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0.26089597, 0)
-flip_h = true
-texture = ExtResource("19_xpof7")
-
 [editable path="Mansion/Door"]
 [editable path="Manager/EndGame"]
 [editable path="Characters/Big Cheese"]
-[editable path="Characters/Butler"]
 [editable path="Characters/Ella x"]
+[editable path="Characters/Butler"]
 [editable path="Characters/Hal"]
 [editable path="Characters/Roch the Twin"]
+[editable path="Characters/Ford the Twin"]
 [editable path="Characters/Plod Stilton"]
 [editable path="Characters/Brie the Merchant"]
-[editable path="Characters/Ford the Twin"]

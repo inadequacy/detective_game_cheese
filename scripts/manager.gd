@@ -46,6 +46,7 @@ func game_lost():
 	$"../Player/AnimationHandling/Control/ClockAnim".play("clock")
 	for character in $"../Characters".get_children():
 		character.position = character.start_loc
+		character.reset_all()
 		character.timer.start()
 	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 	timer.start()

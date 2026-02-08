@@ -3,6 +3,7 @@ extends CharacterBody3D
 @export var route_one : Array[Node3D]
 @export var route_two : Array[Node3D]
 @export var route_three : Array[Node3D]
+@export var route_four : Array[Node3D]
 @export var event_times : Array[int]
 var just_fired = false
 var count = 0
@@ -23,23 +24,32 @@ var current_route : Array[Node3D]
 var route_index := 0
 var moving := false
 
-func _process(delta):
+func _physics_process(delta):
 	var time_passed = 120 - timer.time_left
 	
-	if time_passed == 0:
+	if timer.time_left == timer.wait_time:
 		count = 0
 	if not route_one.is_empty():
 		if time_passed >= event_times[0] and !moving and count == 0:
 			move_to_node(route_one)
 	if not route_two.is_empty():
 		if time_passed >= event_times[1] and !moving and count == 1:
+			if name == "Big Cheese":
+				open_door()
 			move_to_node(route_two)
 	if not route_three.is_empty():
 		if time_passed >= event_times[2] and !moving and count == 2:
-			move_to_node(route_two)
+			move_to_node(route_three)
+	if not route_four.is_empty():
+		if time_passed >= event_times[3] and !moving and count == 3:
+			move_to_node(route_four)
 	if moving:
 		_move_along_route(delta)
 	move_and_slide()
+
+func open_door():
+	$"../../Mansion/Door/Pivot/Door".interact()
+	$"../../Mansion/Door/Pivot/Door".reversible = true
 
 func move_to_node(routes : Array[Node3D]):
 	current_route = routes
@@ -67,6 +77,13 @@ func _move_along_route(delta):
 	velocity.x = direction.normalized().x * speed
 	velocity.z = direction.normalized().z * speed
 	velocity.y = 0
+
+func reset_all():
+	moving = false
+	count = 0
+	velocity = Vector3.ZERO
+	route_index = 0
+	current_route = []
 
 ## Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

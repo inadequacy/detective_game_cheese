@@ -650,12 +650,14 @@ scale = Vector2(0.9, 0.9)
 texture = ExtResource("22_0uf8p")
 
 [node name="CorrectAndWin" type="Sprite2D" parent="." unique_id=1445094834]
+visible = false
 modulate = Color(1, 1, 1, 0)
 position = Vector2(579, 328)
 scale = Vector2(0.97, 0.97)
 texture = ExtResource("23_k0n3j")
 
 [node name="Win Buttons" type="Node2D" parent="." unique_id=459576162]
+visible = false
 
 [node name="Retry" type="Button" parent="Win Buttons" unique_id=91367278]
 offset_left = 263.0
