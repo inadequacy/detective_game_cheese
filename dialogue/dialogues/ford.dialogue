@@ -3,7 +3,8 @@ if not facts.ford_new_twin.known
 	set facts.ford_new_twin.known = true
 	set facts.ford_betrayed.known = true
 	Ford the Twin: Looks like we're no longer the freshest member of the Cheese Ball! 
-	Ford the Twin: By 'we' I mean my twin and I of course, I'm Ford. My twin Roch is around here somewhere. Before you, we were the newest members of the Cheese Ball. We made our mark through our work as cigar salesmen, well... Roch says salesmen but I would say "pioneers". 'Tomayto tomahto'. 
+	Ford the Twin: By 'we' I mean my twin and I of course, I'm Ford. My twin Roch is around here somewhere. Before you, we were the newest members of the Cheese Ball. 
+	Ford the Twin: We made our mark through our work as cigar salesmen, well... Roch says salesmen but I would say "pioneers". 'Tomayto tomahto'. 
 	Ford the Twin: The two of us are a bit like that, Roch and I are like chalk and cheese. He's the smaller one, doesn't mean you can pick on him. If you do you'll be answering to me. 
 	Ford the Twin: Twins always look out for each other no matter what. At the end of the day none of these posh animals care about anyone but themselves. 
 	Ford the Twin: Don't forget it, we did. The Cheese Ball may revolve around cheese, but it's really about blood and gold. My advice is to enjoy as much as you can without being blinded by the shining lights. Now take a cigar or trot on. Enjoy your evening newbie.
@@ -17,5 +18,6 @@ elif not facts.ford_hate.known
 	Ford the Twin: I shudder to think what would become of Roch and I if we didn't have each other, would we end up just like the rest of them? Chasing power and prestige? 
 	Ford the Twin: Being here tonight reminds me that all we've got is each other. Where is Roch anyways.... you seen him? I spotted him walking around earlier, he seemed in high spirits, he was different, confident even. 
 	Ford the Twin: It was quite strange, but good to see him out of his shell for once. I don't know how he can suddenly be comfortable like that knowing we're surrounded by liars. 
-	Ford the Twin: Whatever, at least one of us is enjoying themselves. I'm going to sit and wait here for the night to play out, then we're leaving and never coming back to this dump again. Whatever the Big Cheese has going on for him after this, I hope it's bad, he deserves it.
+	Ford the Twin: Whatever, at least one of us is enjoying themselves. I'm going to sit and wait here for the night to play out, then we're leaving and never coming back to this dump again. 
+	Ford the Twin: Whatever the Big Cheese has going on for him after this, I hope it's bad, he deserves it.
 => END
