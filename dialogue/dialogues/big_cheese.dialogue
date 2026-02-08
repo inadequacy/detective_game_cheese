@@ -1,23 +1,16 @@
-~ big_cheese_retiring
+
+~ start
 if not facts.big_cheese_retiring.known
 	set facts.big_cheese_retiring.known = true
-	Big Cheese: I'm The Big Cheese, don't worry, you've only missed the toast. But you're just in time for the fun! Have you tried the cheese? What do you think? Did it taste funny?...[wait=0.5] No? Perhaps my palate needs cleansing.
+	Big Cheese: Oh! Well hello there! You're fashionably late to the Cheese Ball. I'm The Big Cheese, don't worry, you've only missed the toast. But you're just in time for the fun! Have you tried the cheese? What do you think? Did it taste funny?...[wait=0.5] No? Perhaps my palate needs cleansing.
 	Big Cheese: It's a shame that your first Cheese Ball is the last one, after tonight, I'll be retiring as The Big Cheese, it was a bit of a shock to the others but all good things must come to an end.
 	Big Cheese: Regardless, we're happy to have you! I hope you enjoy yourself, theres nowhere else I'd rather be than here with my loyal friends, my found family, and that includes you now!
-else:
+elif not facts.big_cheese_loves_ella.known
+	set facts.big_cheese_loves_ella.known = true
+	Big Cheese: Back for more Cheddar?
 	Big Cheese: You didn't hear anything earlier did you? Ella and I were having a....conversation.  It didn't go so well. She's rather upset about my retirement, which is understandable given that we started this together. Have you seen the cheese knife thats supposed to be on this tray? 
 	Big Cheese: Gosh, Wensley has really been slacking tonight! The state of Cheese Manor tonight, honestly. First I find my safe all scratched up, what did Wensley do, clean it with a cheese knife? Right of course and then I find a cheese knife missing from the tray!
 	Big Cheese: How can anyone be expected to eat the cheese without a cheese knife?! After spending a fortune on cheese for every ball? It doesn't matter anymore, I really cannot bear to eat any more cheese after tonight.
 	Big Cheese: I've always hated cheese... I've always hated these nights....especially the cheese.... my love... I can no longer bear to be near you and not have you...  
 	Big Cheese: Oh- you're still here. Please forget you heard that. Excuse me, I need a moment to myself.
-=> END
-
-~ start
-if not npcs.BigCheese.has_met
-	set npcs.BigCheese.has_met = true
-	Big Cheese: Oh! Well hello there! You're fashionably late to the Cheese Ball! 
-	=>< big_cheese_retiring
-else:
-	Big Cheese: Back for more cheddar I see?
-	=>< big_cheese_retiring
 => END
