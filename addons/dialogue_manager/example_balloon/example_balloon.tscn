@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Texture2D" uid="uid://d0rx3nrwjheb0" path="res://images/Cheese Cauldron_01.png" id="2_nlsx6"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
+[ext_resource type="Texture2D" uid="uid://bqi3lnvr3cg73" path="res://addons/dialogue_manager/example_balloon/dialogue box2.png" id="3_1337t"]
+[ext_resource type="FontFile" uid="uid://cggb2o3go41up" path="res://addons/dialogue_manager/example_balloon/gothic-pixel-font.ttf" id="4_kmygl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -120,9 +122,18 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -219.0
+offset_left = 17.785
+offset_top = -227.445
+offset_right = 17.785034
+offset_bottom = -8.444092
 grow_horizontal = 2
 grow_vertical = 0
+scale = Vector2(0.97, 0.97)
+
+[node name="DialogueBox2" type="Sprite2D" parent="Balloon/MarginContainer" unique_id=1410765828]
+position = Vector2(578.50006, 106.12884)
+scale = Vector2(0.4431849, 0.46245524)
+texture = ExtResource("3_1337t")
 
 [node name="ChatBoxOutside" type="Sprite2D" parent="Balloon/MarginContainer" unique_id=1776853990]
 visible = false
@@ -136,10 +147,9 @@ layout_mode = 2
 mouse_filter = 1
 
 [node name="ChatBoxInside" type="Sprite2D" parent="Balloon/MarginContainer/PanelContainer" unique_id=444282442]
-visible = false
-position = Vector2(539.50006, 61.5)
-scale = Vector2(2.6980002, 0.7808989)
-texture = ExtResource("2_nlsx6")
+position = Vector2(553.7268, 91.644356)
+scale = Vector2(0.44985244, 0.4787234)
+texture = ExtResource("3_1337t")
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon/MarginContainer/PanelContainer" unique_id=325300755]
 layout_mode = 2
@@ -150,12 +160,16 @@ layout_mode = 2
 [node name="VBoxContainer" type="VBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=648451245]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_constants/separation = 4
 
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1925886638]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
+theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_kmygl")
+theme_override_font_sizes/normal_font_size = 35
 bbcode_enabled = true
 text = "Character"
 fit_content = true
@@ -165,6 +179,8 @@ scroll_active = false
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.9430821, 0.9375901, 0.9317573, 1)
+theme_override_font_sizes/normal_font_size = 17
 text = "Dialogue..."
 
 [node name="Control" type="Control" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=1430225775]
