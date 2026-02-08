@@ -1,6 +1,7 @@
 ~ start
 if not facts.cheese_addict_addicted.known
 	set facts.cheese_addict_addicted.known = true
+	set facts.cheese_addict_married.known = true
 	Hal: Oh! Hello! I was just in here to powder my nose. I've actually been in here for quite a while. 
 	Hal: Ella and The Big Cheese suddenly came through, having a fight, about The Big Cheese's retirement I think. Theres no way I could've walked out of here in that situation! 
 	Hal: ....Why am I still in here? Well uh, I found this tray of cheese in here. It was already here when I got here! I'm just keeping it company so it doesn't get lonely. 

@@ -57,6 +57,10 @@ var pinned_facts: Dictionary = {
 			known = false,
 			content = "Big Cheese is retiring."
 		},
+		big_cheese_taste = {
+			known = false,
+			content = "Some of the cheese tasted 'off'"
+		},
 		big_cheese_loves_ella = {
 			known = false,
 			content = "Big Cheese loves Ella."
@@ -69,6 +73,14 @@ var pinned_facts: Dictionary = {
 			known = false,
 			content = "Stilton broke into the study"
 		},
+		butler_secrets = {
+			known = false,
+			content = "Butler knows all the secrets of the Manor"
+		},
+		butler_closet = {
+			known = false,
+			content = "Butler lingering around closet"
+		},
 		cheese_addict_addicted = {
 			known = false,
 			content = "Hal is addicted to cheese"
@@ -76,6 +88,10 @@ var pinned_facts: Dictionary = {
 		cheese_addict_ella = {
 			known = false,
 			content = "Ella arguing in the study"
+		},
+		cheese_addict_married = {
+			known = false,
+			content = "Hal and Brie are married"
 		},
 		femme_fish_fatale_collude = {
 			known = false,
@@ -109,6 +125,10 @@ var pinned_facts: Dictionary = {
 			known = false,
 			content = "Stilton searching for a knife"
 		},
+		rosh_news = {
+			known = false,
+			content = "The Twins recieved tough news tonight"
+		},
 		ford_new_twin = {
 			known = false,
 			content = "twins were Cheese Ball's newest members"
@@ -116,6 +136,10 @@ var pinned_facts: Dictionary = {
 		ford_hate = {
 			known = false,
 			content = "Ford hates Big Cheese"
+		},
+		ford_betrayed = {
+			known = false,
+			content = "Ford was betrayed by someone tonight"
 		},
 	},
 }

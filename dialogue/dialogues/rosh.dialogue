@@ -1,6 +1,7 @@
 ~ start
 if not facts.rosh_swapped_masks.known
 	set facts.rosh_swapped_masks.known = true
+	set facts.rosh_news.known = true
 	Roch the Twin: O-Oh, hey! It's me Roch! I-I'm not Wensley! 
 	Roch the Twin: I mean I'm not the butler! 
 	Roch the Twin: ...Sorry, I'm not really feeling myself right now.  It's nice to see a new face! or uh, a new mask! Everyone here is really friendly b-but you shouldn't trust them too much, I never did. 

@@ -1,6 +1,7 @@
 ~ start
 if not facts.ford_new_twin.known
 	set facts.ford_new_twin.known = true
+	set facts.ford_betrayed.known = true
 	Ford the Twin: Looks like we're no longer the freshest member of the Cheese Ball! 
 	Ford the Twin: By 'we' I mean my twin and I of course, I'm Ford. My twin Roch is around here somewhere. Before you, we were the newest members of the Cheese Ball. We made our mark through our work as cigar salesmen, well... Roch says salesmen but I would say "pioneers". 'Tomayto tomahto'. 
 	Ford the Twin: The two of us are a bit like that, Roch and I are like chalk and cheese. He's the smaller one, doesn't mean you can pick on him. If you do you'll be answering to me. 

@@ -1,10 +1,12 @@
 ~ start
 if not facts.butler_knife.known
 	set facts.butler_knife.known = true
+	set facts.butler_secrets.known = true
 	Wensley the Butler: Greetings esteemed guest. It is I, Wensley, your butler tonight. Tirelessly working to make sure the night goes on swimmingly, every glass filled, every cheese tray with a cheese knife, and every mask hiding a smile. 
 	Wensley the Butler: We You won't need to worry about a thing, what happens at Cheese Ball naturally stays at Cheese Ball. As the loyal butler of Cheese Manor all secrets are safe with me. Now then, if you'll excuse me. I'm just doing a bit of cleaning up.
 elif not facts.butler_stilton.known
 	set facts.butler_stilton.known = true
+	set facts.butler_closet.known = true
 	Wensley the Butler: Oh you found me! Roch the little twin! Just kidding, it's still me, Wensley. Why aren't I wearing my mask? The poor lad wanted a break from the festivities, he isn't feeling himself tonight, so I've given him my mask for the time being. 
 	Wensley the Butler: Me on the other hand, theres plenty to keep me occupied in here. He doesn't need me out and about right now. God knows I've done enough for the Big Cheese for an entire lifetime. After all, I'm the one who keeps Cheese Manor breathing, the Big Cheese is choking it. 
 	Wensley the Butler: Are you here to get into the study? My my how naughty you are to use the secret doors, you're not the first naughty guest tonight either, Plod Stilton was through just a moment ago. Lady Ella has spent a lot of time in there too.  
